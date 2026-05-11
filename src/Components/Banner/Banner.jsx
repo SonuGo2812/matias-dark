@@ -68,9 +68,9 @@ const Banner = () => {
                 </span>
               </Link>
               <h1>
-                <span className="hone"> Creative Visual</span>
+                <span className="hone"> Modern Web</span>
                 <span className="d-block designers" data-text="Designer">
-                  Designer
+                  Developer
                 </span>
               </h1>
               <div className="video__area">
