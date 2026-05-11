@@ -56,9 +56,7 @@ const About = () => {
               data-aos-duration="1000"
             />
             <p className="descrp" data-aos="fade-up" data-aos-duration="1500">
-              I'm David Matias, I'm a Brand & Webflow Designer, Currently
-              residing in the lush Victoria Street London, Matias operates
-              globally and is ready to take on any design challenge.
+              I’m Sonu Goswami, a Website Developer specializing in modern websites using React, WordPress, Shopify, and Elementor. Based in India, I work with clients worldwide to create responsive, user-focused, and conversion-driven digital experiences.
             </p>
           </div>
           <div className="singletab">

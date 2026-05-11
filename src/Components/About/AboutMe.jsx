@@ -72,10 +72,7 @@ const AboutMe = ({ isTabActive }) => {
                 data-aos="fade-up"
                 data-aos-duration="500"
               >
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                consectetur, aliquam quaerats voluptatem. Ut enim ad minima
-                veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem
-                velit esse quam nihil
+                Passionate website developer with 4+ years of experience creating modern, responsive, and user-focused websites. Skilled in React, WordPress, Shopify, Elementor, and WooCommerce, with a strong focus on clean design, performance, and seamless user experience.
               </p>
               <div className="about__contactwrap">
                 <div className="row g-4">

@@ -15,31 +15,28 @@ const Experience = ({isTabActive}) => {
             <div className="about__onecontent">
               <h2>My Experience</h2>
               <p>
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                consectetur, aliquam quaerats voluptatem. Ut enim ad minima
-                veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem
-                velit esse quam nihil
+                Experienced website developer focused on building modern, responsive, and conversion-driven websites for businesses and brands. Skilled in React, WordPress, Shopify, Elementor, and WooCommerce with hands-on experience across multiple industries and platforms.
               </p>
               <div className="exprience__box mt-30">
                 <div className="exri__item">
-                  <span className="fz-18 fw-500 base">In 2011</span>
+                  <span className="fz-18 fw-500 base">In 2021</span>
                   <div className="expri__cont">
-                    <h4 className="mb-15 text-white">Software Engineer</h4>
-                    <p className="fz-18 pra d-block">UI Head & Manager</p>
+                    <h4 className="mb-15 text-white">WordPress Developer</h4>
+                    <p className="fz-18 pra d-block">Freelance Projects</p>
                   </div>
                 </div>
                 <div className="exri__item">
-                  <span className="fz-18 fw-500 base">In 2016</span>
+                  <span className="fz-18 fw-500 base">In 2024</span>
                   <div className="expri__cont">
-                    <h4 className="mb-15 text-white">Product Designer</h4>
-                    <p className="fz-18 pra d-block">Head of Department</p>
+                    <h4 className="mb-15 text-white">Website Developer</h4>
+                    <p className="fz-18 pra d-block">Shopify & CMS Development</p>
                   </div>
                 </div>
                 <div className="exri__item">
-                  <span className="fz-18 fw-500 base">In 2023</span>
+                  <span className="fz-18 fw-500 base">In 2026</span>
                   <div className="expri__cont">
-                    <h4 className="mb-15 text-white">Senior UI Designer</h4>
-                    <p className="fz-18 pra d-block">Fiverr.com</p>
+                    <h4 className="mb-15 text-white">Frontend Developer</h4>
+                    <p className="fz-18 pra d-block">Learning React Development</p>
                   </div>
                 </div>
               </div>
