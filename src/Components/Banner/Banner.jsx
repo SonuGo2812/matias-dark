@@ -69,7 +69,7 @@ const Banner = () => {
               </Link>
               <h1>
                 <span className="hone"> Modern Web</span>
-                <span className="d-block designers" data-text="Designer">
+                <span className="d-block designers" data-text="Developer">
                   Developer
                 </span>
               </h1>
