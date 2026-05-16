@@ -17,14 +17,14 @@ const Blogs = () => {
                 data-aos="fade-down"
                 data-aos-duration="1000"
               >
-                My Blogs
+                Website Insights
               </span>
               <h2
                 className="fw-500 mt-3"
                 data-aos="fade-down"
                 data-aos-duration="1500"
               >
-                Recent Posts
+                Recent Notes
               </h2>
               <div className="blog__hoverbox">
                 <Link
@@ -33,7 +33,7 @@ const Blogs = () => {
                 >
                   <span className="box">
                     <i className="bi bi-arrow-up-right"></i>
-                    <span className="textmore"> Click More Work </span>
+                    <span className="textmore"> Read More </span>
                   </span>
                 </Link>
               </div>

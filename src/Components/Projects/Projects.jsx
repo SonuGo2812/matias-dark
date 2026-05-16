@@ -20,7 +20,7 @@ const Projects = () => {
       <div className="container">
         <Title
           mainTitle={"Explore my recent website projects."}
-          sortTitle={"Complete Project"}
+          sortTitle={"Work"}
         />
 
         <div className={`project__wrapone`}>

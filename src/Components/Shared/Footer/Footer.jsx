@@ -15,12 +15,12 @@ const socalList = [
   },
   {
     id: 3,
-    platfrom: "Dribble",
+    platfrom: "LinkedIn",
     icon: <ArrowRight />,
   },
   {
     id: 4,
-    platfrom: "Webflow",
+    platfrom: "Portfolio",
     icon: <ArrowRight />,
   },
 ];
@@ -36,10 +36,11 @@ const Footer = () => {
             <div className="col-lg-6">
               <div className="get__content">
                 <p>
-                  Hello, I’m David Matias, Website & User Interface Designer
-                  based in London.
+                  Hello, I am Sonu Goswami, a Website Developer based in India,
+                  working worldwide on WordPress, Shopify, WooCommerce, and CMS
+                  website solutions.
                 </p>
-                <a href="#0">davidmatias333@gmail.com</a>
+                <a href="mailto:sonu998999@gmail.com">sonu998999@gmail.com</a>
               </div>
             </div>
             <div className="col-lg-6">
@@ -65,9 +66,9 @@ const Footer = () => {
         <div className="container">
           <div className="copyright">
             <p className="white">
-              Copyright © 2023 {" "}
+              Copyright 2026{" "}
               <Link to={"/"} className="base">
-                Matias.
+                Sonu Goswami.
               </Link>{" "}
               All rights reserved.
             </p>

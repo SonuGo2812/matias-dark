@@ -10,7 +10,7 @@ import PageHeader from "../Components/Shared/PageHeader/PageHeader";
 const AllServices = () => {
   return (
     <>
-      <PageHeader heading={"Services All"} page={"Services All"} />
+      <PageHeader heading={"Website Development Services"} page={"Services"} />
       <Services isHeading={false} />
       <Metting />
       <Pricing />

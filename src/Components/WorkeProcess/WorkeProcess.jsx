@@ -5,32 +5,32 @@ import WorkProcessCard from "./WorkProcessCard";
 const processList = [
   {
     id: 1,
-    title: "Concept",
-    info: "Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit",
+    title: "Plan",
+    info: "Clear website planning keeps the structure focused on business goals.",
     list: [
-      "Reviewing any existing branding",
-      "Target audience and competitors research",
-      "Developing a strategy",
+      "Review business goals and content needs",
+      "Plan pages, sections, and user journey",
+      "Define CMS or eCommerce requirements",
     ],
   },
   {
     id: 2,
-    title: "Design",
-    info: "Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit",
+    title: "Build",
+    info: "Responsive development with clean layouts and easy content management.",
     list: [
-      "Developing wireframes and mockup",
-      "Choosing typography, color palettes,",
-      "Refining the design",
+      "Create WordPress, Shopify, or Elementor pages",
+      "Set up WooCommerce, ACF, or CMS content",
+      "Optimize responsive design and usability",
     ],
   },
   {
     id: 3,
-    title: "Webflow",
-    info: "Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit",
+    title: "Launch",
+    info: "Final checks ensure the website is ready for real users.",
     list: [
-      "Testing the website thoroughly launch",
-      "Choosing typography, color palettes,",
-      "Refining the design",
+      "Test mobile, desktop, forms, and key flows",
+      "Check performance and SEO-friendly structure",
+      "Deploy and prepare the website for updates",
     ],
   },
 ];
@@ -39,7 +39,7 @@ const WorkeProcess = () => {
     <section className="process__section pt-120 pb-120">
       <div className="container">
         <Title
-          mainTitle="Your Dream Website In Just Few Steps"
+          mainTitle="Your Website In A Clear Development Process"
           sortTitle="Working Process"
         />
         <div className="row g-4">

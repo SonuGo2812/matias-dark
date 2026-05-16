@@ -11,33 +11,25 @@ import { ScrollRestoration } from "react-router-dom";
 const accordionList = [
   {
     id: "cmnid4",
-    heading: "Simple process for workflow?",
-    para: ` All the Lorem Ipsum generators on the Internet tend
-    to repeat predefined chunks as necessary, making
-    this the first true generator on the Internet. It
-    uses a dictionary of over words, combined with a
-    handful of model structures, to generate Lorem Ipsum
-    which looks reasonable.`,
+    heading: "How do you start a website project?",
+    para: ` I start by understanding your business, pages, content,
+    target audience, and platform needs. After that, I plan the
+    structure, design flow, and development approach before building
+    the website.`,
   },
   {
     id: "cmnid5",
-    heading: "Unique brand identity and strategy",
-    para: ` All the Lorem Ipsum generators on the Internet tend
-    to repeat predefined chunks as necessary, making
-    this the first true generator on the Internet. It
-    uses a dictionary of over words, combined with a
-    handful of model structures, to generate Lorem Ipsum
-    which looks reasonable.`,
+    heading: "Can you work with CMS and eCommerce websites?",
+    para: ` Yes. I build and customize WordPress, Shopify, WooCommerce,
+    Elementor, Divi, ACF, and CMS-based websites with clean layouts,
+    responsive sections, and easy-to-manage content.`,
   },
   {
     id: "cmnid6",
-    heading: "Tailor-made digital products",
-    para: ` All the Lorem Ipsum generators on the Internet tend
-    to repeat predefined chunks as necessary, making
-    this the first true generator on the Internet. It
-    uses a dictionary of over words, combined with a
-    handful of model structures, to generate Lorem Ipsum
-    which looks reasonable.`,
+    heading: "Will the website be responsive and SEO-friendly?",
+    para: ` I focus on mobile-friendly design, clean page structure,
+    performance basics, SEO-friendly sections, and a smooth user
+    experience so the website works well for real visitors.`,
   },
 ];
 const ServiceDetails = () => {
@@ -45,7 +37,7 @@ const ServiceDetails = () => {
   return (
     <>
  
-      <PageHeader heading={"Business Branding"} page={"Business Branding"} />
+      <PageHeader heading={"Website Development"} page={"Website Development"} />
       <section className="service__details overhid pb-120">
         <div className="container">
           <div className="row g-4">
@@ -60,22 +52,19 @@ const ServiceDetails = () => {
                   data-aos-duration="1400"
                 >
                   <h3 className="textt36 d-block">
-                    About Business Branding Service
+                    About Website Development Service
                   </h3>
                   <p className="fz-16 pra ttext__one">
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia consequuntur magni voluptatem sequi
-                    nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                    dolor sit amet, consectetur, adipisci velit, numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam
+                    I create responsive, user-friendly, and conversion-focused
+                    websites for businesses, brands, and service providers. My
+                    main work includes WordPress, Shopify, Elementor,
+                    WooCommerce, Divi, ACF, and CMS-based website development.
                   </p>
                   <p className="fz-16 pra">
-                    Quis nostrum exercitationem ullam corporis suscipit
-                    laboriosam, nisi ut aliquid ex ea commodi reprehenderit qui
-                    in ea voluptate velit esse quam nihil molestiae consequatur,
-                    vel illum qui dolorem fugiat quo voluptas nulla the Lorem
-                    Ipsum generators on the Internet tend to repeat predefined
-                    chunks
+                    Each website is built with clean design, clear content
+                    structure, SEO-friendly sections, and easy content
+                    management so business owners can update pages without
+                    difficulty.
                   </p>
                 </div>
                 <div
@@ -87,18 +76,12 @@ const ServiceDetails = () => {
                     Specialization & Working Process
                   </h3>
                   <p className="fz-16 pra">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look even slightly believable. If you are going to use a you
-                    need to be sure there isn't anything embarrassing hidden in
-                    the middle of text. All the generators on the Internet tend
-                    to repeat predefined chunks as necessary, Making this the
-                    first true generator on the Internet. It uses a dictionary
-                    of over combined with a handful of structures, to generate
-                    Lorem Ipsum which looks reasonable. The generated Lorem
-                    Ipsum is therefore always free from injected humour, or
-                    non-characteristic words etc.
+                    My workflow covers website planning, page layout, CMS setup,
+                    responsive development, eCommerce configuration, content
+                    structure, testing, and launch support. I also work on
+                    landing pages, service pages, product pages, ACF dynamic
+                    content, and custom website solutions based on project
+                    requirements.
                   </p>
                 </div>
                 <div className="paythumb position-relative">
@@ -113,7 +96,7 @@ const ServiceDetails = () => {
                   </a>
                 </div>
                 <div className="ser__components">
-                  <h2 className="whites mb-5">Questions ? You're Covered</h2>
+                  <h2 className="whites mb-5">Questions ? You Are Covered</h2>
                   <div className="accordion" id="accordionExample">
                     {accordionList.map(({ id, heading, para }) => (
                       <Accordion key={id} id={id} heading={heading} para={para} />
@@ -127,27 +110,27 @@ const ServiceDetails = () => {
                 <div className="service__rightbox mb-30">
                   <h3>Service List</h3>
                   <a href="#0" className="link__box mb-15">
-                    Illustration Design
+                    WordPress Development
                     <i className="bi bi-chevron-right"></i>
                   </a>
                   <a href="#0" className="link__box mb-15">
-                    Business Branding
+                    Shopify Store Setup
                     <i className="bi bi-chevron-right"></i>
                   </a>
                   <a href="#0" className="link__box mb-15">
-                    Web UI/UX Design
+                    Elementor Landing Pages
                     <i className="bi bi-chevron-right"></i>
                   </a>
                   <a href="#0" className="link__box mb-15">
-                    Application Design
+                    WooCommerce Development
                     <i className="bi bi-chevron-right"></i>
                   </a>
                   <a href="#0" className="link__box mb-15">
-                    Digital Marketing
+                    ACF Dynamic Websites
                     <i className="bi bi-chevron-right"></i>
                   </a>
                   <a href="#0" className="link__box">
-                    Web Development
+                    Website Maintenance
                     <i className="bi bi-chevron-right"></i>
                   </a>
                 </div>

@@ -44,7 +44,7 @@ const Partner = () => {
           data-aos="fade-down"
           data-aos-duration="1000"
         >
-          More than 100+ companies trusted us worldwide
+          Building websites for businesses and service providers worldwide
         </h4>
         <div className="swiper sponsor__wrap">
           <Swiper

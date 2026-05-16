@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <>
       <PageHeader
-        heading={"Let's Start Something"}
-        page={"Let's Start Something"}
+        heading={"Need a Website?"}
+        page={"Contact"}
       />
       <section className="contact__section">
         <div className="container">
@@ -31,15 +31,15 @@ const Contact = () => {
                 <h4 className="mb-30">Feel free to contact me anytime</h4>
                 <div className="contact__item mb-20">
                   <span className="he1">Email</span>
-                  <a href="#0">davidmatias333@gmail.com</a>
+                  <a href="mailto:sonu998999@gmail.com">sonu998999@gmail.com</a>
                 </div>
                 <div className="contact__item mb-20">
-                  <span className="he1">Phone</span>
-                  <a href="#0">+(2) 871 382 023</a>
+                  <span className="he1">Availability</span>
+                  <a href="#0">Open for website projects</a>
                 </div>
                 <div className="contact__item">
-                  <span className="he1">Address</span>
-                  <span className="address">Victoria Street London</span>
+                  <span className="he1">Location</span>
+                  <span className="address">India, Working Worldwide</span>
                 </div>
               </div>
             </div>

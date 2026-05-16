@@ -43,8 +43,8 @@ const Banner = () => {
   const [position, setPosition] = useState(false);
 
   useEffect(() => {
-    if(!position){
-      setPosition(true)
+    if (!position) {
+      setPosition(true);
     }
   }, []);
 
@@ -60,15 +60,15 @@ const Banner = () => {
             <div className="banner__content">
               <Link to={""} className="bn__currently">
                 <span className="d-block">
-                  Currently available for freelance
+                  Available for website projects
                 </span>
                 <span className="d-flex gap-4 align-items-center">
-                  worldwide
+                  India, working worldwide
                   <i className="bi bi-arrow-up-right"></i>
                 </span>
               </Link>
               <h1>
-                <span className="hone"> Modern Web</span>
+                <span className="hone"> Website</span>
                 <span className="d-block designers" data-text="Developer">
                   Developer
                 </span>
@@ -80,16 +80,15 @@ const Banner = () => {
                     <PlayFill />
                   </i>
                 </div>
-                <span className="proces">Work Process</span>
+                <span className="proces">CMS Websites</span>
               </div>
             </div>
           </div>
           <div className="col-lg-4">
             <div
               className={`banner__thumb  ${
-                position  ? "right_up_animat" : "right_up"
+                position ? "right_up_animat" : "right_up"
               }`}
-             
             >
               <img src={bannerMan} alt="man-img" />
             </div>
@@ -101,7 +100,7 @@ const Banner = () => {
           <Link to={""}>
             <img src={dial} alt="img" />
           </Link>
-          <Link to={""}>(+02)-574-328-301</Link>
+          <Link to={""}>sonu998999@gmail.com</Link>
         </div>
         <div className="right__infoscroll">
           <Link className="scroll">

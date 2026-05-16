@@ -5,33 +5,33 @@ import Title from "../Shared/Title/Title";
 const serviceList = [
   {
     id: "01",
-    heading: "Illustration Design",
-    subHeading: "Designer",
-    para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. sunt in culpa qui officia deserunt mollit",
+    heading: "WordPress Development",
+    subHeading: "CMS Websites",
+    para: "Custom WordPress websites, service pages, landing pages, and easy-to-manage CMS builds for businesses.",
   },
   {
     id: "02",
-    heading: "Business Branding",
-    subHeading: "Branding",
-    para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. sunt in culpa qui officia deserunt mollit",
+    heading: "Shopify Store Development",
+    subHeading: "eCommerce",
+    para: "Responsive Shopify stores, product pages, collections, theme setup, and conversion-focused store experiences.",
   },
   {
     id: "03",
-    heading: "Web UI/UX Design",
-    subHeading: "UI/UX Design",
-    para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. sunt in culpa qui officia deserunt mollit",
+    heading: "Elementor Website Design",
+    subHeading: "Page Builder",
+    para: "Clean Elementor layouts, responsive sections, landing pages, and flexible pages clients can manage easily.",
   },
   {
     id: "04",
-    heading: "Application Design",
-    subHeading: " Web Design",
-    para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. sunt in culpa qui officia deserunt mollit",
+    heading: "WooCommerce Solutions",
+    subHeading: "Online Stores",
+    para: "WooCommerce setup, product pages, checkout flows, store structure, and business-ready eCommerce websites.",
   },
   {
     id: "05",
-    heading: " Digital Marketing",
-    subHeading: "SEO Analytics",
-    para: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. sunt in culpa qui officia deserunt mollit",
+    heading: "Custom Website Solutions",
+    subHeading: "ACF and Frontend",
+    para: "ACF-powered dynamic content, Divi customization, responsive fixes, and modern frontend improvements.",
   },
 ];
 const Services = ({ isHeading }) => {
@@ -43,8 +43,8 @@ const Services = ({ isHeading }) => {
       <div className="container">
         {isHeading && (
           <Title
-            mainTitle="My Special Service For Your Business Development"
-            sortTitle="Services That i Provide"
+            mainTitle="Website Development Services For Business Growth"
+            sortTitle="Services That I Provide"
           />
         )}
 

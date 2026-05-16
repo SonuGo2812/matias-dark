@@ -7,43 +7,43 @@ import Title from "../Shared/Title/Title";
 const planData = [
   {
     id: 1,
-    planName: "Basic Plan",
-    price: "$35",
-    time: "per month",
+    planName: "Starter Website",
+    price: "Custom",
+    time: "project",
     fetcher: [
-      " Web Development",
-      " Mobile Development",
-      "Advetising",
-      "Graphic design",
-      "Project management",
+      " WordPress setup",
+      " Responsive pages",
+      "Elementor sections",
+      "Basic SEO structure",
+      "Launch support",
     ],
     image: basic,
   },
   {
     id: 2,
-    planName: "Ultra Plan",
-    price: "$65",
-    time: "per month",
+    planName: "Business Website",
+    price: "Custom",
+    time: "project",
     fetcher: [
-      " Web Development",
-      " Mobile Development",
-      "Advetising",
-      "Graphic design",
-      "Project management",
+      " CMS development",
+      " Service page layouts",
+      "ACF dynamic content",
+      "Performance basics",
+      "Content management",
     ],
     image: warranty,
   },
   {
     id: 3,
-    planName: "Gold Plan",
-    price: "$95",
-    time: "per month",
+    planName: "eCommerce Website",
+    price: "Custom",
+    time: "project",
     fetcher: [
-      " Web Development",
-      " Mobile Development",
-      "Advetising",
-      "Graphic design",
-      "Project management",
+      " Shopify setup",
+      " WooCommerce setup",
+      "Product pages",
+      "Payment-ready structure",
+      "Store launch support",
     ],
     image: premium,
   },
@@ -53,8 +53,8 @@ const Pricing = () => {
     <section className="pricing__section pt-120 pb-120">
       <div className="container">
         <Title
-          mainTitle={"The best pricing plans to get your best"}
-          sortTitle={"Choose Your Plan"}
+          mainTitle={"Flexible website solutions for your business"}
+          sortTitle={"Website Packages"}
         />
         <div className="row g-4 justify-content-center">
           {planData.map(({ id, image, planName, fetcher, price, time }) => (
