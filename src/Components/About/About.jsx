@@ -56,7 +56,7 @@ const About = () => {
               data-aos-duration="1000"
             />
             <p className="descrp" data-aos="fade-up" data-aos-duration="1500">
-              I’m Sonu Goswami, a Website Developer specializing in modern websites using React, WordPress, Shopify, and Elementor. Based in India, I work with clients worldwide to create responsive, user-focused, and conversion-driven digital experiences.
+              I’m Sonu Goswami, a Website Developer based in India, specializing in WordPress, Shopify, Elementor, WooCommerce, and custom website solutions. I work with clients worldwide to build responsive, user-friendly, and conversion-focused websites.
             </p>
           </div>
           <div className="singletab">

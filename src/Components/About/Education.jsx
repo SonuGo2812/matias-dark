@@ -15,31 +15,28 @@ const Education = ({isTabActive}) => {
             <div className="about__onecontent">
               <h2>My Education</h2>
               <p>
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                consectetur, aliquam quaerats voluptatem. Ut enim ad minima
-                veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem
-                velit esse quam nihil
+                My education background helped me build a strong foundation in computer science, programming logic, and web technologies. After completing my science education with a mathematics background, I continued into computer applications and started my professional journey in website development.
               </p>
               <div className="exprience__box mt-30">
                 <div className="exri__item">
-                  <span className="fz-18 fw-500 base">2011-2013</span>
+                  <span className="fz-18 fw-500 base">2018</span>
                   <div className="expri__cont">
-                    <h4 className="mb-15 text-white">Programming Course</h4>
-                    <p className="fz-18 pra d-block">New York University</p>
+                    <h4 className="mb-15 text-white">Senior Secondary Education</h4>
+                    <p className="fz-18 pra d-block">Science with Mathematics</p>
                   </div>
                 </div>
                 <div className="exri__item">
-                  <span className="fz-18 fw-500 base">2013-2016</span>
+                  <span className="fz-18 fw-500 base">2018 to 2021</span>
                   <div className="expri__cont">
-                    <h4 className="mb-15 text-white">University of Design</h4>
-                    <p className="fz-18 pra d-block">Kingston, United States</p>
+                    <h4 className="mb-15 text-white">Computer Applications Program</h4>
+                    <p className="fz-18 pra d-block">Bachelor’s Level Study</p>
                   </div>
                 </div>
                 <div className="exri__item">
-                  <span className="fz-18 fw-500 base">2016-2018</span>
+                  <span className="fz-18 fw-500 base">2021 to Present</span>
                   <div className="expri__cont">
-                    <h4 className="mb-15 text-white">Web Design Course</h4>
-                    <p className="fz-18 pra d-block">New York University</p>
+                    <h4 className="mb-15 text-white">Professional Web Development Journey</h4>
+                    <p className="fz-18 pra d-block">Website Development and CMS Projects</p>
                   </div>
                 </div>
               </div>

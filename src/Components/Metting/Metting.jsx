@@ -14,14 +14,14 @@ const Metting = () => {
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
-                  Need a Project?
+                  Need a Website?
                 </span>
                 <h2
                   className="fw-500"
                   data-aos="fade-down"
                   data-aos-duration="1600"
                 >
-                  Let's work together. fixed a meeting
+                  Let’s build a clean, responsive website.
                 </h2>
               </div>
               <div
@@ -34,7 +34,7 @@ const Metting = () => {
                 </span>
                 <span className="box">
                   <span className="ptext fz-18 mb-1 d-block"> Email </span>
-                  <a href="#0"> davidmatias333@gmail.com </a>
+                  <a href="#0"> goswamisonu2812@gmail.com </a>
                 </span>
               </div>
               <div
@@ -46,8 +46,8 @@ const Metting = () => {
                   <GeoAlt className="i"/>
                 </span>
                 <span className="box">
-                  <span className="ptext fz-18 mb-1 d-block"> Location </span>
-                  <a href="#0"> Victoria Street London, England </a>
+                  <span className="ptext fz-18 mb-1 d-block"> Address </span>
+                  <a href="#0"> Jodhpur, Rajasthan, India </a>
                 </span>
               </div>
             </div>
