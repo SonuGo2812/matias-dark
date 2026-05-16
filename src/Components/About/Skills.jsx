@@ -14,21 +14,57 @@ const skillsList = [
   },
   {
     id: 2,
-    skill: "Shopify",
-    percentage: "90%",
+    skill: "Elementor",
+    percentage: "95%",
     image: word,
   },
   {
     id: 3,
-    skill: "WooCommerce",
-    percentage: "80%",
+    skill: "Shopify",
+    percentage: "90%",
     image: html,
   },
   {
     id: 4,
-    skill: "React",
-    percentage: "60%",
+    skill: "WooCommerce",
+    percentage: "90%",
     image: boot,
+  },
+  {
+    id: 5,
+    skill: "Divi",
+    percentage: "90%",
+    image: figma,
+  },
+  {
+    id: 6,
+    skill: "HTML / CSS",
+    percentage: "95%",
+    image: word,
+  },
+  {
+    id: 7,
+    skill: "Bootstrap",
+    percentage: "90%",
+    image: html,
+  },
+  {
+    id: 8,
+    skill: "Figma",
+    percentage: "85%",
+    image: boot,
+  },
+  {
+    id: 9,
+    skill: "ACF / Dynamic Content",
+    percentage: "85%",
+    image: figma,
+  },
+  {
+    id: 10,
+    skill: "React",
+    percentage: "65%",
+    image: word,
   },
 ];
 const Skills = ({ isTabActive }) => {
@@ -45,11 +81,13 @@ const Skills = ({ isTabActive }) => {
             <div className="about__onecontent">
               <h2>My Skills</h2>
               <p>
-                I work with a mix of CMS platforms, design tools, eCommerce solutions, and modern frontend technologies to build clean, responsive, and business-focused websites. My core strength is creating practical websites that are easy to manage, visually clean, and optimized for user experience.
+                I work with CMS platforms, eCommerce solutions, design tools,
+                and frontend technologies to build clean, responsive, and
+                business-focused websites.
               </p>
               <div className="about__contactwrap">
                 <div className="row g-4">
-                  {skillsList.map(({id, skill, image, percentage}) => {
+                  {skillsList.map(({ id, skill, image, percentage }) => {
                     return (
                       <div key={id} className="col-xxl-6 col-xl-6 col-lg-12 col-md-6">
                         <div className="abox myskill__item">
@@ -64,7 +102,6 @@ const Skills = ({ isTabActive }) => {
                       </div>
                     );
                   })}
-
                 </div>
               </div>
             </div>

@@ -26,8 +26,8 @@ const ProtfolioDetails = () => {
     <>
 
       <PageHeader
-        heading={"Brand Identity & Motion Design"}
-        page="Brand Identity & Motion Design"
+        heading={"Business Website Development"}
+        page="Business Website Development"
       />
       <section className="protfolio__details pb-120">
         <div className="container">
@@ -43,21 +43,21 @@ const ProtfolioDetails = () => {
                 <div className="prot__left">
                   <div className="items mb__cus30">
                     <h5>Clients</h5>
-                    <p>Nicolas Marko</p>
+                    <p>Business Website Client</p>
                   </div>
                   <div className="items">
                     <h5>Date</h5>
-                    <p>Sept 19, 2023</p>
+                    <p>2024</p>
                   </div>
                 </div>
                 <div className="prot__left">
                   <div className="items mb__cus30">
                     <h5>Category</h5>
-                    <p>Branding Design</p>
+                    <p>WordPress and CMS</p>
                   </div>
                   <div className="items">
                     <h5>Location</h5>
-                    <p>24 Fifth st.,Los Angeles, USA</p>
+                    <p>India, Remote Project</p>
                   </div>
                 </div>
               </div>
@@ -79,25 +79,16 @@ const ProtfolioDetails = () => {
               data-aos-duration="1400"
             >
               <p className="fz-16 pra ttext__one">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet. It uses a
-                dictionary of over combined with a handful of model sentence
-                structures, to generate Lorem Ipsum which looks reasonable.
+                This project focused on building a clean, responsive, and
+                easy-to-manage business website with clear service sections,
+                strong content structure, and a smooth user experience across
+                desktop and mobile devices.
               </p>
               <p className="fz-16 pra">
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque quisquam est, qui dolorem ipsum
-                quia dolor sit amet, consectetur, adipisci velit, sed quia non
-                numquam eius modi tempora incidunt ut labore et dolore magnam
-                aliquam voluptatem. Ut enim ad minima veniam, quis nostrum
-                exercitationem ullam corporis suscipit laboriosam,
+                The website was planned around real business goals, simple
+                navigation, SEO-friendly page sections, fast content updates,
+                and conversion-focused layouts that guide visitors toward
+                inquiry or purchase actions.
               </p>
             </div>
             <div
@@ -107,28 +98,21 @@ const ProtfolioDetails = () => {
             >
               <h3 className="text__boxhead">Challenge</h3>
               <p className="fz-16 pra ttext__one">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet.
+                The main challenge was to organize services, trust elements,
+                calls to action, and content in a way that stayed simple for
+                visitors while remaining easy for the business owner to manage.
               </p>
               <ul className="challenge__list">
                 <li>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur.
+                  Create a responsive website structure for all key pages.
                 </li>
                 <li>
-                  Nor again is there anyone who loves or pursues or desires to
-                  obtain pain of itself, because it is pain, but because
-                  occasionally
+                  Keep content manageable through CMS fields and reusable
+                  sections.
                 </li>
                 <li>
-                  On the other hand, we denounce with righteous indignation and
-                  dislike
+                  Improve clarity, page flow, and conversion-focused calls to
+                  action.
                 </li>
               </ul>
             </div>
@@ -139,19 +123,11 @@ const ProtfolioDetails = () => {
             >
               <h3 className="text__boxhead">Solution & Result</h3>
               <p className="fz-16 pra">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet. It uses a
-                dictionary of over Latin words, combined with a handful of model
-                sentence structures, to generate Lorem Ipsum which looks
-                reasonable. The generated Lorem Ipsum is therefore always free
-                from repetition, injected humour, or non-characteristic words
-                etc.
+                I built a clean CMS-based website layout with responsive
+                sections, service-focused content, optimized page flow, and
+                flexible content blocks. The result is a professional website
+                that is easier to update, clearer for visitors, and stronger for
+                business inquiries.
               </p>
             </div>
             <div
@@ -178,7 +154,7 @@ const ProtfolioDetails = () => {
               data-aos="fade-down"
               data-aos-duration="1000"
             >
-              Protfolio
+              Portfolio
             </span>
             <h2 className="fw-500" data-aos="fade-up" data-aos-duration="1000">
               Related Work

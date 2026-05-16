@@ -8,23 +8,23 @@ import bsmall3 from "../../assets/img/blog/bsmall3.png";
 const categoriesList = [
   {
     id: 1,
-    category: "Creative",
+    category: "WordPress",
   },
   {
     id: 2,
-    category: "Business",
+    category: "Shopify",
   },
   {
     id: 3,
-    category: "Design",
+    category: "WooCommerce",
   },
   {
     id: 4,
-    category: "Marketing",
+    category: "Elementor",
   },
   {
     id: 5,
-    category: "Lifestyle",
+    category: "CMS Websites",
   },
 ];
 
@@ -32,27 +32,27 @@ const recentList = [
   {
     id: 1,
     image: bsmall1,
-    date: "October 19, 2023",
-    title: "The Main Thing For The Designer",
+    date: "May 12, 2026",
+    title: "Why businesses need easy-to-manage CMS websites",
   },
   {
     id: 2,
     image: bsmall2,
-    date: "October 19, 2023",
-    title: "he services provide for design",
+    date: "April 22, 2026",
+    title: "Building conversion-focused WordPress landing pages",
   },
   {
     id: 3,
     image: bsmall3,
-    date: "October 19, 2023",
-    title: "The Main Thing For The Designer",
+    date: "March 18, 2026",
+    title: "Shopify and WooCommerce store setup basics",
   },
 ];
 const BlogSidebar = () => {
   return (
     <div className="blog__bright__bar">
       <div className="scope__item mb__cus60">
-        <h4 className="scope__title">Serach</h4>
+        <h4 className="scope__title">Search</h4>
         <form
           action="#0"
           className="d-flex align-content-center justify-content-between"
@@ -93,7 +93,7 @@ const BlogSidebar = () => {
                 <div className="cont__box">
                   <span className="retitle">{title}</span>
                   <span className="base fz-16 d-flex align-items-center gap-2">
-                    <i><Clock/></i>
+                    <i><Clock /></i>
                     {date}
                   </span>
                 </div>
@@ -106,25 +106,22 @@ const BlogSidebar = () => {
         <h4 className="scope__title">Tag</h4>
         <ul className="tags">
           <li>
-            <Link>Business</Link>
+            <Link>WordPress</Link>
           </li>
           <li>
-            <Link>Digital</Link>
+            <Link>Shopify</Link>
           </li>
           <li>
-            <Link>Audio Post</Link>
+            <Link>WooCommerce</Link>
           </li>
           <li>
-            <Link>Gallery Post</Link>
+            <Link>Elementor</Link>
           </li>
           <li>
-            <Link>Marketing</Link>
+            <Link>ACF</Link>
           </li>
           <li>
-            <Link>Agency</Link>
-          </li>
-          <li>
-            <Link>Graphic</Link>
+            <Link>CMS</Link>
           </li>
           <li>
             <Link>Web Development</Link>

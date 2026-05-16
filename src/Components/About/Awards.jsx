@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 const awardList = [
   {
     id: 1,
@@ -31,7 +30,6 @@ const awardList = [
   },
 ];
 const Awards = () => {
-
   useEffect(() => {
     AOS.init();
   }, []);
@@ -49,11 +47,16 @@ const Awards = () => {
               <tr>
                 <td>
                   <span className="table__title">Achievements</span>
+                  <p className="pra mt-3">
+                    Multiple business websites, eCommerce stores, landing pages,
+                    and CMS-based projects across WordPress, Shopify,
+                    WooCommerce, Elementor, Divi, and custom website solutions.
+                  </p>
                 </td>
                 <td className="cusnoe"></td>
                 <td className="text-end">
                   <a
-                    href="#0"
+                    href="#projects"
                     className="d-flex table__view justify-content-end align-items-center base gap-2"
                   >
                     <span>View My Work</span>

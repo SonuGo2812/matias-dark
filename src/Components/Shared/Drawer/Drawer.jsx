@@ -20,28 +20,27 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
           <img src={logo} alt="img" />
         </Link>
         <p>
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-          consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam,
-          exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam
-          nihil
+          Website Developer specializing in WordPress, Shopify, Elementor,
+          WooCommerce, Divi, ACF, and custom website solutions for businesses
+          working worldwide.
         </p>
         <div className="sub__contact-left d-grid">
           <div className="sub__contac-item">
             <div className="content">
-              <span className="address d-block"> address </span>
-              <span className="textp"> Victoria Street London, </span>
+              <span className="address d-block"> location </span>
+              <span className="textp"> India, Working Worldwide </span>
             </div>
           </div>
           <div className="sub__contac-item">
             <div className="content">
               <span className="address d-block"> email </span>
-              <Link className="textp"> matias999@.com </Link>
+              <Link className="textp"> sonu998999@gmail.com </Link>
             </div>
           </div>
           <div className="sub__contac-item">
             <div className="content">
-              <span className="address d-block"> call now </span>
-              <Link className="textp"> +98 4758 2154 021 </Link>
+              <span className="address d-block"> experience </span>
+              <Link className="textp"> 5+ Years </Link>
             </div>
           </div>
         </div>
@@ -57,7 +56,7 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
           </ul>
         </div>
         <Link
-          to={""}
+          to={"/contact"}
           className="d-flex justify-content-center fw-500 cmn--btn align-items-center gap-2"
         >
           <span>
@@ -65,7 +64,7 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
               <ChevronRight />
             </i>
           </span>
-          <span className="get__text"> Let's Talk </span>
+          <span className="get__text"> Let us Talk </span>
         </Link>
       </div>
     </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import { ScrollRestoration, Link } from "react-router-dom";
-import {  } from "react-router-dom";
 
 import BlogSidebar from "../../Components/Blogs/BlogSidebar";
 import PageHeader from "../../Components/Shared/PageHeader/PageHeader";
@@ -12,7 +11,7 @@ const AllBlogs = () => {
 
   return (
     <>
-      <PageHeader heading={"Blog Standard"} page={"Blog Standard"} />
+      <PageHeader heading={"Website Insights"} page={"Blog"} />
       <section className="blog__bsection pb-120">
         <div className="container">
           <div className="row g-4">

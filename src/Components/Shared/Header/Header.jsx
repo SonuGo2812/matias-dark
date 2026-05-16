@@ -140,7 +140,7 @@ const Header = () => {
               to="/contact"
               className="d-flex fw-500 cmn--btn align-items-center gap-2"
             >
-              <span className="get__text">Let's Talk</span>
+              <span className="get__text">Let us Talk</span>
               <span>
                 <ArrowRight className="fz-20" />
               </span>

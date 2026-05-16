@@ -15,22 +15,22 @@ const categoryList = [
   },
   {
     id: 2,
-    categoryName: "Branding-app",
+    categoryName: "CMS Websites",
     value: "branding_app",
   },
   {
     id: 3,
-    categoryName: "Los-App",
+    categoryName: "eCommerce",
     value: "los_app",
   },
   {
     id: 4,
-    categoryName: "Landing Page",
+    categoryName: "Landing Pages",
     value: "landing_page",
   },
   {
     id: 5,
-    categoryName: "Website",
+    categoryName: "Websites",
     value: "website",
   },
 ];

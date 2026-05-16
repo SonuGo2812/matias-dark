@@ -34,7 +34,7 @@ const tabList = [
 
 const About = () => {
   const [isTabActive, setIsTabAative] = useState("about");
-  
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -56,7 +56,10 @@ const About = () => {
               data-aos-duration="1000"
             />
             <p className="descrp" data-aos="fade-up" data-aos-duration="1500">
-              I’m Sonu Goswami, a Website Developer based in India, specializing in WordPress, Shopify, Elementor, WooCommerce, and custom website solutions. I work with clients worldwide to build responsive, user-friendly, and conversion-focused websites.
+              I am Sonu Goswami, a Website Developer based in India, specializing
+              in WordPress, Shopify, Elementor, WooCommerce, and custom website
+              solutions. I work with clients worldwide to build responsive,
+              user-friendly, and conversion-focused websites.
             </p>
           </div>
           <div className="singletab">

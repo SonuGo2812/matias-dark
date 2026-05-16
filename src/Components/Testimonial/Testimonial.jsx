@@ -18,35 +18,26 @@ import { Pagination, Autoplay } from "swiper/modules";
 const reviewList = [
   {
     id: 1,
-    name: "Shawn Beltran",
-    position: "Business Owner",
-    review: `There are many variations of passages of Lorem Ipsum
-    available, by injected humour, or randomised words which
-    don't look even slightly believable. If you are going to
-    use a passage of Lorem Ipsum, you need to be hidden in
-    middle of text. All the Lorem Ipsum generators`,
+    name: "Business Website Client",
+    position: "WordPress Project",
+    review: `Sonu built a clean and responsive WordPress website that was easy
+    to manage and structured well for our services and local SEO pages.`,
     stars: [<StarFill className="ratting fz-20" />],
   },
   {
     id: 2,
-    name: "John Methcel",
-    position: "Business Owner",
-    review: `There are many variations of passages of Lorem Ipsum
-    available, by injected humour, or randomised words which
-    don't look even slightly believable. If you are going to
-    use a passage of Lorem Ipsum, you need to be hidden in
-    middle of text. All the Lorem Ipsum generators`,
+    name: "eCommerce Store Client",
+    position: "Shopify and WooCommerce",
+    review: `The store setup was practical, mobile-friendly, and focused on a
+    smooth product and checkout experience for customers.`,
     stars: [<StarFill className="ratting fz-20" />],
   },
   {
     id: 3,
-    name: "Nethon Jr",
-    position: "Business Owner",
-    review: `There are many variations of passages of Lorem Ipsum
-    available, by injected humour, or randomised words which
-    don't look even slightly believable. If you are going to
-    use a passage of Lorem Ipsum, you need to be hidden in
-    middle of text. All the Lorem Ipsum generators`,
+    name: "Service Business Client",
+    position: "Elementor Landing Pages",
+    review: `The landing pages were delivered with clear content sections,
+    responsive layouts, and a structure that helped improve inquiries.`,
     stars: [<StarFill className="ratting fz-20" />],
   },
 ];
@@ -59,8 +50,8 @@ const Testimonial = () => {
             Testimonial
           </span>
           <h2 className="fw-500" data-aos="fade-down" data-aos-duration="1000">
-            Happy Words From Happy
-            <span className="d-block"> Customer </span>
+            Happy Words From Clients
+            <span className="d-block"> Clients </span>
           </h2>
         </div>
         <div
@@ -85,11 +76,10 @@ const Testimonial = () => {
                   loop={true}
                   modules={[Pagination, Autoplay]}
                 >
-                  {/* <div className="swiper-wrapper"> */}
                   {reviewList.map(({ id, name, position, review, stars }) => {
                     return (
                       <SwiperSlide key={id}>
-                        <div  className="test__slide swiper-slide">
+                        <div className="test__slide swiper-slide">
                           <div className="d-flex mb-40 align-items-center gap-2">
                             {stars.map((star, index) => (
                               <i key={index}>{star}</i>
@@ -102,7 +92,6 @@ const Testimonial = () => {
                       </SwiperSlide>
                     );
                   })}
-                  {/* </div> */}
                 </Swiper>
 
                 <div className="swiper-pagination3"></div>

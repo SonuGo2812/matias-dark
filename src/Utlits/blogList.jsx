@@ -7,38 +7,34 @@ export const blogsList = [
   {
     id: 1,
     image: blog1,
-    date: "October 19, 2023",
-    heading: " Brand design that helps the company grow",
-    para: `There are many variations of passages of Lorem Ipsum
-      available, but the majority have suffered alteration in
-      some form, by injected humour, or randomised words`,
+    date: "May 12, 2026",
+    heading: "Why businesses need easy-to-manage CMS websites",
+    para: `A clean CMS website helps businesses update content, publish pages,
+      and manage their online presence without technical complexity.`,
   },
   {
     id: 2,
     image: blog2,
-    date: "October 19, 2023",
-    heading: "   Fresh design ideas & inspiration for 2023",
-    para: `There are many variations of passages of Lorem Ipsum
-      available, but the majority have suffered alteration in
-      some form, by injected humour, or randomised words`,
+    date: "April 22, 2026",
+    heading: "Building conversion-focused WordPress landing pages",
+    para: `Strong landing pages need clear content, fast loading, responsive
+      layouts, and a user journey focused on inquiries and leads.`,
   },
   {
     id: 3,
     image: blog3,
-    date: "October 19, 2023",
-    heading: "   Fresh design ideas & inspiration for 2023",
-    para: `There are many variations of passages of Lorem Ipsum
-      available, but the majority have suffered alteration in
-      some form, by injected humour, or randomised words`,
+    date: "March 18, 2026",
+    heading: "Shopify and WooCommerce store setup basics",
+    para: `eCommerce stores work better when product pages, checkout flow,
+      navigation, and mobile experience are planned from the start.`,
   },
   {
     id: 4,
     image: blog4,
-    date: "October 19, 2023",
-    heading: "   Brand design that helps the company grow",
-    para: `There are many variations of passages of Lorem Ipsum
-      available, but the majority have suffered alteration in
-      some form, by injected humour, or randomised words`,
+    date: "February 10, 2026",
+    heading: "Using ACF for flexible WordPress content",
+    para: `ACF helps create dynamic, reusable content structures that make
+      WordPress websites easier to manage and scale.`,
   },
 ];
 
