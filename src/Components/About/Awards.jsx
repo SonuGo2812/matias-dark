@@ -7,26 +7,26 @@ import "aos/dist/aos.css";
 const awardList = [
   {
     id: 1,
-    awardName: "Site Of The Day",
-    contest: "Css & Animation",
-    year: "2018",
+    awardName: "5+ Years of Experience",
+    contest: "Website Development",
+    year: "2026",
   },
   {
     id: 2,
-    awardName: "Best Business Model",
-    contest: "New Strategy",
-    year: "2019",
+    awardName: "Multiple Business Websites Delivered",
+    contest: "WordPress and CMS Development",
+    year: "2024",
   },
   {
     id: 3,
-    awardName: "Motion Graphic	",
-    contest: "3D & Visual Effect	",
-    year: "2020",
+    awardName: "eCommerce Store Development",
+    contest: "Shopify and WooCommerce",
+    year: "2023",
   },
   {
     id: 4,
-    awardName: "Video Design	",
-    contest: "Css & Animation",
+    awardName: "Local SEO Landing Pages",
+    contest: "Service and City Pages",
     year: "2022",
   },
 ];
@@ -48,7 +48,7 @@ const Awards = () => {
             <tbody>
               <tr>
                 <td>
-                  <span className="table__title">Our Awards</span>
+                  <span className="table__title">Achievements</span>
                 </td>
                 <td className="cusnoe"></td>
                 <td className="text-end">

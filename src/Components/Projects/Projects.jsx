@@ -19,7 +19,7 @@ const Projects = () => {
     <section className="project__section pt-120 pb-120" id="projects">
       <div className="container">
         <Title
-          mainTitle={"Look at my portfolio and give me your feedback"}
+          mainTitle={"Explore my recent website projects."}
           sortTitle={"Complete Project"}
         />
 
@@ -45,7 +45,7 @@ const Projects = () => {
           >
             <span className="box">
               <i className="bi bi-arrow-up-right"></i>
-              <span className="textmore"> Click More Work </span>
+              <span className="textmore"> View My Work </span>
             </span>
           </Link>
         </div>

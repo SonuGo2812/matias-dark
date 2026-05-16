@@ -8,26 +8,26 @@ import boot from "../../assets/img/about/boot.png";
 const skillsList = [
   {
     id: 1,
-    skill: "Figma",
-    percentage: "90%",
+    skill: "WordPress",
+    percentage: "95%",
     image: figma,
   },
   {
     id: 2,
-    skill: "Wordpress",
-    percentage: "95%",
+    skill: "Shopify",
+    percentage: "90%",
     image: word,
   },
   {
     id: 3,
-    skill: "Figma",
-    percentage: "85%",
+    skill: "WooCommerce",
+    percentage: "80%",
     image: html,
   },
   {
     id: 4,
-    skill: "Bootstrap",
-    percentage: "97%",
+    skill: "React",
+    percentage: "60%",
     image: boot,
   },
 ];
@@ -45,10 +45,7 @@ const Skills = ({ isTabActive }) => {
             <div className="about__onecontent">
               <h2>My Skills</h2>
               <p>
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                consectetur, aliquam quaerats voluptatem. Ut enim ad minima
-                veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem
-                velit esse quam nihil
+                I work with a mix of CMS platforms, design tools, eCommerce solutions, and modern frontend technologies to build clean, responsive, and business-focused websites. My core strength is creating practical websites that are easy to manage, visually clean, and optimized for user experience.
               </p>
               <div className="about__contactwrap">
                 <div className="row g-4">

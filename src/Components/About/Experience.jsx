@@ -15,7 +15,7 @@ const Experience = ({isTabActive}) => {
             <div className="about__onecontent">
               <h2>My Experience</h2>
               <p>
-                Experienced website developer focused on building modern, responsive, and conversion-driven websites for businesses and brands. Skilled in React, WordPress, Shopify, Elementor, and WooCommerce with hands-on experience across multiple industries and platforms.
+                Experienced website developer with 5+ years of hands-on experience building modern, responsive, and conversion-focused websites for businesses, brands, and service providers. Skilled in WordPress, Shopify, Elementor, WooCommerce, Divi, and CMS-based development, with growing experience in React and modern frontend workflows.
               </p>
               <div className="exprience__box mt-30">
                 <div className="exri__item">

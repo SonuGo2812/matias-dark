@@ -17,7 +17,7 @@ const contactInfo = [
   {
     id: 1,
     system: "Email",
-    contact: "Matias999@Gmail.Com",
+    contact: "goswamisonu2812@gmail.com",
   },
   {
     id: 2,
@@ -26,8 +26,8 @@ const contactInfo = [
   },
   {
     id: 3,
-    system: "Phone",
-    contact: "Victoria Street London,",
+    system: "Address",
+    contact: "Jodhpur, Rajasthan, India",
   },
   {
     id: 4,
@@ -72,7 +72,9 @@ const AboutMe = ({ isTabActive }) => {
                 data-aos="fade-up"
                 data-aos-duration="500"
               >
-                Passionate website developer with 4+ years of experience creating modern, responsive, and user-focused websites. Skilled in React, WordPress, Shopify, Elementor, and WooCommerce, with a strong focus on clean design, performance, and seamless user experience.
+                Passionate website developer with 5+ years of experience creating modern, responsive, and user-focused websites. Skilled in WordPress, Shopify, Elementor, WooCommerce, Divi, and custom website solutions, with a strong focus on clean design, performance, SEO-friendly structure, and smooth user experience.
+
+                Currently expanding my skills in React and modern custom development to build more flexible and scalable web solutions.
               </p>
               <div className="about__contactwrap">
                 <div className="row g-4">
