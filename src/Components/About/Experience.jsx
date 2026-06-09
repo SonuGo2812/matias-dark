@@ -24,7 +24,7 @@ const Experience = ({ isTabActive }) => {
               </p>
               <div className="exprience__box mt-30">
                 <div className="exri__item">
-                  <span className="fz-18 fw-500 base">In 2021</span>
+                  <span className="expri__date fz-18 fw-500 base">In 2021</span>
                   <div className="expri__cont">
                     <h4 className="mb-15 text-white">WordPress Developer</h4>
                     <p className="fz-18 pra d-block">Freelance Projects</p>
@@ -35,7 +35,7 @@ const Experience = ({ isTabActive }) => {
                   </div>
                 </div>
                 <div className="exri__item">
-                  <span className="fz-18 fw-500 base">In 2024</span>
+                  <span className="expri__date fz-18 fw-500 base">In 2024</span>
                   <div className="expri__cont">
                     <h4 className="mb-15 text-white">Website Developer</h4>
                     <p className="fz-18 pra d-block">Shopify and CMS Development</p>
@@ -46,7 +46,7 @@ const Experience = ({ isTabActive }) => {
                   </div>
                 </div>
                 <div className="exri__item">
-                  <span className="fz-18 fw-500 base">In 2026</span>
+                  <span className="expri__date fz-18 fw-500 base">In 2026</span>
                   <div className="expri__cont">
                     <h4 className="mb-15 text-white">Frontend Developer</h4>
                     <p className="fz-18 pra d-block">Learning React Development</p>
