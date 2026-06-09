@@ -1,30 +1,45 @@
 import React from "react";
 import { ArrowRight } from "react-bootstrap-icons";
-import { Link } from "react-router-dom";
 
 const Form = ({ isColTwo }) => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+    const subject = encodeURIComponent(`Website project enquiry from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    );
+
+    window.location.href = `mailto:sonu998999@gmail.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <div className="replay__box cmn__bg">
       <h3>Send a Message</h3>
       <p>
         Share your website requirement and I will get back to you.
       </p>
-      <form action="#" className="row g-4">
+      <form onSubmit={handleSubmit} className="row g-4">
         <div className={` ${isColTwo ? "col-lg-6" : "col-lg-12"}`}>
-          <input type="text" placeholder="Name" />
+          <input type="text" name="name" placeholder="Name" required />
         </div>
         <div className={` ${isColTwo ? "col-lg-6" : "col-lg-12"}`}>
-          <input type="email" placeholder="Email" />
+          <input type="email" name="email" placeholder="Email" required />
         </div>
         <div className="col-lg-12">
           <textarea
-            name="comment"
+            name="message"
             rows="5"
             placeholder="Write Message"
+            required
           ></textarea>
         </div>
-        <Link
-          to={""}
+        <button
+          type="submit"
           className="d-flex fw-500 cmn--btn align-items-center gap-2"
         >
           <span className="get__text">Submit Message</span>
@@ -34,7 +49,7 @@ const Form = ({ isColTwo }) => {
               <ArrowRight />{" "}
             </i>
           </span>
-        </Link>
+        </button>
       </form>
     </div>
   );

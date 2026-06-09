@@ -1,8 +1,31 @@
 import React from "react";
 import { XLg, ChevronRight } from "react-bootstrap-icons";
 import logo from "../../../assets/img/logo/logo.png";
-import { socialIcons } from "../../../Utlits/socilIcons";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
+const drawerLinks = [
+  {
+    id: 1,
+    label: "About",
+    path: "/#about",
+  },
+  {
+    id: 2,
+    label: "Work",
+    path: "/#projects",
+  },
+  {
+    id: 3,
+    label: "Services",
+    path: "/#services",
+  },
+  {
+    id: 4,
+    label: "Process",
+    path: "/#process",
+  },
+];
 
 const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
   return (
@@ -16,7 +39,7 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
         </i>
       </div>
       <div className="sub__contact__wrapper d-grid">
-        <Link to={""} className="side-logo">
+        <Link to={"/"} className="side-logo" onClick={() => setIsSidebarActive(false)}>
           <img src={logo} alt="img" />
         </Link>
         <p>
@@ -34,29 +57,32 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
           <div className="sub__contac-item">
             <div className="content">
               <span className="address d-block"> email </span>
-              <Link className="textp"> sonu998999@gmail.com </Link>
+              <a className="textp" href="mailto:sonu998999@gmail.com">
+                sonu998999@gmail.com
+              </a>
             </div>
           </div>
           <div className="sub__contac-item">
             <div className="content">
               <span className="address d-block"> experience </span>
-              <Link className="textp"> 5+ Years </Link>
+              <span className="textp"> 5+ Years </span>
             </div>
           </div>
         </div>
         <div className="sub__contact-right mb-80 position-relative">
           <ul className="social d-flex gap-3">
-            {socialIcons.map(({ icon, id }) => (
+            {drawerLinks.map(({ id, label, path }) => (
               <li key={id}>
-                <Link>
-                  <i>{icon}</i>
-                </Link>
+                <HashLink smooth to={path} onClick={() => setIsSidebarActive(false)}>
+                  {label}
+                </HashLink>
               </li>
             ))}
           </ul>
         </div>
         <Link
           to={"/contact"}
+          onClick={() => setIsSidebarActive(false)}
           className="d-flex justify-content-center fw-500 cmn--btn align-items-center gap-2"
         >
           <span>

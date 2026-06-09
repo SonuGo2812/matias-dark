@@ -36,7 +36,7 @@ const processList = [
 ];
 const WorkeProcess = () => {
   return (
-    <section className="process__section pt-120 pb-120">
+    <section className="process__section pt-120 pb-120" id="process">
       <div className="container">
         <Title
           mainTitle="Your Website In A Clear Development Process"

@@ -32,13 +32,13 @@ const Projects = () => {
               subHeading={subHeading}
               openLightbox={openLightbox}
               index={index}
-              navigate="/protfolio"
+              navigate="/portfolio"
             />
           ))}
         </div>
 
         <div className="custom__hover">
-          <Link to={"/protfolio"}
+          <Link to={"/portfolio"}
             className="hover__circle mauto"
             data-aos="zoom-out-down"
             data-aos-duration="2000"

@@ -7,8 +7,6 @@ import Projects from "../Components/Projects/Projects";
 import Metting from "../Components/Metting/Metting";
 import Services from "../Components/Services/Services";
 import WorkeProcess from "../Components/WorkeProcess/WorkeProcess";
-import Testimonial from "../Components/Testimonial/Testimonial";
-import Blogs from "../Components/Blogs/Blogs";
 import MarqueeWapper from "../Components/Shared/Marquee/MarqueeWapper";
 import Awards from "../Components/About/Awards";
 import Preloader from "../Components/Shared/Preloader/Preloader";
@@ -34,8 +32,6 @@ const Home = () => {
       <Metting />
       <Services isHeading={true} />
       <WorkeProcess />
-      <Testimonial />
-      <Blogs />
       <ScrollRestoration/>
     </>
   );
