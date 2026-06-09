@@ -36,6 +36,12 @@
             width: 67px;
         }
     }
+    .banner__actions{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
     @include breakpoint(max-xxxl){
         @include breakpoint(xl){
             padding-left: 40px;

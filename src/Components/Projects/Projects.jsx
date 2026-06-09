@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import Title from "../Shared/Title/Title";
 import Lightbox from "../Shared/LightBox/LightBox";
@@ -32,13 +32,13 @@ const Projects = () => {
               subHeading={subHeading}
               openLightbox={openLightbox}
               index={index}
-              navigate="/protfolio"
+              navigate="/portfolio"
             />
           ))}
         </div>
 
         <div className="custom__hover">
-          <Link to={"/protfolio"}
+          <Link to={"/portfolio"}
             className="hover__circle mauto"
             data-aos="zoom-out-down"
             data-aos-duration="2000"

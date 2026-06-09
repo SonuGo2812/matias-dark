@@ -1,26 +1,31 @@
 import React from "react";
 import { ArrowUpShort, ArrowRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
-const socalList = [
+const quickLinks = [
   {
     id: 1,
-    platfrom: "Facebook",
+    label: "Work",
+    path: "/#projects",
     icon: <ArrowRight />,
   },
   {
     id: 2,
-    platfrom: "Instagram",
+    label: "Services",
+    path: "/#services",
     icon: <ArrowRight />,
   },
   {
     id: 3,
-    platfrom: "LinkedIn",
+    label: "Process",
+    path: "/#process",
     icon: <ArrowRight />,
   },
   {
     id: 4,
-    platfrom: "Portfolio",
+    label: "Contact",
+    path: "/contact",
     icon: <ArrowRight />,
   },
 ];
@@ -46,13 +51,13 @@ const Footer = () => {
             <div className="col-lg-6">
               <div className="get__rightcontetn">
                 <div className="row g-4">
-                  {socalList.map(({ id, icon, platfrom }) => {
+                  {quickLinks.map(({ id, icon, label, path }) => {
                     return (
                       <div key={id} className="col-lg-6 col-md-6 col-sm-6">
-                        <a href="#0" className="social__footer">
-                          {platfrom}
+                        <HashLink smooth to={path} className="social__footer">
+                          {label}
                           <i>{icon}</i>
-                        </a>
+                        </HashLink>
                       </div>
                     );
                   })}
@@ -74,17 +79,17 @@ const Footer = () => {
             </p>
             <ul className="terms">
               <li>
-                <a href="#0"> Terms & Condition </a>
+                <a href="mailto:sonu998999@gmail.com"> Email </a>
               </li>
               <li>
-                <a href="#0"> Privacy Policy </a>
+                <HashLink smooth to="/#projects"> Portfolio </HashLink>
               </li>
             </ul>
-            <a href="#about" className="toparrow">
+            <HashLink smooth to="/#home" className="toparrow">
               <i>
                 <ArrowUpShort />
               </i>
-            </a>
+            </HashLink>
           </div>
         </div>
       </div>

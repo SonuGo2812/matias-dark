@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { List, ArrowRight } from "react-bootstrap-icons";
@@ -29,42 +29,17 @@ const menuList = [
     path: "/",
     section: "#services",
     name: "Services",
-    dropDown: [
-      {
-        id: 1,
-        path: "/all-services",
-        name: "Services",
-      },
-      {
-        id: 2,
-        path: "/service-details",
-        name: "Service Details",
-      },
-    ],
   },
   {
     id: 5,
     path: "/",
-    section: "#testimonial",
-    name: "Testimonial",
+    section: "#process",
+    name: "Process",
   },
   {
     id: 6,
-    path: "/",
-    section: "#blog",
-    name: "Blog",
-    dropDown: [
-      {
-        id: 1,
-        path: "/all-blog",
-        name: "Blog",
-      },
-      {
-        id: 2,
-        path: "/blog-details",
-        name: "Blog Details",
-      },
-    ],
+    path: "/portfolio",
+    name: "Portfolio",
   },
   {
     id: 7,
@@ -76,7 +51,6 @@ const menuList = [
 const Header = () => {
   const [isSidebarActive, setIsSidebarActive] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
-  const [dropDownId, setDropDownId] = useState(null);
 
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
@@ -85,7 +59,7 @@ const Header = () => {
     };
   }, []);
 
-  const isSticky = (e) => {
+  const isSticky = () => {
     const header = document.querySelector(".header-section");
     const scrollTop = window.scrollY;
 
@@ -98,10 +72,6 @@ const Header = () => {
     setMenuActive(!menuActive);
   };
 
-  const handleSubMenu = (id) => {
-    setDropDownId(id);
-  };
-
   return (
     <header className={`header-section `}>
       <div className="container">
@@ -112,25 +82,16 @@ const Header = () => {
             </Link>
           </div>
           <ul className={`main-menu ${menuActive ? "active" : ""}`}>
-            {menuList.map(({ id, name, path, dropDown, section }) => {
+            {menuList.map(({ id, name, path, section }) => {
               return (
-                <li key={id} onClick={() => handleSubMenu(id)}>
-                  <HashLink smooth to={`${path}${section ? section : ""}`}>
+                <li key={id}>
+                  <HashLink
+                    smooth
+                    to={`${path}${section ? section : ""}`}
+                    onClick={() => setMenuActive(false)}
+                  >
                     {name}
                   </HashLink>
-                  {dropDown?.length && (
-                    <ul className={`sub-menu ${dropDownId === id ? "sub-menu_active":""}`}>
-                      {dropDown.map(({ id, name, path }) => {
-                        return (
-                          <li key={id}>
-                            <HashLink smooth to={path}>
-                              {name}
-                            </HashLink>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  )}
                 </li>
               );
             })}
@@ -140,7 +101,7 @@ const Header = () => {
               to="/contact"
               className="d-flex fw-500 cmn--btn align-items-center gap-2"
             >
-              <span className="get__text">Let us Talk</span>
+              <span className="get__text">Let&apos;s Talk</span>
               <span>
                 <ArrowRight className="fz-20" />
               </span>

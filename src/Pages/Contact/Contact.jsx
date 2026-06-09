@@ -35,7 +35,7 @@ const Contact = () => {
                 </div>
                 <div className="contact__item mb-20">
                   <span className="he1">Availability</span>
-                  <a href="#0">Open for website projects</a>
+                  <span className="contact__text">Open for website projects</span>
                 </div>
                 <div className="contact__item">
                   <span className="he1">Location</span>

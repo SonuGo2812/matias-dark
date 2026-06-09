@@ -1,13 +1,4 @@
 import React, { useEffect } from "react";
-import {
-  Facebook,
-  Twitter,
-  Linkedin,
-  Globe,
-  Instagram,
-} from "react-bootstrap-icons";
-
-import { Link } from "react-router-dom";
 import personalInfoThumb from "../../assets/img/about/personal-infothumb.png";
 
 import AOS from "aos";
@@ -31,14 +22,8 @@ const contactInfo = [
   },
   {
     id: 4,
-    system: "Follow",
-    socalContact: [
-      <Facebook />,
-      <Twitter />,
-      <Linkedin />,
-      <Globe />,
-      <Instagram />,
-    ],
+    system: "Availability",
+    contact: "Open for website projects",
   },
 ];
 const AboutMe = ({ isTabActive }) => {
@@ -82,7 +67,7 @@ const AboutMe = ({ isTabActive }) => {
               </p>
               <div className="about__contactwrap">
                 <div className="row g-4">
-                  {contactInfo.map(({ id, contact, socalContact, system }) => {
+                  {contactInfo.map(({ id, contact, system }) => {
                     return (
                       <div
                         key={id}
@@ -94,15 +79,10 @@ const AboutMe = ({ isTabActive }) => {
                             <span className="ptext fz-18 mb-20 d-block">
                               {system}
                             </span>
-                            <Link to={""}>{contact}</Link>
-                            {socalContact && (
-                              <ul className="d-flex align-items-center gap-2 gap-xl-4">
-                                {socalContact.map((info, index) => (
-                                  <li key={index}>
-                                    <Link to={""}>{info} </Link>
-                                  </li>
-                                ))}
-                              </ul>
+                            {system === "Email" ? (
+                              <a href={`mailto:${contact}`}>{contact}</a>
+                            ) : (
+                              <span className="contact__text">{contact}</span>
                             )}
                           </div>
                         </div>

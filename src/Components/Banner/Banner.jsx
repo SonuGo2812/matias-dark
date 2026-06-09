@@ -1,56 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
-import {
-  Facebook,
-  Twitter,
-  Linkedin,
-  Globe,
-  Instagram,
-  PlayFill,
-} from "react-bootstrap-icons";
+import { HashLink } from "react-router-hash-link";
 
 import bannerMan from "../../assets/img/banner/banner-man.png";
 import scrollDown from "../../assets/img/banner/scroll-down.png";
 import dial from "../../assets/img/banner/dial.png";
-import bnArrow from "../../assets/img/banner/bn-arrow.png";
-import VideoPlay from "../Shared/VideoPlay/VideoPlay";
 
-const socalIcon = [
-  {
-    id: 1,
-    icon: <Facebook />,
-  },
-  {
-    id: 2,
-    icon: <Twitter />,
-  },
-  {
-    id: 3,
-    icon: <Linkedin />,
-  },
-  {
-    id: 4,
-    icon: <Globe />,
-  },
-  {
-    id: 5,
-    icon: <Instagram />,
-  },
-];
 const Banner = () => {
-  const [lightboxOpen, setLightboxOpen] = useState(false);
   const [position, setPosition] = useState(false);
 
   useEffect(() => {
-    if (!position) {
-      setPosition(true);
-    }
+    setPosition(true);
   }, []);
-
-  const openLightbox = () => {
-    setLightboxOpen(true);
-  };
 
   return (
     <section id="home">
@@ -58,7 +18,7 @@ const Banner = () => {
         <div className="row g-4">
           <div className="col-lg-8">
             <div className="banner__content">
-              <Link to={""} className="bn__currently">
+              <HashLink smooth to="/contact" className="bn__currently">
                 <span className="d-block">
                   Available for website projects
                 </span>
@@ -66,21 +26,28 @@ const Banner = () => {
                   India, working worldwide
                   <i className="bi bi-arrow-up-right"></i>
                 </span>
-              </Link>
+              </HashLink>
               <h1>
                 <span className="hone"> Website</span>
                 <span className="d-block designers" data-text="Developer">
                   Developer
                 </span>
               </h1>
-              <div className="video__area">
-                <img src={bnArrow} className="vid__arrow" alt="img" />
-                <div onClick={openLightbox} className="video__80 video-btn">
-                  <i>
-                    <PlayFill />
-                  </i>
-                </div>
-                <span className="proces">CMS Websites</span>
+              <div className="banner__actions">
+                <HashLink
+                  smooth
+                  to="/#projects"
+                  className="d-flex fw-500 cmn--btn align-items-center gap-2"
+                >
+                  <span className="get__text">View Work</span>
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/contact"
+                  className="d-flex fw-500 cmn--btn align-items-center gap-2"
+                >
+                  <span className="get__text">Contact Me</span>
+                </HashLink>
               </div>
             </div>
           </div>
@@ -97,49 +64,20 @@ const Banner = () => {
       </div>
       <div className="banner__leftinfo">
         <div className="left__infomobile">
-          <Link to={""}>
+          <a href="mailto:sonu998999@gmail.com">
             <img src={dial} alt="img" />
-          </Link>
-          <Link to={""}>sonu998999@gmail.com</Link>
+          </a>
+          <a href="mailto:sonu998999@gmail.com">sonu998999@gmail.com</a>
         </div>
         <div className="right__infoscroll">
-          <Link className="scroll">
+          <HashLink smooth to="/#about" className="scroll">
             scroll down
-          </Link>
-          <Link className="scroll__bar">
+          </HashLink>
+          <HashLink smooth to="/#about" className="scroll__bar">
             <img src={scrollDown} alt="img" />
-          </Link>
+          </HashLink>
         </div>
       </div>
-      <div className="banner__rightinfo">
-        <div className="right__infoscroll">
-          <Link to={""} className="scroll">
-            Follow Me
-          </Link>
-          <Link to={""} className="scroll__bar">
-            <img src={scrollDown} alt="img" />
-          </Link>
-        </div>
-        <div className="banner__xlsocial">
-          <ul className="banner__soci d-grid justify-content-center">
-            {socalIcon.map(({ icon, id }) => {
-              return (
-                <li key={id}>
-                  <Link to={""} >
-                    <i>{icon}</i>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </div>
-      {lightboxOpen && (
-        <VideoPlay
-          setLightboxOpen={setLightboxOpen}
-          url="https://www.youtube.com/embed/tgbNymZ7vqY"
-        />
-      )}
     </section>
   );
 };

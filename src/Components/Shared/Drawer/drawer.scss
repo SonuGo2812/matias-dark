@@ -38,15 +38,19 @@
       margin-bottom: 40px;
     }
     .social {
+      flex-wrap: wrap;
       li {
         a {
-          width: 45px;
-          height: 45px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 42px;
+          padding: 10px 14px;
           background: var(--base);
           border: 1px solid var(--base);
-          i {
-            color: var(--title);
-          }
+          border-radius: 5px;
+          color: var(--title);
+          font-weight: 600;
         }
       }
     }
