@@ -247,19 +247,40 @@
 //exprience
 .exri__item{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    gap: 34px;
     border-top: 1px solid var(--cusborder);
     padding-top: 24px;
     padding-bottom: 24px;
     transition: all 0.4s;
+    .expri__date{
+        flex: 0 0 86px;
+        line-height: 1.35;
+        white-space: nowrap;
+    }
+    .expri__cont{
+        flex: 1;
+        min-width: 0;
+    }
     &:last-child{
         border-bottom: 1px solid var(--cusborder);
     }
     &:hover{
         border-color: var(--hover);
     }
+    @include breakpoint(max-md){
+        gap: 22px;
+        .expri__date{
+            flex-basis: 78px;
+            font-size: 16px;
+        }
+    }
     @include breakpoint(max-xs){
+       flex-direction: column;
+       gap: 12px;
+       .expri__date{
+            flex-basis: auto;
+       }
        .expri__cont{
             h4{
                 font-size: 18px;
