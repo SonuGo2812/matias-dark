@@ -70,7 +70,7 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
           </div>
         </div>
         <div className="sub__contact-right mb-80 position-relative">
-          <ul className="social d-flex gap-3">
+          <ul className="social">
             {drawerLinks.map(({ id, label, path }) => (
               <li key={id}>
                 <HashLink smooth to={path} onClick={() => setIsSidebarActive(false)}>
