@@ -291,9 +291,45 @@
 //exprience
 
 //my skill
-.myskill__item{
-    display: flex;
-    align-items: center;
-    gap: 24px;
+.skills__points{
+    display: grid;
+    gap: 16px;
+    margin-top: 34px;
+    li{
+        position: relative;
+        padding: 18px 22px 18px 48px;
+        border-radius: 10px;
+        background-color: rgb(29, 29, 29);
+        border: 1px solid rgb(29, 29, 29);
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 500;
+        transition: all 0.4s;
+        &::before{
+            position: absolute;
+            content: "";
+            left: 22px;
+            top: 50%;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--base);
+            transform: translateY(-50%);
+        }
+        &:hover{
+            border-color: var(--base);
+        }
+    }
+    @include breakpoint(max-md){
+        gap: 12px;
+        margin-top: 26px;
+        li{
+            font-size: 18px;
+            padding: 16px 18px 16px 42px;
+            &::before{
+                left: 18px;
+            }
+        }
+    }
 }
 //my skill
