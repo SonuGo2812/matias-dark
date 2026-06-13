@@ -1,44 +1,12 @@
 //banner
 .banner__section{
-    background: #000;
+    background: url("../../assets/img/banner/banner-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     position: relative;
     overflow: hidden;
-}
-.banner__hero{
-    position: relative;
-    overflow: hidden;
-    .container,
-    .banner__leftinfo,
-    .banner__rightinfo{
-        position: relative;
-        z-index: 2;
-    }
-}
-.banner__bg-shape{
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: min(1120px, 82vw);
-    max-width: none;
-    height: auto;
-    transform: translateX(-32%);
-    opacity: 0.82;
-    z-index: 0;
-    pointer-events: none;
-    @include breakpoint(max-xl){
-        width: min(980px, 92vw);
-        transform: translateX(-38%);
-    }
-    @include breakpoint(max-lg){
-        width: 900px;
-        left: 42%;
-        opacity: 0.55;
-    }
-    @include breakpoint(max-md){
-        width: 760px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+    background-attachment: fixed;
 }
 .banner__content{
     padding: 140px 0 180px;

@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
-import { PlayFill } from "react-bootstrap-icons";
 
 import bannerMan from "../../assets/img/banner/banner-man.png";
-import bannerBg from "../../assets/img/banner/banner-bg.png";
-import bnArrow from "../../assets/img/banner/bn-arrow.png";
 import scrollDown from "../../assets/img/banner/scroll-down.png";
 import dial from "../../assets/img/banner/dial.png";
 
@@ -16,8 +13,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <section id="home" className="banner__hero">
-      <img src={bannerBg} className="banner__bg-shape" alt="" aria-hidden="true" />
+    <section id="home">
       <div className="container">
         <div className="row g-4">
           <div className="col-lg-8">
@@ -37,20 +33,20 @@ const Banner = () => {
                   Developer
                 </span>
               </h1>
-              <div className="video__area">
-                <img src={bnArrow} className="vid__arrow" alt="arrow" />
+              <div className="banner__actions">
                 <HashLink
                   smooth
                   to="/#projects"
-                  className="video__80 video-btn"
-                  aria-label="View recent work"
+                  className="d-flex fw-500 cmn--btn align-items-center gap-2"
                 >
-                  <i>
-                    <PlayFill />
-                  </i>
+                  <span className="get__text">View Work</span>
                 </HashLink>
-                <HashLink smooth to="/#projects" className="proces">
-                  View Work
+                <HashLink
+                  smooth
+                  to="/contact"
+                  className="d-flex fw-500 cmn--btn align-items-center gap-2"
+                >
+                  <span className="get__text">Contact Me</span>
                 </HashLink>
               </div>
             </div>
