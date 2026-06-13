@@ -4,6 +4,7 @@ import pro4 from "../assets/img/project/pro4.png";
 import pro5 from "../assets/img/project/pro5.png";
 import pro6 from "../assets/img/project/pro6.png";
 import futuraHome from "../assets/img/project/futurausa-home.png";
+import growbizonHome from "../assets/img/project/growbizon-home.png";
 
 export const projectList = [
   {
@@ -30,9 +31,10 @@ export const projectList = [
   },
   {
     id: 4,
-    image: pro2,
-    heading: "WooCommerce Website",
-    subHeading: "Online Store Development",
+    image: growbizonHome,
+    heading: "Grow Bizon",
+    subHeading: "AI Growth Systems Website",
+    projectUrl: "https://growbizon.com/",
     category: ["los_app", "landing_page", "all"],
   },
   {
@@ -51,4 +53,4 @@ export const projectList = [
   },
 ];
 
-export const imagesList = [futuraHome, pro3, pro5, pro2, pro4, pro6];
+export const imagesList = [futuraHome, pro3, pro5, growbizonHome, pro4, pro6];
