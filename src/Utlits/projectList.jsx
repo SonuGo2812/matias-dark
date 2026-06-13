@@ -1,16 +1,17 @@
-import pro1 from "../assets/img/project/pro1.png";
 import pro2 from "../assets/img/project/pro2.png";
 import pro3 from "../assets/img/project/pro3.png";
 import pro4 from "../assets/img/project/pro4.png";
 import pro5 from "../assets/img/project/pro5.png";
 import pro6 from "../assets/img/project/pro6.png";
+import futuraHome from "../assets/img/project/futurausa-home.png";
 
 export const projectList = [
   {
     id: 1,
-    image: pro1,
-    heading: "WordPress Business Website",
-    subHeading: "Responsive CMS Website",
+    image: futuraHome,
+    heading: "Futura USA",
+    subHeading: "Architectural Metals Website",
+    projectUrl: "https://futurausa.com/",
     category: ["branding_app", "website", "all"],
   },
   {
@@ -50,4 +51,4 @@ export const projectList = [
   },
 ];
 
-export const imagesList = [pro1, pro3, pro5, pro2, pro4, pro6];
+export const imagesList = [futuraHome, pro3, pro5, pro2, pro4, pro6];
