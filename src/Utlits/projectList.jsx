@@ -1,10 +1,10 @@
 import pro2 from "../assets/img/project/pro2.png";
-import pro4 from "../assets/img/project/pro4.png";
 import pro5 from "../assets/img/project/pro5.png";
 import pro6 from "../assets/img/project/pro6.png";
 import futuraHome from "../assets/img/project/futurausa-home.png";
 import growbizonHome from "../assets/img/project/growbizon-home.png";
 import tescoSpaceHome from "../assets/img/project/tesco-space-home.png";
+import ynsculptHome from "../assets/img/project/ynsculpt-home.png";
 
 export const projectList = [
   {
@@ -40,9 +40,10 @@ export const projectList = [
   },
   {
     id: 5,
-    image: pro4,
-    heading: "ACF Dynamic Website",
-    subHeading: "Custom CMS Content Structure",
+    image: ynsculptHome,
+    heading: "YNSculpt Academy",
+    subHeading: "Dermatosurgery Academy Website",
+    projectUrl: "https://ynsculpt.com/",
     category: ["branding_app", "website", "all"],
   },
   {
@@ -54,4 +55,4 @@ export const projectList = [
   },
 ];
 
-export const imagesList = [futuraHome, tescoSpaceHome, pro5, growbizonHome, pro4, pro6];
+export const imagesList = [futuraHome, tescoSpaceHome, pro5, growbizonHome, ynsculptHome, pro6];
