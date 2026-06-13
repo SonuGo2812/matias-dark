@@ -1,6 +1,6 @@
 import pro2 from "../assets/img/project/pro2.png";
-import pro5 from "../assets/img/project/pro5.png";
 import pro6 from "../assets/img/project/pro6.png";
+import almostKoachHome from "../assets/img/project/almostkoach-home.png";
 import futuraHome from "../assets/img/project/futurausa-home.png";
 import growbizonHome from "../assets/img/project/growbizon-home.png";
 import tescoSpaceHome from "../assets/img/project/tesco-space-home.png";
@@ -25,9 +25,10 @@ export const projectList = [
   },
   {
     id: 3,
-    image: pro5,
-    heading: "Elementor Landing Page",
-    subHeading: "Conversion-Focused Layout",
+    image: almostKoachHome,
+    heading: "Almost Koach",
+    subHeading: "Life Coaching Website",
+    projectUrl: "https://almostkoach.com/",
     category: ["website", "branding_app", "all"],
   },
   {
@@ -55,4 +56,11 @@ export const projectList = [
   },
 ];
 
-export const imagesList = [futuraHome, tescoSpaceHome, pro5, growbizonHome, ynsculptHome, pro6];
+export const imagesList = [
+  futuraHome,
+  tescoSpaceHome,
+  almostKoachHome,
+  growbizonHome,
+  ynsculptHome,
+  pro6,
+];
