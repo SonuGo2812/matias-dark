@@ -31,8 +31,8 @@ const ProjectCard = ({
   return (
     <div
       className={`project__item ${index === 0 ? "project__item--template" : ""} ${
-        index !== 2 && "cus__mb60"
-      }`}
+        index === 3 ? "project__item--tall-template" : ""
+      } ${index !== 2 && "cus__mb60"}`}
       data-aos="fade-up"
       data-aos-duration="1000"
     >
