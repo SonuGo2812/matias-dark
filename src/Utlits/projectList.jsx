@@ -16,10 +16,9 @@ export const projectList = [
   },
   {
     id: 2,
-    image: growbizonHome,
-    heading: "Grow Bizon",
-    subHeading: "AI Growth Systems Website",
-    projectUrl: "https://growbizon.com/",
+    image: pro2,
+    heading: "WooCommerce Website",
+    subHeading: "Online Store Development",
     category: ["los_app", "landing_page", "all"],
   },
   {
@@ -31,9 +30,10 @@ export const projectList = [
   },
   {
     id: 4,
-    image: pro2,
-    heading: "WooCommerce Website",
-    subHeading: "Online Store Development",
+    image: growbizonHome,
+    heading: "Grow Bizon",
+    subHeading: "AI Growth Systems Website",
+    projectUrl: "https://growbizon.com/",
     category: ["los_app", "landing_page", "all"],
   },
   {
@@ -52,4 +52,4 @@ export const projectList = [
   },
 ];
 
-export const imagesList = [futuraHome, growbizonHome, pro5, pro2, pro4, pro6];
+export const imagesList = [futuraHome, pro2, pro5, growbizonHome, pro4, pro6];
