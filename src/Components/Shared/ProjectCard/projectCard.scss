@@ -12,9 +12,9 @@
       border-radius: 10px;
     }
   }
-  &.project__item--tall-template {
+  &.project__item--wide-cover {
     .thumb {
-      aspect-ratio: 630 / 599;
+      aspect-ratio: 630 / 440;
       border-radius: 10px;
       img {
         height: 100%;
