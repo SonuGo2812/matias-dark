@@ -30,7 +30,9 @@ const ProjectCard = ({
 
   return (
     <div
-      className={`project__item ${index === 3 ? "project__item--wide-cover" : ""} ${
+      className={`project__item ${
+        index === 2 || index === 3 ? "project__item--wide-cover" : ""
+      } ${
         index !== 2 && "cus__mb60"
       }`}
       data-aos="fade-up"
