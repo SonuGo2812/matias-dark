@@ -3,6 +3,7 @@ import { HashLink } from "react-router-hash-link";
 import { PlayFill } from "react-bootstrap-icons";
 
 import bannerMan from "../../assets/img/banner/banner-man.png";
+import bannerBg from "../../assets/img/banner/banner-bg.png";
 import bnArrow from "../../assets/img/banner/bn-arrow.png";
 import scrollDown from "../../assets/img/banner/scroll-down.png";
 import dial from "../../assets/img/banner/dial.png";
@@ -15,7 +16,8 @@ const Banner = () => {
   }, []);
 
   return (
-    <section id="home">
+    <section id="home" className="banner__hero">
+      <img src={bannerBg} className="banner__bg-shape" alt="" aria-hidden="true" />
       <div className="container">
         <div className="row g-4">
           <div className="col-lg-8">

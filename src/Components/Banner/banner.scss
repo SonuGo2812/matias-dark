@@ -1,12 +1,29 @@
 //banner
 .banner__section{
-    background: url("../../assets/img/banner/banner-bg.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background: #000;
     position: relative;
     overflow: hidden;
-    background-attachment: fixed;
+}
+.banner__hero{
+    position: relative;
+    overflow: hidden;
+    .container,
+    .banner__leftinfo,
+    .banner__rightinfo{
+        position: relative;
+        z-index: 2;
+    }
+}
+.banner__bg-shape{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    opacity: 0.9;
+    z-index: 0;
+    pointer-events: none;
 }
 .banner__content{
     padding: 140px 0 180px;
