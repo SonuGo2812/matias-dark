@@ -18,6 +18,9 @@
     .thumb {
       aspect-ratio: 630 / 440;
       border-radius: 10px;
+      img {
+        object-position: left center;
+      }
     }
   }
   .content {
