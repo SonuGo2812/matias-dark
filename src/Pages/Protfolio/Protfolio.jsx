@@ -84,12 +84,13 @@ const Protfolio = () => {
             </ul>
             <div className="tabcontents project__wrapone">
               {filterProject.map(
-                ({ heading, id, image, subHeading }, index) => (
+                ({ heading, id, image, projectUrl, subHeading }, index) => (
                   <ProjectCard
                     key={id}
                     image={image}
                     heading={heading}
                     subHeading={subHeading}
+                    projectUrl={projectUrl}
                     openLightbox={openLightbox}
                     index={index}
                   />

@@ -24,12 +24,13 @@ const Projects = () => {
         />
 
         <div className={`project__wrapone`}>
-          {projectList.map(({ heading, id, image, subHeading }, index) => (
+          {projectList.map(({ heading, id, image, projectUrl, subHeading }, index) => (
             <ProjectCard
               key={id}
               image={image}
               heading={heading}
               subHeading={subHeading}
+              projectUrl={projectUrl}
               openLightbox={openLightbox}
               index={index}
               navigate="/portfolio"

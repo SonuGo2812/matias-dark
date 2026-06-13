@@ -9,7 +9,16 @@ const ProjectCard = ({
   index,
   openLightbox,
   navigate,
+  projectUrl,
 }) => {
+  const handlePreview = () => {
+    if (projectUrl) {
+      return;
+    }
+
+    openLightbox(index);
+  };
+
   const projectContent = (
     <>
       <span className="base mb-2 mb-xxl-3 d-block text-uppercase">
@@ -25,26 +34,57 @@ const ProjectCard = ({
       data-aos="fade-up"
       data-aos-duration="1000"
     >
-      <div onClick={() => openLightbox(index)} className="thumb mb-30 imgc">
-        <img src={image} alt="img" />
-      </div>
+      {projectUrl ? (
+        <a
+          href={projectUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="thumb mb-30 imgc d-block"
+        >
+          <img src={image} alt={heading} />
+        </a>
+      ) : (
+        <div onClick={handlePreview} className="thumb mb-30 imgc">
+          <img src={image} alt={heading} />
+        </div>
+      )}
       <div className="content d-flex align-items-center justify-content-between gap-2">
-        {navigate ? (
+        {projectUrl ? (
+          <a
+            href={projectUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="left__cont"
+          >
+            {projectContent}
+          </a>
+        ) : navigate ? (
           <Link to={navigate} className="left__cont">
             {projectContent}
           </Link>
         ) : (
           <button
             type="button"
-            onClick={() => openLightbox(index)}
+            onClick={handlePreview}
             className="left__cont bg-transparent border-0 text-start p-0"
           >
             {projectContent}
           </button>
         )}
-        <div onClick={() => openLightbox(index)} className="common__icon imgc">
-          <ArrowUpRight className="icon" />
-        </div>
+        {projectUrl ? (
+          <a
+            href={projectUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="common__icon imgc"
+          >
+            <ArrowUpRight className="icon" />
+          </a>
+        ) : (
+          <div onClick={handlePreview} className="common__icon imgc">
+            <ArrowUpRight className="icon" />
+          </div>
+        )}
       </div>
     </div>
   );
