@@ -7,8 +7,16 @@
     cursor: pointer;
     img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
       overflow: hidden;
       transition: all 0.4s;
+      border-radius: 10px;
+    }
+  }
+  &.project__item--template {
+    .thumb {
+      aspect-ratio: 630 / 440;
       border-radius: 10px;
     }
   }

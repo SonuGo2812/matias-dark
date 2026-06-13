@@ -30,7 +30,9 @@ const ProjectCard = ({
 
   return (
     <div
-      className={`project__item  ${index !== 2 && "cus__mb60"}`}
+      className={`project__item ${index === 0 ? "project__item--template" : ""} ${
+        index !== 2 && "cus__mb60"
+      }`}
       data-aos="fade-up"
       data-aos-duration="1000"
     >
