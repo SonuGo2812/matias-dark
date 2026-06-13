@@ -16,14 +16,29 @@
 }
 .banner__bg-shape{
     position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center bottom;
-    opacity: 0.9;
+    left: 50%;
+    bottom: 0;
+    width: min(1120px, 82vw);
+    max-width: none;
+    height: auto;
+    transform: translateX(-32%);
+    opacity: 0.82;
     z-index: 0;
     pointer-events: none;
+    @include breakpoint(max-xl){
+        width: min(980px, 92vw);
+        transform: translateX(-38%);
+    }
+    @include breakpoint(max-lg){
+        width: 900px;
+        left: 42%;
+        opacity: 0.55;
+    }
+    @include breakpoint(max-md){
+        width: 760px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 .banner__content{
     padding: 140px 0 180px;
