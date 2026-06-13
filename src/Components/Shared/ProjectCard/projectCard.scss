@@ -23,6 +23,12 @@
       }
     }
   }
+  &.project__item--tall-template {
+    .thumb {
+      aspect-ratio: 630 / 599;
+      border-radius: 10px;
+    }
+  }
   .content {
     .left__cont {
       span {
