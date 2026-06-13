@@ -1,10 +1,10 @@
 import pro2 from "../assets/img/project/pro2.png";
-import pro3 from "../assets/img/project/pro3.png";
 import pro4 from "../assets/img/project/pro4.png";
 import pro5 from "../assets/img/project/pro5.png";
 import pro6 from "../assets/img/project/pro6.png";
 import futuraHome from "../assets/img/project/futurausa-home.png";
 import growbizonHome from "../assets/img/project/growbizon-home.png";
+import tescoSpaceHome from "../assets/img/project/tesco-space-home.png";
 
 export const projectList = [
   {
@@ -17,9 +17,10 @@ export const projectList = [
   },
   {
     id: 2,
-    image: pro3,
-    heading: "Shopify eCommerce Store",
-    subHeading: "Product Pages and Store Setup",
+    image: tescoSpaceHome,
+    heading: "Tech Staff Connect",
+    subHeading: "Digital Solutions Website",
+    projectUrl: "https://tesco.space/",
     category: ["los_app", "landing_page", "all"],
   },
   {
@@ -53,4 +54,4 @@ export const projectList = [
   },
 ];
 
-export const imagesList = [futuraHome, pro3, pro5, growbizonHome, pro4, pro6];
+export const imagesList = [futuraHome, tescoSpaceHome, pro5, growbizonHome, pro4, pro6];
