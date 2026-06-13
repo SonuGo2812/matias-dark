@@ -1,6 +1,6 @@
 import pro2 from "../assets/img/project/pro2.png";
-import pro6 from "../assets/img/project/pro6.png";
 import almostKoachHome from "../assets/img/project/almostkoach-home.png";
+import drShikhaHome from "../assets/img/project/drshikha-home.png";
 import futuraHome from "../assets/img/project/futurausa-home.png";
 import growbizonHome from "../assets/img/project/growbizon-home.png";
 import tescoSpaceHome from "../assets/img/project/tesco-space-home.png";
@@ -49,9 +49,10 @@ export const projectList = [
   },
   {
     id: 6,
-    image: pro6,
-    heading: "Local SEO Landing Pages",
-    subHeading: "Service and City Page Builds",
+    image: drShikhaHome,
+    heading: "Matrutva Fertility & IVF",
+    subHeading: "Fertility Clinic Website",
+    projectUrl: "https://drshikhatandon.in/",
     category: ["landing_page", "website", "all"],
   },
 ];
@@ -62,5 +63,5 @@ export const imagesList = [
   almostKoachHome,
   growbizonHome,
   ynsculptHome,
-  pro6,
+  drShikhaHome,
 ];
