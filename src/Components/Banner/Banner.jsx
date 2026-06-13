@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
+import { PlayFill } from "react-bootstrap-icons";
 
 import bannerMan from "../../assets/img/banner/banner-man.png";
+import bnArrow from "../../assets/img/banner/bn-arrow.png";
 import scrollDown from "../../assets/img/banner/scroll-down.png";
 import dial from "../../assets/img/banner/dial.png";
 
@@ -33,20 +35,20 @@ const Banner = () => {
                   Developer
                 </span>
               </h1>
-              <div className="banner__actions">
+              <div className="video__area">
+                <img src={bnArrow} className="vid__arrow" alt="arrow" />
                 <HashLink
                   smooth
                   to="/#projects"
-                  className="d-flex fw-500 cmn--btn align-items-center gap-2"
+                  className="video__80 video-btn"
+                  aria-label="View recent work"
                 >
-                  <span className="get__text">View Work</span>
+                  <i>
+                    <PlayFill />
+                  </i>
                 </HashLink>
-                <HashLink
-                  smooth
-                  to="/contact"
-                  className="d-flex fw-500 cmn--btn align-items-center gap-2"
-                >
-                  <span className="get__text">Contact Me</span>
+                <HashLink smooth to="/#projects" className="proces">
+                  View Work
                 </HashLink>
               </div>
             </div>
