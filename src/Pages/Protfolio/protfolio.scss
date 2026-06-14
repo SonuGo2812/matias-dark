@@ -1,26 +1,38 @@
 .protfolio__filter {
   .tablinks {
-    border: 1px solid var(--cusborder);
-    padding: 10px 10px;
-    border-radius: 8px;
-    max-width: 683px;
+    list-style: none;
     margin: 0 auto 60px;
+    padding: 8px;
+    border: 1px solid var(--cusborder);
+    border-radius: 8px;
+    max-width: 520px;
     display: flex;
-    align-items: center;
+    align-items: stretch;
+    gap: 0;
+
     .nav-links {
-      button {
-        border: none;
-        background: transparent;
-        text-align: center;
-        display: inline-block;
-        font-size: 18px;
-        color: var(--pra);
-        padding: 16px 24px;
-        border-radius: 5px;
-      }
+      flex: 1;
+      min-width: 0;
+
       &:not(:last-child) {
         border-right: 1px solid var(--cusborder);
       }
+
+      button {
+        width: 100%;
+        border: none;
+        background: transparent;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--pra);
+        padding: 14px 20px;
+        border-radius: 5px;
+        white-space: nowrap;
+        line-height: 1.2;
+        transition: background 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+      }
+
       &.active {
         button {
           background: var(--base);
@@ -28,17 +40,26 @@
         }
       }
     }
+
     @include breakpoint(max-md) {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 5px;
+      max-width: 100%;
       margin: 0 auto 40px;
+      padding: 6px;
+
       .nav-links {
         button {
-          display: block;
-          padding: 11px 20px;
+          font-size: 15px;
+          padding: 12px 10px;
         }
-        border: 1px solid var(--cusborder);
+      }
+    }
+
+    @include breakpoint(max-xs) {
+      .nav-links {
+        button {
+          font-size: 14px;
+          padding: 11px 8px;
+        }
       }
     }
   }

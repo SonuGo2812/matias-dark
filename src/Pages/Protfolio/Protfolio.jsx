@@ -15,40 +15,27 @@ const categoryList = [
   },
   {
     id: 2,
-    categoryName: "CMS Websites",
-    value: "branding_app",
+    categoryName: "WordPress",
+    value: "wordpress",
   },
   {
     id: 3,
-    categoryName: "eCommerce",
-    value: "los_app",
-  },
-  {
-    id: 4,
-    categoryName: "Landing Pages",
-    value: "landing_page",
-  },
-  {
-    id: 5,
-    categoryName: "Websites",
-    value: "website",
+    categoryName: "Shopify",
+    value: "shopify",
   },
 ];
+
 const Protfolio = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentId, setCurrentId] = useState(0);
   const [currentCategory, setCurrentCategory] = useState("all");
 
-  // ---------- Filer project by category
-  let filterProject = [];
-
-  for (const iterator of projectList) {
-    for (const cet of iterator.category) {
-      if (cet === currentCategory) {
-        filterProject.push(iterator);
-      }
-    }
-  }
+  const filterProject =
+    currentCategory === "all"
+      ? projectList
+      : projectList.filter((project) =>
+          project.category.includes(currentCategory)
+        );
 
   const openLightbox = (index) => {
     setCurrentId(index);
