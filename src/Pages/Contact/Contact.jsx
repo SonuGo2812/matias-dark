@@ -29,9 +29,12 @@ const Contact = () => {
             >
               <div className="contact__rightside cmn__bg">
                 <h4 className="mb-30">Feel free to contact me anytime</h4>
-                <div className="contact__item mb-20">
+                <div className="contact__item contact__item--email mb-20">
                   <span className="he1">Email</span>
-                  <a href="mailto:goswamisonu2812@gmail.com">goswamisonu2812@gmail.com</a>
+                  <a href="mailto:goswamisonu2812@gmail.com" className="contact__email">
+                    <span className="contact__email-line">goswamisonu2812@</span>
+                    <span className="contact__email-line">gmail.com</span>
+                  </a>
                 </div>
                 <div className="contact__item mb-20">
                   <span className="he1">Availability</span>

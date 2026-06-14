@@ -74,13 +74,20 @@ const AboutMe = ({ isTabActive }) => {
                         className="col-xxl-6 col-xl-6 col-lg-12 col-md-6"
                         data-aos="zoom-in"
                       >
-                        <div className="abox">
+                        <div className={`abox${system === "Email" ? " abox--email" : ""}`}>
                           <div className="about__contbox__item">
                             <span className="ptext fz-18 mb-20 d-block">
                               {system}
                             </span>
                             {system === "Email" ? (
-                              <a href={`mailto:${contact}`}>{contact}</a>
+                              <a href={`mailto:${contact}`} className="contact__email">
+                                <span className="contact__email-line">
+                                  {contact.split("@")[0]}@
+                                </span>
+                                <span className="contact__email-line">
+                                  {contact.split("@")[1]}
+                                </span>
+                              </a>
                             ) : (
                               <span className="contact__text">{contact}</span>
                             )}
