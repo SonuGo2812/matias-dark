@@ -16,6 +16,7 @@ export const projectList = [
     subHeading: "Architectural Metals Website",
     projectUrl: "https://futurausa.com/",
     category: ["wordpress", "all"],
+    showOnHome: true,
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ export const projectList = [
     subHeading: "AI Growth Systems Website",
     projectUrl: "https://growbizon.com/",
     category: ["wordpress", "all"],
+    showOnHome: true,
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ export const projectList = [
     subHeading: "Digital Solutions Website",
     projectUrl: "https://tesco.space/",
     category: ["wordpress", "all"],
+    showOnHome: true,
   },
   {
     id: 4,
@@ -40,6 +43,7 @@ export const projectList = [
     subHeading: "Dermatosurgery Academy Website",
     projectUrl: "https://ynsculpt.com/",
     category: ["wordpress", "all"],
+    showOnHome: true,
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ export const projectList = [
     subHeading: "Life Coaching Website",
     projectUrl: "https://almostkoach.com/",
     category: ["wordpress", "all"],
+    showOnHome: true,
   },
   {
     id: 6,
@@ -56,6 +61,7 @@ export const projectList = [
     subHeading: "Fertility Clinic Website",
     projectUrl: "https://drshikhatandon.in/",
     category: ["wordpress", "all"],
+    showOnHome: true,
   },
   {
     id: 7,
@@ -82,6 +88,8 @@ export const projectList = [
     category: ["shopify", "all"],
   },
 ];
+
+export const homeProjectList = projectList.filter(({ showOnHome }) => showOnHome);
 
 export const imagesList = [
   futuraHome,
