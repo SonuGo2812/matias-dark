@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ScrollRestoration } from "react-router-dom";
 
-import { images, images2 } from "../Utlits/marqueeItems";
+import { images2, serviceLabels } from "../Utlits/marqueeItems";
 import About from "../Components/About/About";
 import Projects from "../Components/Projects/Projects";
 import Metting from "../Components/Metting/Metting";
@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <>
       {isFetching && <Preloader />}
-      <MarqueeWapper direction="left" images={images} />
+      <MarqueeWapper direction="left" labels={serviceLabels} />
       <About />
       <MarqueeWapper direction="right" images={images2} />
       <Awards />
