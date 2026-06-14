@@ -67,9 +67,7 @@ const Banner = () => {
           <a href="mailto:goswamisonu2812@gmail.com">
             <img src={dial} alt="img" />
           </a>
-          <a href="mailto:goswamisonu2812@gmail.com" className="left__info-email">
-            goswamisonu2812@gmail.com
-          </a>
+          <a href="mailto:goswamisonu2812@gmail.com">goswamisonu2812@gmail.com</a>
         </div>
         <div className="right__infoscroll">
           <HashLink smooth to="/#about" className="scroll">
