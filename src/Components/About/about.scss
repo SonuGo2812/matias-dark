@@ -201,6 +201,7 @@
                     color: var(--white);
                     padding: 30px 0;
                     border-bottom: 1px solid #2c3030;
+                    vertical-align: top;
                     .table__view{
                         font-size: 18px;
                         margin-top: 28px !important;
@@ -220,7 +221,7 @@
                         font-size: 16px;
                         .table__view{
                             font-size: 16px;
-                            margin-top: 28px !important;
+                            margin-top: 0 !important;
                         }
                         .table__title{
                             font-size: 28px;
@@ -230,23 +231,107 @@
                         font-size: 14px;
                         .table__view{
                             font-size: 14px;
-                            margin-top: 0px !important;
+                            margin-top: 0 !important;
                         }
                         .table__title{
-                            font-size: 20px;
+                            font-size: 22px;
                             line-height: 1.2;
                         }
                     }
                 }
                 .cusnoe{
-                    @include breakpoint(max-sm){
+                    @include breakpoint(max-md){
                         display: none;
                     }
                 }
                 td:last-child{
                     min-width: 150px;
+
+                    @include breakpoint(max-md){
+                        min-width: 0;
+                    }
+                }
+
+                &:first-child{
+                    @include breakpoint(max-md){
+                        display: block;
+
+                        td{
+                            display: block;
+                            width: 100% !important;
+                            min-width: 0 !important;
+                            padding: 0;
+                            border-bottom: none;
+                        }
+
+                        td:first-child{
+                            padding-bottom: 16px;
+                            border-bottom: 1px solid #2c3030;
+                        }
+
+                        td.text-end{
+                            padding-top: 16px;
+                            text-align: left !important;
+
+                            .table__view{
+                                justify-content: flex-start !important;
+                            }
+                        }
+                    }
+                }
+
+                &:not(:first-child){
+                    @include breakpoint(max-md){
+                        display: grid;
+                        grid-template-columns: 1fr auto;
+                        gap: 6px 12px;
+                        padding: 18px 0;
+                        border-bottom: 1px solid #2c3030;
+
+                        td{
+                            display: block;
+                            width: 100% !important;
+                            min-width: 0 !important;
+                            padding: 0;
+                            border-bottom: none;
+                            font-size: 15px;
+                        }
+
+                        td:first-child{
+                            grid-column: 1 / -1;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+
+                        td:nth-child(2){
+                            grid-column: 1;
+                            color: var(--pra);
+                        }
+
+                        td:last-child{
+                            grid-column: 2;
+                            text-align: right !important;
+                            align-self: end;
+                        }
+                    }
+
+                    @include breakpoint(max-xs){
+                        td{
+                            font-size: 14px;
+                        }
+
+                        td:first-child{
+                            font-size: 15px;
+                        }
+                    }
                 }
             }
+        }
+    }
+
+    @include breakpoint(max-md){
+        .table-responsive{
+            overflow: visible;
         }
     }
 }
