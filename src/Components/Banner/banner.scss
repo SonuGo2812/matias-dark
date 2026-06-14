@@ -201,10 +201,10 @@
 
     @include breakpoint(max-lg){
         left: auto;
-        right: -20px;
+        right: 0;
         bottom: 0;
-        max-width: 340px;
-        width: 46vw;
+        max-width: 300px;
+        width: min(42vw, 300px);
         margin: 0;
 
         img{
@@ -215,21 +215,21 @@
     }
 
     @include breakpoint(max-md){
-        right: -24px;
-        max-width: 280px;
-        width: 50vw;
+        right: 0;
+        max-width: 240px;
+        width: min(44vw, 240px);
     }
 
     @include breakpoint(max-sm){
-        right: -28px;
-        max-width: 220px;
-        width: 54vw;
+        right: 0;
+        max-width: 200px;
+        width: min(46vw, 200px);
     }
 
     @include breakpoint(max-xs){
-        right: -32px;
-        max-width: 190px;
-        width: 58vw;
+        right: 0;
+        max-width: 175px;
+        width: min(48vw, 175px);
     }
 }
 .banner__leftinfo{
