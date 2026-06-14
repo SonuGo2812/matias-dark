@@ -8,7 +8,7 @@ const contactInfo = [
   {
     id: 1,
     system: "Email",
-    contact: "sonu998999@gmail.com",
+    contact: "goswamisonu2812@gmail.com",
   },
   {
     id: 2,

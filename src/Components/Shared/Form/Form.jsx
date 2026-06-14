@@ -14,7 +14,7 @@ const Form = ({ isColTwo }) => {
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
     );
 
-    window.location.href = `mailto:sonu998999@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:goswamisonu2812@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (

@@ -45,7 +45,7 @@ const Footer = () => {
                   working worldwide on WordPress, Shopify, WooCommerce, and CMS
                   website solutions.
                 </p>
-                <a href="mailto:sonu998999@gmail.com">sonu998999@gmail.com</a>
+                <a href="mailto:goswamisonu2812@gmail.com">goswamisonu2812@gmail.com</a>
               </div>
             </div>
             <div className="col-lg-6">
@@ -79,7 +79,7 @@ const Footer = () => {
             </p>
             <ul className="terms">
               <li>
-                <a href="mailto:sonu998999@gmail.com"> Email </a>
+                <a href="mailto:goswamisonu2812@gmail.com"> Email </a>
               </li>
               <li>
                 <HashLink smooth to="/#projects"> Portfolio </HashLink>
