@@ -5,8 +5,8 @@ import { marqueeStar } from "../../../Utlits/marqueeItems";
 const MarqueeWapper = ({ images, labels, direction }) => {
   return (
     <div className="marquee-wrapper text-slider">
-      <div className="marquee-inner ">
-        <Marquee direction={direction}>
+      <div className="marquee-inner">
+        <Marquee direction={direction} autoFill>
           {labels
             ? labels.map((label) => (
                 <span key={label} className="marquee-text-item">
@@ -19,7 +19,7 @@ const MarqueeWapper = ({ images, labels, direction }) => {
                 </span>
               ))
             : images?.map(({ id, image }) => (
-                <img key={id} src={image} alt="" />
+                <img key={id} src={image} alt="" className="marquee-image" />
               ))}
         </Marquee>
       </div>
