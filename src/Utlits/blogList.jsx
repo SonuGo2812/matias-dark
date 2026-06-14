@@ -32,8 +32,8 @@ export const blogsList = [
     id: 4,
     image: blog4,
     date: "February 10, 2026",
-    heading: "Using ACF for flexible WordPress content",
-    para: `ACF helps create dynamic, reusable content structures that make
+    heading: "Building flexible WordPress page layouts",
+    para: `Well-planned page sections and reusable layouts make
       WordPress websites easier to manage and scale.`,
   },
 ];

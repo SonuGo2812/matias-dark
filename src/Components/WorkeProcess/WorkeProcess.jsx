@@ -19,7 +19,7 @@ const processList = [
     info: "Responsive development with clean layouts and easy content management.",
     list: [
       "Create WordPress, Shopify, or Elementor pages",
-      "Set up WooCommerce, ACF, or CMS content",
+      "Set up WooCommerce, page sections, and easy-to-manage content",
       "Optimize responsive design and usability",
     ],
   },

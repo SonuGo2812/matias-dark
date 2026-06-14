@@ -40,7 +40,7 @@ const Experience = ({ isTabActive }) => {
                     <h4 className="mb-15 text-white">Website Developer</h4>
                     <p className="fz-18 pra d-block">Shopify and CMS Development</p>
                     <p className="fz-16 pra d-block">
-                      Shopify, WooCommerce, Divi, ACF, CMS websites, service
+                      Shopify, WooCommerce, Divi, business websites, service
                       pages, eCommerce stores, and scalable website structures.
                     </p>
                   </div>

@@ -30,8 +30,8 @@ const serviceList = [
   {
     id: "05",
     heading: "Custom Website Solutions",
-    subHeading: "ACF and Frontend",
-    para: "ACF-powered dynamic content, Divi customization, responsive fixes, and modern frontend improvements.",
+    subHeading: "Frontend & Layout",
+    para: "Custom page layouts, Divi customization, responsive fixes, and modern frontend improvements.",
   },
 ];
 const Services = ({ isHeading }) => {
