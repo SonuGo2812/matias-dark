@@ -44,7 +44,7 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
         </Link>
         <p>
           Website Developer specializing in WordPress, Shopify, Elementor,
-          WooCommerce, Divi, ACF, and custom website solutions for businesses
+          WooCommerce, Divi, and custom website solutions for businesses
           working worldwide.
         </p>
         <div className="sub__contact-left d-grid">

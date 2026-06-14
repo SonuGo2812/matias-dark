@@ -21,7 +21,7 @@ const accordionList = [
     id: "cmnid5",
     heading: "Can you work with CMS and eCommerce websites?",
     para: ` Yes. I build and customize WordPress, Shopify, WooCommerce,
-    Elementor, Divi, ACF, and CMS-based websites with clean layouts,
+    Elementor, Divi, and CMS-based websites with clean layouts,
     responsive sections, and easy-to-manage content.`,
   },
   {
@@ -58,7 +58,7 @@ const ServiceDetails = () => {
                     I create responsive, user-friendly, and conversion-focused
                     websites for businesses, brands, and service providers. My
                     main work includes WordPress, Shopify, Elementor,
-                    WooCommerce, Divi, ACF, and CMS-based website development.
+                    WooCommerce, Divi, and CMS-based website development.
                   </p>
                   <p className="fz-16 pra">
                     Each website is built with clean design, clear content
@@ -79,9 +79,8 @@ const ServiceDetails = () => {
                     My workflow covers website planning, page layout, CMS setup,
                     responsive development, eCommerce configuration, content
                     structure, testing, and launch support. I also work on
-                    landing pages, service pages, product pages, ACF dynamic
-                    content, and custom website solutions based on project
-                    requirements.
+                    landing pages, service pages, product pages, custom layouts,
+                    and tailored website solutions based on project requirements.
                   </p>
                 </div>
                 <div className="paythumb position-relative">
@@ -126,7 +125,7 @@ const ServiceDetails = () => {
                     <i className="bi bi-chevron-right"></i>
                   </a>
                   <a href="#0" className="link__box mb-15">
-                    ACF Dynamic Websites
+                    Custom Website Development
                     <i className="bi bi-chevron-right"></i>
                   </a>
                   <a href="#0" className="link__box">

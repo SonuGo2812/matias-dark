@@ -45,7 +45,7 @@ const BlogDetails = () => {
                         A good CMS website gives businesses control over their
                         pages, services, products, and content without needing a
                         developer for every small update. WordPress, Shopify,
-                        WooCommerce, Elementor, Divi, and ACF are still strong
+                        WooCommerce, Elementor, and Divi are still strong
                         choices when they are planned and built properly.
                       </p>
                       <p className="fz-16 pra">
@@ -90,8 +90,8 @@ const BlogDetails = () => {
                     >
                       <ul className="challenge__list">
                         <li>
-                          Use WordPress, Shopify, Elementor, WooCommerce, Divi,
-                          and ACF where they fit the business need.
+                          Use WordPress, Shopify, Elementor, WooCommerce, and Divi
+                          where they fit the business need.
                         </li>
                         <li>
                           Build responsive layouts that work smoothly on mobile,

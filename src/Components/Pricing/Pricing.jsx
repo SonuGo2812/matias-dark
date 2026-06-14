@@ -27,7 +27,7 @@ const planData = [
     fetcher: [
       " CMS development",
       " Service page layouts",
-      "ACF dynamic content",
+      "Custom page layouts",
       "Performance basics",
       "Content management",
     ],

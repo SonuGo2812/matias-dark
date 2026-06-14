@@ -118,7 +118,7 @@ const BlogSidebar = () => {
             <Link>Elementor</Link>
           </li>
           <li>
-            <Link>ACF</Link>
+            <Link>Divi</Link>
           </li>
           <li>
             <Link>CMS</Link>
