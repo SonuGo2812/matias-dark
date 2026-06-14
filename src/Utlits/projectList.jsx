@@ -1,4 +1,3 @@
-import pro2 from "../assets/img/project/pro2.png";
 import almostKoachHome from "../assets/img/project/almostkoach-home.png";
 import drShikhaHome from "../assets/img/project/drshikha-home.png";
 import futuraHome from "../assets/img/project/futurausa-home.png";
@@ -13,7 +12,7 @@ export const projectList = [
     heading: "Futura USA",
     subHeading: "Architectural Metals Website",
     projectUrl: "https://futurausa.com/",
-    category: ["branding_app", "website", "all"],
+    category: ["wordpress", "all"],
   },
   {
     id: 2,
@@ -21,7 +20,7 @@ export const projectList = [
     heading: "Tech Staff Connect",
     subHeading: "Digital Solutions Website",
     projectUrl: "https://tesco.space/",
-    category: ["los_app", "landing_page", "all"],
+    category: ["shopify", "all"],
   },
   {
     id: 3,
@@ -29,7 +28,7 @@ export const projectList = [
     heading: "Almost Koach",
     subHeading: "Life Coaching Website",
     projectUrl: "https://almostkoach.com/",
-    category: ["website", "branding_app", "all"],
+    category: ["wordpress", "all"],
   },
   {
     id: 4,
@@ -37,7 +36,7 @@ export const projectList = [
     heading: "Grow Bizon",
     subHeading: "AI Growth Systems Website",
     projectUrl: "https://growbizon.com/",
-    category: ["los_app", "landing_page", "all"],
+    category: ["shopify", "all"],
   },
   {
     id: 5,
@@ -45,7 +44,7 @@ export const projectList = [
     heading: "YNSculpt Academy",
     subHeading: "Dermatosurgery Academy Website",
     projectUrl: "https://ynsculpt.com/",
-    category: ["branding_app", "website", "all"],
+    category: ["wordpress", "all"],
   },
   {
     id: 6,
@@ -53,7 +52,7 @@ export const projectList = [
     heading: "Matrutva Fertility & IVF",
     subHeading: "Fertility Clinic Website",
     projectUrl: "https://drshikhatandon.in/",
-    category: ["landing_page", "website", "all"],
+    category: ["wordpress", "all"],
   },
 ];
 
