@@ -34,6 +34,25 @@
     color: var(--white);
     font-size: 20px;
     display: block;
+    line-height: 1.45;
+  }
+  .contact__email {
+    font-size: 18px;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    word-break: break-word;
+
+    &:hover {
+      color: var(--base);
+    }
+  }
+  .contact__email-line {
+    display: block;
+  }
+  &--email {
+    padding: 26px 24px 28px;
   }
   .address {
     font-size: 20px;
