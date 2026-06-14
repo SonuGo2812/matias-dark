@@ -8,6 +8,20 @@
     overflow: hidden;
     background-attachment: fixed;
 }
+
+#home{
+    position: relative;
+
+    .row > .col-lg-4{
+        @include breakpoint(max-lg){
+            position: static;
+            height: 0;
+            padding: 0;
+            overflow: visible;
+        }
+    }
+}
+
 .banner__content{
     padding: 140px 0 180px;
     .bn__currently{
@@ -41,13 +55,33 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 18px;
+        position: relative;
+        z-index: 2;
 
-        @include breakpoint(max-xs){
-            flex-direction: column;
-            align-items: stretch;
+        @include breakpoint(max-lg){
+            gap: 12px;
 
             .cmn--btn{
-                justify-content: center;
+                padding: 14px 20px 15px;
+                font-size: 15px;
+            }
+        }
+
+        @include breakpoint(max-md){
+            gap: 10px;
+
+            .cmn--btn{
+                padding: 12px 16px 13px;
+                font-size: 14px;
+            }
+        }
+
+        @include breakpoint(max-sm){
+            gap: 8px;
+
+            .cmn--btn{
+                padding: 10px 14px 11px;
+                font-size: 13px;
             }
         }
     }
@@ -78,7 +112,11 @@
         padding: 120px 0 150px;
     }
     @include breakpoint(max-lg){
-        padding: 90px 0 30px;
+        padding: 90px 0 170px;
+        position: relative;
+        z-index: 2;
+        max-width: 72%;
+
         .bn__currently{
             font-size: 24px;
             margin-bottom: 40px;
@@ -86,7 +124,7 @@
         }
         h1{
             font-size: 68px;
-            margin-bottom: 50px;
+            margin-bottom: 36px;
         }
         .video__area{
             gap: 24px;
@@ -97,7 +135,9 @@
         }
     }
     @include breakpoint(max-md){
-        padding: 80px 0 24px;
+        padding: 80px 0 150px;
+        max-width: 68%;
+
         .bn__currently{
             font-size: 20px;
             margin-bottom: 35px;
@@ -105,7 +145,7 @@
         }
         h1{
             font-size: 48px;
-            margin-bottom: 40px;
+            margin-bottom: 28px;
         }
         .video__area{
             gap: 24px;
@@ -116,7 +156,9 @@
         }
     }
     @include breakpoint(max-sm){
-        padding: 60px 0 16px;
+        padding: 60px 0 130px;
+        max-width: 62%;
+
         .bn__currently{
             font-size: 16px;
             margin-bottom: 28px;
@@ -124,7 +166,7 @@
         }
         h1{
             font-size: 34px;
-            margin-bottom: 30px;
+            margin-bottom: 24px;
         }
         .video__area{
             gap: 24px;
@@ -144,6 +186,7 @@
     left: calc(50% - -120px);
     bottom: 0;
     max-width: 560px;
+    z-index: 1;
 
     img{
         width: 100%;
@@ -157,45 +200,36 @@
     }
 
     @include breakpoint(max-lg){
-        position: relative;
         left: auto;
-        bottom: auto;
+        right: -20px;
+        bottom: 0;
         max-width: 340px;
-        margin: 8px auto 0;
-        display: flex;
-        justify-content: center;
+        width: 46vw;
+        margin: 0;
 
         img{
-            max-height: 360px;
+            max-height: none;
             object-fit: contain;
-            object-position: bottom center;
+            object-position: bottom right;
         }
     }
 
     @include breakpoint(max-md){
-        max-width: 300px;
-        margin-top: 16px;
-
-        img{
-            max-height: 300px;
-        }
+        right: -24px;
+        max-width: 280px;
+        width: 50vw;
     }
 
     @include breakpoint(max-sm){
-        max-width: 260px;
-        margin-top: 12px;
-
-        img{
-            max-height: 260px;
-        }
+        right: -28px;
+        max-width: 220px;
+        width: 54vw;
     }
 
     @include breakpoint(max-xs){
-        max-width: 220px;
-
-        img{
-            max-height: 220px;
-        }
+        right: -32px;
+        max-width: 190px;
+        width: 58vw;
     }
 }
 .banner__leftinfo{
