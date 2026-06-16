@@ -9,6 +9,9 @@
   padding-left: 10px;
   img {
     width: 100%;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
   }
   @include breakpoint(max-lg) {
     max-width: 400px;
