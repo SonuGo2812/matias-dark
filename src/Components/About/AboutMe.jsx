@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import personalInfoThumb from "../../assets/img/about/personal-infothumb.png";
+import personalInfoPhoto from "../../assets/img/about/personal-info-photo.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -40,7 +40,7 @@ const AboutMe = ({ isTabActive }) => {
               data-aos="zoom-in"
               data-aos-duration="500"
             >
-              <img src={personalInfoThumb} alt="img" />
+              <img src={personalInfoPhoto} alt="Sonu Goswami working at a desk" />
             </div>
           </div>
           <div className="col-lg-7">
