@@ -1,5 +1,5 @@
 import React from "react";
-import personalInfothumb from "../../assets/img/about/personal-infothumb.png";
+import experiencePhoto from "../../assets/img/about/experience-photo.png";
 
 const Experience = ({ isTabActive }) => {
   return (
@@ -8,7 +8,7 @@ const Experience = ({ isTabActive }) => {
         <div className="row g-4 align-items-lg-start align-items-center">
           <div className="col-lg-5">
             <div className="about__onethumb">
-              <img src={personalInfothumb} alt="img" />
+              <img src={experiencePhoto} alt="Developer workspace with dual monitors" />
             </div>
           </div>
           <div className="col-lg-7">
