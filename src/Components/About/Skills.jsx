@@ -1,5 +1,5 @@
 import React from "react";
-import personalInfothumb from "../../assets/img/about/personal-infothumb.png";
+import skillsPhoto from "../../assets/img/about/skills-photo.png";
 
 const skillsList = [
   {
@@ -30,7 +30,7 @@ const Skills = ({ isTabActive }) => {
         <div className="row g-4 align-items-lg-start align-items-center">
           <div className="col-lg-5">
             <div className="about__onethumb">
-              <img src={personalInfothumb} alt="img" />
+              <img src={skillsPhoto} alt="Developer coding with dual monitors" />
             </div>
           </div>
           <div className="col-lg-7">
