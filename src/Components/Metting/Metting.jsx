@@ -1,6 +1,6 @@
 import React from "react";
 import { Envelope, GeoAlt } from "react-bootstrap-icons";
-import mettingImag from "../../assets/img/project/project-need.png";
+import mettingImag from "../../assets/img/project/web-design-creator.png";
 const Metting = () => {
   return (
     <section className="project__metting overhid pt-120 pb-120">
@@ -58,7 +58,7 @@ const Metting = () => {
               data-aos="zoom-in"
               data-aos-duration="2000"
             >
-              <img src={mettingImag} alt="img" />
+              <img src={mettingImag} alt="Web design creator illustration" />
             </div>
           </div>
         </div>
