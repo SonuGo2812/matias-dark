@@ -1,6 +1,6 @@
 import React from "react";
 import { XLg, ChevronRight } from "react-bootstrap-icons";
-import logo from "../../../assets/img/logo/logo.png";
+import logo from "../../../assets/img/logo/nexa-studio-logo.png";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -40,7 +40,7 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
       </div>
       <div className="sub__contact__wrapper d-grid">
         <Link to={"/"} className="side-logo" onClick={() => setIsSidebarActive(false)}>
-          <img src={logo} alt="img" />
+          <img src={logo} alt="NEXA STUDIO" />
         </Link>
         <p>
           Website Developer specializing in WordPress, Shopify, Elementor,
