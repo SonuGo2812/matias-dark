@@ -28,6 +28,14 @@
     padding: 40px 20px;
     .side-logo {
       margin-bottom: 20px;
+      display: block;
+      max-width: 190px;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
     }
     p {
       font-size: 14px;

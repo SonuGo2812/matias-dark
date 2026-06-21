@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 import { List, ArrowRight } from "react-bootstrap-icons";
 
 import Drawer from "../Drawer/Drawer";
-import logo from "../../../assets/img/logo/logo.png";
+import logo from "../../../assets/img/logo/nexa-studio-logo.png";
 
 const menuList = [
   {
@@ -78,7 +78,7 @@ const Header = () => {
         <div className="header-wrapper">
           <div className="main__logo">
             <Link to={"/"} className="logo">
-              <img src={logo} alt="logo" />
+              <img src={logo} alt="NEXA STUDIO" />
             </Link>
           </div>
           <ul className={`main-menu ${menuActive ? "active" : ""}`}>

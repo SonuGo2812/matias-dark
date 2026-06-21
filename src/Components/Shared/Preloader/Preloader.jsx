@@ -1,13 +1,13 @@
 import React from "react";
-import manimg from "../../../assets/img/banner/banner-man.png";
+import logo from "../../../assets/img/logo/nexa-studio-logo.png";
+
 const Preloader = () => {
   return (
     <div className="preloader__matias">
       <div className="box text-center">
         <div className="matias mb-10">
-          <img src={manimg} alt="img" />
+          <img src={logo} alt="NEXA STUDIO" />
         </div>
-        <span className="fz-30 mati fw-600 text-uppercase">Sonu</span>
       </div>
     </div>
   );
