@@ -1,19 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import PageHeader from "../../Components/Shared/PageHeader/PageHeader";
 import ToolCard from "../../Components/Tools/ToolCard";
 import { toolsData } from "../../Utlits/toolsData";
 import { ShieldCheck, LightningChargeFill, Download, Headset } from "react-bootstrap-icons";
 
-const categories = ["All Tools", "WordPress & AI", "Web Converters", "Developer Tools"];
-
 const AllTools = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All Tools");
-
-  const filteredTools =
-    selectedCategory === "All Tools"
-      ? toolsData
-      : toolsData.filter((tool) => tool.category === selectedCategory);
-
   return (
     <>
       <PageHeader
@@ -23,21 +14,9 @@ const AllTools = () => {
 
       <section className="tools__page-section pb-120">
         <div className="container">
-          <div className="tools__filter-wrap" data-aos="fade-up">
-            {categories.map((cat, idx) => (
-              <button
-                key={idx}
-                className={`filter-btn ${selectedCategory === cat ? "active" : ""}`}
-                onClick={() => setSelectedCategory(cat)}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-
           <div className="row g-4 justify-content-center">
-            {filteredTools.map((tool) => (
-              <div key={tool.id} className="col-lg-4 col-md-6">
+            {toolsData.map((tool) => (
+              <div key={tool.id} className="col-lg-5 col-md-7 col-sm-10">
                 <ToolCard tool={tool} />
               </div>
             ))}
