@@ -31,14 +31,30 @@ const CartDrawer = () => {
   const handleEmailCheckout = () => {
     if (cart.length === 0) return;
 
-    let subject = encodeURIComponent(`Subscription Inquiry: ${cart.map((i) => i.name).join(", ")}`);
-    let body = `Hello Sonu,%0D%0A%0D%0AI would like to subscribe to the following tools from your store:%0D%0A%0D%0A`;
+    const recipient = "Goswamisonu2812@gmail.com";
+    const subject = encodeURIComponent(
+      `Subscription Inquiry: ${cart.map((i) => i.name).join(", ")}`
+    );
+    let body = `Hello Sonu,%0D%0A%0D%0AI would like to subscribe to the following tools from Nexa Studio:%0D%0A%0D%0A`;
     cart.forEach((item, index) => {
-      body += `${index + 1}. ${item.name} (${item.tierName}) x ${item.quantity} = ₹${item.price * item.quantity} / month%0D%0A`;
+      body += `${index + 1}. ${item.name} (${item.tierName}) x ${item.quantity} = ₹${(item.price * item.quantity).toLocaleString()} / month%0D%0A`;
     });
-    body += `%0D%0ATotal: ₹${cartTotal} / month%0D%0A%0D%0APlease send payment and license activation details.`;
+    body += `%0D%0ATotal: ₹${cartTotal.toLocaleString()} / month%0D%0A%0D%0APlease send the official invoice and payment/activation details.%0D%0A%0D%0AClient Details:%0D%0A- Full Name:%0D%0A- Website/Company URL:%0D%0A- WhatsApp/Phone:`;
 
-    window.location.href = `mailto:sonu998999@gmail.com?subject=${subject}&body=${body}`;
+    // Direct Gmail Web Compose in a brand new tab
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${subject}&body=${body}`;
+    const newTab = window.open(gmailUrl, "_blank", "noopener,noreferrer");
+
+    // Fallback if popup blocker intercepts window.open (never change window.location.href)
+    if (!newTab) {
+      const link = document.createElement("a");
+      link.href = gmailUrl;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   };
 
   return (
