@@ -50,7 +50,7 @@ const ToolDetails = () => {
     const priceText = isYearly
       ? `${curr}${selectedTier.yearlyPrice.toLocaleString()} / year`
       : `${curr}${selectedTier.price.toLocaleString()} / month`;
-    const text = `*Inquiry / Subscription for ${tool.name}*%0A%0A- Selected Plan: *${selectedTier.name} (${cycleText})*%0A- Price: *${priceText}*%0A%0APlease share the activation details and payment link.`;
+    const text = `*Inquiry / 14-Day Free Trial for ${tool.name}*%0A%0A- Selected Plan: *${selectedTier.name} (${cycleText})*%0A- Regular Price: *${priceText}*%0A- *Requested:* 14-Day Risk-Free Trial Setup (No Upfront Charges)%0A%0APlease share the trial download link and license activation instructions.`;
     window.open(`https://wa.me/919610342763?text=${text}`, "_blank");
   };
 
@@ -58,8 +58,8 @@ const ToolDetails = () => {
     const tierForCart = {
       ...selectedTier,
       tierName: isYearly
-        ? `${selectedTier.name} (Yearly - 2 Months Free)`
-        : `${selectedTier.name} (Monthly)`,
+        ? `${selectedTier.name} (Yearly - 2 Months Free + 14-Day Trial)`
+        : `${selectedTier.name} (14-Day Free Trial Included)`,
       price: currentPrice,
     };
     addToCart(tool, tierForCart);
@@ -528,25 +528,39 @@ const ToolDetails = () => {
                   ))}
                 </div>
 
+                {/* 14-Day Free Trial Guarantee Banner */}
+                <div className="trial__guarantee-box">
+                  <div className="trial-badge-row">
+                    <span className="trial-badge-pill">✨ 14-DAY RISK-FREE TRIAL</span>
+                    <span className="trial-subtext">No Credit Card Upfront</span>
+                  </div>
+                  <p className="trial-desc">
+                    Deploy live on your website today. Experience full premium features for 14 days with zero risk. If not 100% satisfied, cancel anytime.
+                  </p>
+                </div>
+
                 {/* Buy Action Buttons */}
                 <div className="buy__ctas">
                   <button
                     className="btn-add-cart"
                     onClick={handleAddToCart}
                   >
-                    <BagCheck className="fz-20" /> Add to Cart ({tool.currency || "₹"}{currentPriceShort})
+                    <BagCheck className="fz-20" /> Start 14-Day Trial / Add to Cart
                   </button>
 
                   <button
                     className="btn-direct-buy"
                     onClick={handleWhatsAppInstantBuy}
                   >
-                    <Whatsapp className="fz-18" /> Subscribe via WhatsApp
+                    <Whatsapp className="fz-18" /> Start 14-Day Free Trial via WhatsApp
                   </button>
                 </div>
 
                 {/* Guarantees */}
                 <ul className="trust__guarantees">
+                  <li style={{ color: "var(--base)", fontWeight: 600 }}>
+                    <ShieldCheck /> 14-Day Risk-Free Full Access Trial Included
+                  </li>
                   <li>
                     <Download /> Instant .ZIP Plugin Download & Setup
                   </li>

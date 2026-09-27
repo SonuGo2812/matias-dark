@@ -35,6 +35,7 @@ export const toolsData = [
       },
     ],
     featuresHeading: "Why Chat Pilot is Superior",
+    freeTrial: "14-Day Free Trial",
     overview:
       "Chat Pilot is a proprietary, high-performance website assistant custom-engineered by Nexa Studio specifically for WordPress and WooCommerce websites. Handcrafted with an optimized PHP backend and ultra-lightweight Vanilla JavaScript, Chat Pilot features a high-speed neural language processing core alongside an intelligent 0.05s response cache, semantic micro-chunking, and strict anti-hallucination guardrails to answer customer queries accurately, resolve pre-sale objections, and capture high-intent leads around the clock.",
     licenseTiers: [
@@ -47,6 +48,7 @@ export const toolsData = [
         billingPeriod: "Monthly",
         desc: "For 1 business website or WooCommerce store wanting 24/7 automated sales & lead capture.",
         features: [
+          "14-Day Risk-Free Full Access Trial",
           "1 WordPress / WooCommerce Website",
           "High-Speed Neural Language Core",
           "0.05s Smart Response Cache (0 Latency on repeats)",
@@ -66,6 +68,7 @@ export const toolsData = [
         billingPeriod: "Monthly",
         desc: "Ideal for freelancers & growing agencies deploying assistants across client sites.",
         features: [
+          "14-Day Risk-Free Full Access Trial",
           "Up to 3 WordPress / WooCommerce Client Websites",
           "Everything in Single Website Plan",
           "Multi-Domain Central License Control",
@@ -84,6 +87,7 @@ export const toolsData = [
         billingPeriod: "Monthly",
         desc: "For established digital agencies and high-volume studios managing multiple clients.",
         features: [
+          "14-Day Risk-Free Full Access Trial",
           "Up to 5 WordPress / WooCommerce Client Websites",
           "Everything in Agency 3-Site Plan",
           "100% White-label & Custom Client Styling",
@@ -141,6 +145,10 @@ export const toolsData = [
         a: "Chat Pilot was custom-designed and developed from scratch by Sonu Goswami at Nexa Studio. Unlike generic third-party tools, you receive direct 1-on-1 developer support, regular feature improvements, and setup assistance directly from the creator.",
       },
       {
+        q: "How does the 14-Day Free Trial work?",
+        a: "Every new user gets a full 14-day risk-free trial with zero commitments and no credit card required upfront. We assist you with complete plugin installation and knowledge base indexing. Test live automated customer responses and lead captures on your website; if you love it, continue your plan, or cancel anytime with zero obligation.",
+      },
+      {
         q: "Are there any hidden server or per-message charges?",
         a: "No! Everything is covered under your straightforward monthly subscription. With Chat Pilot's built-in 0.05s Smart Response Cache and optimized cloud infrastructure, you get predictable, transparent pricing with zero unexpected usage bills.",
       },
@@ -194,6 +202,7 @@ export const toolsData = [
       },
     ],
     featuresHeading: "Why Sentinel Hosting Defense is Superior",
+    freeTrial: "14-Day Free Trial",
     overview:
       "Sentinel Security is an autonomous, server-level cybersecurity watchdog custom-engineered by Nexa Studio specifically for WordPress, WooCommerce, and cloud hosting servers (cPanel, Hostinger, Cloudways, VPS). Unlike conventional WordPress security plugins that run inside the CMS and get deactivated when a site is compromised, Sentinel operates directly at the hosting infrastructure layer. Featuring a 15 KB zero-overhead probe, SHA-256 cryptographic baseline monitoring, self-healing configuration armor, and real-time Telegram 1-tap quarantine alerts, Sentinel halts webshells, rootkits, and unauthorized code injections before they ever reach your visitors.",
     licenseTiers: [
@@ -209,6 +218,7 @@ export const toolsData = [
         billingPeriod: "Monthly",
         desc: "1 Site coverage. ₹999/mo (or ₹9,999/yr with 2 Months Free).",
         features: [
+          "14-Day Risk-Free Full Access Trial",
           "1 WordPress / WooCommerce Site",
           "Continuous 24/7 SHA-256 Baseline Integrity Scan",
           "Automated Zero-Day PHP Webshell Quarantine",
@@ -232,6 +242,7 @@ export const toolsData = [
         billingPeriod: "Monthly",
         desc: "5 Sites coverage. Only ₹500/site/mo (or ₹24,999/yr with 2 Months Free).",
         features: [
+          "14-Day Risk-Free Full Access Trial",
           "Up to 5 Client Domains / Hostings",
           "Only ₹500/site per month",
           "Everything in Solo Plan",
@@ -252,6 +263,7 @@ export const toolsData = [
         billingPeriod: "Monthly",
         desc: "15 Sites coverage. Only ₹333/site/mo (or ₹49,999/yr with 2 Months Free).",
         features: [
+          "14-Day Risk-Free Full Access Trial",
           "Up to 15 Client Domains / Hostings",
           "Only ₹333/site per month",
           "Everything in Growth Plan",
@@ -272,6 +284,7 @@ export const toolsData = [
         billingPeriod: "Monthly",
         desc: "50+ Sites coverage. Lowest rate at ₹240/site/mo (or ₹1,20,000/yr).",
         features: [
+          "14-Day Risk-Free Full Access Trial",
           "50+ Client Domains / Dedicated Server Fleet",
           "Lowest rate: Only ₹240/site per month",
           "Everything in Agency Master Plan",
@@ -367,8 +380,12 @@ export const toolsData = [
         a: "Whenever an unfamiliar file is created or modified on your server, Sentinel sends an instant priority alert to your private Telegram bot. You can verify legitimate updates with [ ✅ VERIFY & WHITELIST ] or neutralize threats immediately with [ 🗑️ QUARANTINE & DESTROY ] directly from your phone.",
       },
       {
+        q: "How does the 14-Day Free Trial work?",
+        a: "Every Sentinel license includes a full 14-day risk-free trial. We deploy the server probe on your hosting, establish your SHA-256 cryptographic baseline, and link your private Telegram bot with zero upfront risk. Test live self-healing protection and mobile alerts before any billing begins.",
+      },
+      {
         q: "Can I protect multiple client websites or hosting accounts?",
-        a: "Yes! Our Agency Shield (₹2,499/mo) and Agency Pro (₹3,999/mo) plans support multi-domain deployments with centralized license keys and unified Telegram monitoring.",
+        a: "Yes! Our Growth (₹2,499/mo) and Agency Master (₹4,999/mo) plans support multi-domain deployments with centralized license keys and unified Telegram monitoring.",
       },
       {
         q: "How is Sentinel installed on my hosting server?",

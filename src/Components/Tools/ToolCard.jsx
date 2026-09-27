@@ -9,6 +9,7 @@ const ToolCard = ({ tool }) => {
   return (
     <div className="tool__card" data-aos="fade-up" data-aos-duration="1000">
       {tool.badge && <span className="tool__badge">{tool.badge}</span>}
+      <span className="tool__trial-badge">✨ 14-Day Free Trial</span>
 
       <div className="tool__thumb">
         <Link to={`/tools/${tool.slug}`}>
@@ -32,6 +33,10 @@ const ToolCard = ({ tool }) => {
         <h3 className="tool__title">
           <Link to={`/tools/${tool.slug}`}>{tool.name}</Link>
         </h3>
+
+        <div className="tool__trial-strip">
+          <span className="trial-pulse"></span> 14-Day Free Trial Available • Zero Risk
+        </div>
 
         <p className="tool__desc">{tool.tagline || tool.shortDesc}</p>
 
