@@ -3,9 +3,10 @@
    Matches Nexa Studio Dark Neon Aesthetic:
    - Primary Background: #141410
    - Card / Header Background: #181814
+   - Bot Card Background: #1d1d17
    - Accent / Neon Lime: #c9f31d
    - Accent Hover: #d7ff36
-   - Borders: #2e2e25
+   - Borders: #2e2e25 & #3d3d32
    - White Text: #ffffff
    - Muted Text: #999999
    - Font: 'Kanit', sans-serif
@@ -18,23 +19,25 @@
     font-family: 'Kanit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   }
 
-  /* 1. Proactive Speech Bubble */
+  /* -------------------------------------------------------------------------
+     1. Proactive Speech Bubble
+     ------------------------------------------------------------------------- */
   .cp-saas-bubble {
     background: #181814 !important;
     color: #ffffff !important;
-    border: 1px solid rgba(201, 243, 29, 0.35) !important;
-    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.75), 0 0 20px rgba(201, 243, 29, 0.12) !important;
+    border: 1px solid rgba(201, 243, 29, 0.4) !important;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(201, 243, 29, 0.15) !important;
     border-radius: 16px !important;
 
     &::after {
       background: #181814 !important;
-      border-right: 1px solid rgba(201, 243, 29, 0.35) !important;
-      border-bottom: 1px solid rgba(201, 243, 29, 0.35) !important;
+      border-right: 1px solid rgba(201, 243, 29, 0.4) !important;
+      border-bottom: 1px solid rgba(201, 243, 29, 0.4) !important;
     }
 
     &:hover {
-      border-color: rgba(201, 243, 29, 0.55) !important;
-      box-shadow: 0 18px 46px rgba(0, 0, 0, 0.85), 0 0 25px rgba(201, 243, 29, 0.22) !important;
+      border-color: rgba(201, 243, 29, 0.65) !important;
+      box-shadow: 0 18px 46px rgba(0, 0, 0, 0.9), 0 0 25px rgba(201, 243, 29, 0.25) !important;
     }
   }
 
@@ -60,7 +63,7 @@
   }
 
   .cp-saas-bubble-text {
-    color: #d8d8d8 !important;
+    color: #e5e5e5 !important;
     font-weight: 400 !important;
     line-height: 1.5 !important;
   }
@@ -74,40 +77,45 @@
     }
   }
 
-  /* 2. Floating Robot Launcher Button */
+  /* -------------------------------------------------------------------------
+     2. Floating Robot Avatar Launcher Button
+     ------------------------------------------------------------------------- */
   .cp-saas-robot-btn {
-    background: radial-gradient(circle at 35% 35%, #26261f 0%, #161612 70%, #0d0d0a 100%) !important;
+    background: radial-gradient(circle at 35% 35%, #2a2a22 0%, #181814 70%, #0d0d0a 100%) !important;
     border: 2px solid #c9f31d !important;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), 0 0 22px rgba(201, 243, 29, 0.35) !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.65), 0 0 22px rgba(201, 243, 29, 0.4) !important;
     transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease !important;
 
     &:hover {
       transform: scale(1.08) !important;
       border-color: #d8ff36 !important;
-      box-shadow: 0 12px 38px rgba(0, 0, 0, 0.8), 0 0 32px rgba(201, 243, 29, 0.6) !important;
+      box-shadow: 0 12px 38px rgba(0, 0, 0, 0.85), 0 0 32px rgba(201, 243, 29, 0.65) !important;
     }
 
-    /* Robot glowing beacon */
+    /* Robot Glowing Antenna Beacon */
     .cp-bot-beacon {
       fill: #c9f31d !important;
       filter: drop-shadow(0 0 6px #c9f31d) !important;
     }
 
-    /* Eyes */
+    /* Robot Glowing Neon Lime Eyes */
     .cp-bot-eyes ellipse {
       fill: #c9f31d !important;
-      filter: drop-shadow(0 0 3px rgba(201, 243, 29, 0.8)) !important;
+      filter: drop-shadow(0 0 3px rgba(201, 243, 29, 0.9)) !important;
     }
 
-    /* Robot Ears & Accents */
-    rect[fill="#0284c7"] {
-      fill: #22221b !important;
+    /* Robot Smile / Mouth */
+    .cp-bot-eyes path {
+      stroke: #c9f31d !important;
+      stroke-width: 2.5 !important;
     }
+
+    /* Ear Pod Center Light */
     circle[fill="#38bdf8"] {
       fill: #c9f31d !important;
     }
-    path[stroke="#38bdf8"] {
-      stroke: #c9f31d !important;
+    rect[fill="#0284c7"] {
+      fill: #334155 !important;
     }
   }
 
@@ -145,41 +153,51 @@
     }
   }
 
-  /* 3. Main Chat Window */
+  /* -------------------------------------------------------------------------
+     3. Main Chat Window
+     ------------------------------------------------------------------------- */
   .cp-saas-box {
     background: #141410 !important;
     border: 1px solid #2e2e25 !important;
-    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(201, 243, 29, 0.1) !important;
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.85), 0 0 30px rgba(201, 243, 29, 0.12) !important;
     border-radius: 18px !important;
   }
 
-  /* Header */
+  /* Chat Header */
   .cp-saas-hdr {
     background: #181814 !important;
     border-bottom: 1px solid #262620 !important;
     color: #ffffff !important;
     padding: 14px 18px !important;
 
-    /* Header avatar */
+    /* Header Robot Avatar Container */
     > div:first-child > div:first-child {
-      background: #22221b !important;
-      border: 1px solid rgba(201, 243, 29, 0.3) !important;
+      background: rgba(201, 243, 29, 0.12) !important;
+      border: 1.5px solid rgba(201, 243, 29, 0.4) !important;
+      box-shadow: 0 0 10px rgba(201, 243, 29, 0.2) !important;
 
+      /* KEEP ROBOT HEAD CRISP WHITE & VISOR DARK */
       rect[fill="#ffffff"] {
-        fill: #26261f !important;
+        fill: #ffffff !important;
+        stroke: #e2e8f0 !important;
+        stroke-width: 1 !important;
       }
       rect[fill="#090d16"] {
-        fill: #141410 !important;
+        fill: #090d16 !important;
       }
+      /* Robot Eyes Neon Lime */
       ellipse[fill="#38bdf8"] {
         fill: #c9f31d !important;
+        filter: drop-shadow(0 0 2px #c9f31d) !important;
       }
+      /* Robot Smile Neon Lime */
       path[stroke="#38bdf8"] {
         stroke: #c9f31d !important;
+        stroke-width: 3 !important;
       }
     }
 
-    /* Online dot */
+    /* Online Dot */
     span[style*="background:#34d399"] {
       background: #c9f31d !important;
       box-shadow: 0 0 8px #c9f31d !important;
@@ -202,6 +220,7 @@
   /* Message Stream */
   .cp-saas-stream {
     background: #141410 !important;
+    padding: 16px !important;
 
     /* Custom dark scrollbar matching portfolio */
     &::-webkit-scrollbar {
@@ -220,24 +239,32 @@
     }
   }
 
-  /* Messages */
+  /* -------------------------------------------------------------------------
+     4. Messages
+     ------------------------------------------------------------------------- */
   .cp-saas-msg {
     border-radius: 14px !important;
     font-size: 14px !important;
-    line-height: 1.5 !important;
+    line-height: 1.55 !important;
 
-    /* Bot messages */
+    /* Bot messages: Sleek dark card with clear high-contrast text */
     &.bot {
-      background: #1a1a14 !important;
-      color: #e5e5e5 !important;
-      border: 1px solid #2a2a22 !important;
+      background: #1d1d17 !important;
+      color: #f1f5f9 !important;
+      border: 1px solid #333328 !important;
+
+      p, span, div, li {
+        color: #f1f5f9 !important;
+      }
 
       strong {
         color: #ffffff !important;
+        font-weight: 600 !important;
       }
 
       a, .cp-saas-link {
         color: #c9f31d !important;
+        font-weight: 600 !important;
         text-decoration: underline !important;
 
         &:hover {
@@ -246,12 +273,16 @@
       }
     }
 
-    /* User messages */
+    /* User messages: Nexa Studio Neon Lime bubble with dark text */
     &.user {
       background: #c9f31d !important;
       color: #141410 !important;
       font-weight: 500 !important;
       box-shadow: 0 4px 15px rgba(201, 243, 29, 0.25) !important;
+
+      p, span, div {
+        color: #141410 !important;
+      }
 
       a, .cp-saas-link {
         color: #000000 !important;
@@ -260,41 +291,77 @@
     }
   }
 
-  /* Input Row */
+  /* -------------------------------------------------------------------------
+     5. Input Area & Typing Visibility (Bulletproof Specificity)
+     ------------------------------------------------------------------------- */
+  /* Input Container Bar */
+  #cp-s-box #cp-s-form.cp-saas-input-row,
+  #cp-s-form.cp-saas-input-row,
   .cp-saas-input-row {
     background: #181814 !important;
-    border-top: 1px solid #262620 !important;
+    border-top: 1px solid #2e2e25 !important;
     padding: 12px 14px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3) !important;
   }
 
-  /* Text Input */
+  /* Input Field - Normal State */
+  #cp-s-box #cp-s-form #cp-s-in.cp-saas-input,
+  #cp-s-form #cp-s-in.cp-saas-input,
+  #cp-s-in.cp-saas-input,
+  form.cp-saas-input-row input.cp-saas-input,
   input.cp-saas-input {
-    background: #141410 !important;
+    background: #22221b !important;
     color: #ffffff !important;
-    border: 1px solid #333328 !important;
+    -webkit-text-fill-color: #ffffff !important;
+    caret-color: #c9f31d !important;
+    border: 1.5px solid #3d3d32 !important;
     border-radius: 24px !important;
     padding: 9px 16px !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    height: 40px !important;
+    outline: none !important;
     transition: all 0.2s ease !important;
 
     &::placeholder {
-      color: #777777 !important;
-    }
-
-    &:focus {
-      background: #141410 !important;
-      border-color: #c9f31d !important;
-      box-shadow: 0 0 0 3px rgba(201, 243, 29, 0.22) !important;
-      color: #ffffff !important;
+      color: #8c8c82 !important;
+      -webkit-text-fill-color: #8c8c82 !important;
+      opacity: 1 !important;
     }
   }
 
+  /* Input Field - Focused State (Active Typing) */
+  #cp-s-box #cp-s-form #cp-s-in.cp-saas-input:focus,
+  #cp-s-form #cp-s-in.cp-saas-input:focus,
+  #cp-s-in.cp-saas-input:focus,
+  form.cp-saas-input-row input.cp-saas-input:focus,
+  input.cp-saas-input:focus {
+    background: #272720 !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    caret-color: #c9f31d !important;
+    border-color: #c9f31d !important;
+    box-shadow: 0 0 0 3px rgba(201, 243, 29, 0.3) !important;
+    outline: none !important;
+  }
+
   /* Send Button */
+  #cp-s-box #cp-s-form #cp-s-sub.cp-saas-send,
+  #cp-s-form #cp-s-sub.cp-saas-send,
+  #cp-s-sub.cp-saas-send,
   .cp-saas-send {
     background: #c9f31d !important;
     color: #141410 !important;
     width: 40px !important;
     height: 40px !important;
     border-radius: 50% !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     transition: all 0.2s ease !important;
 
     svg {
@@ -304,15 +371,15 @@
     &:hover:not(:disabled) {
       background: #d7ff36 !important;
       transform: scale(1.08) !important;
-      box-shadow: 0 4px 14px rgba(201, 243, 29, 0.4) !important;
+      box-shadow: 0 4px 14px rgba(201, 243, 29, 0.45) !important;
     }
 
     &:disabled {
-      background: #262620 !important;
+      background: #2a2a22 !important;
       cursor: not-allowed !important;
 
       svg {
-        fill: #666666 !important;
+        fill: #666660 !important;
       }
     }
   }
@@ -326,9 +393,11 @@
     .cp-saas-hdr {
       background: #181814 !important;
     }
+    #cp-s-box #cp-s-form.cp-saas-input-row,
     .cp-saas-input-row {
       background: #181814 !important;
-      border-top: 1px solid #262620 !important;
+      border-top: 1px solid #2e2e25 !important;
+      padding-bottom: max(14px, env(safe-area-inset-bottom, 14px)) !important;
     }
   }
 }
