@@ -16,7 +16,7 @@ const AllTools = () => {
         <div className="container">
           <div className="row g-4 justify-content-center">
             {toolsData.map((tool) => (
-              <div key={tool.id} className="col-lg-5 col-md-7 col-sm-10">
+              <div key={tool.id} className="col-lg-6 col-md-6 col-sm-10">
                 <ToolCard tool={tool} />
               </div>
             ))}

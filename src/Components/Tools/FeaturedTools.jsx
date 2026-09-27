@@ -16,7 +16,7 @@ const FeaturedTools = () => {
 
         <div className="row g-4 justify-content-center">
           {toolsData.map((tool) => (
-            <div key={tool.id} className="col-lg-5 col-md-7 col-sm-10">
+            <div key={tool.id} className="col-lg-6 col-md-6 col-sm-10">
               <ToolCard tool={tool} />
             </div>
           ))}
@@ -24,10 +24,10 @@ const FeaturedTools = () => {
 
         <div className="text-center mt-50" data-aos="fade-up" data-aos-duration="1000">
           <Link
-            to="/tools/chat-pilot"
+            to="/tools"
             className="d-inline-flex fw-500 cmn--btn align-items-center gap-2"
           >
-            <span>View Chat Pilot Features & Live Demo</span>
+            <span>Explore All Web Tools & Software</span>
             <ArrowRight className="fz-20" />
           </Link>
         </div>

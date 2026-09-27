@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { toolsData } from "../../Utlits/toolsData";
 import { useCart } from "../../context/CartContext";
@@ -27,6 +27,13 @@ const ToolDetails = () => {
   );
   const [selectedTier, setSelectedTier] = useState(tool.licenseTiers[0]);
   const [openFaq, setOpenFaq] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setActiveImage(tool.gallery?.[0]?.url || tool.bannerImage);
+    setSelectedTier(tool.licenseTiers[0]);
+    document.title = `${tool.name} | Nexa Studio`;
+  }, [id, tool]);
 
   const handleWhatsAppInstantBuy = () => {
     const curr = tool.currency || "₹";
@@ -96,7 +103,7 @@ const ToolDetails = () => {
                   data-aos="fade-up"
                 >
                   <h3 style={{ color: "#fff", fontSize: "22px", marginBottom: "20px" }}>
-                    Why Chat Pilot is Superior
+                    {tool.featuresHeading || `Why ${tool.shortName} is Superior`}
                   </h3>
 
                   <div className="row g-3">
