@@ -47,9 +47,14 @@ const ToolCard = ({ tool }) => {
 
         <div className="tool__footer">
           <div className="tool__price-wrap">
-            <span className="price-current">{tool.currency || "₹"}{tool.price}</span>
+            <span className="price-current">
+              {tool.currency || "₹"}{tool.price}
+              <span style={{ fontSize: "13px", fontWeight: "normal", color: "var(--pra)", marginLeft: "4px" }}>
+                / mo
+              </span>
+            </span>
             {tool.originalPrice && (
-              <span className="price-original">{tool.currency || "₹"}{tool.originalPrice}</span>
+              <span className="price-original">{tool.currency || "₹"}{tool.originalPrice} / mo</span>
             )}
           </div>
 

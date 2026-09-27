@@ -30,7 +30,7 @@ const ToolDetails = () => {
 
   const handleWhatsAppInstantBuy = () => {
     const curr = tool.currency || "₹";
-    const text = `*Inquiry / Instant Buy for ${tool.name}*%0A%0A- Selected License: *${selectedTier.name}*%0A- Price: *${curr}${selectedTier.price}*%0A%0APlease share the payment link and instant download details.`;
+    const text = `*Inquiry / Subscription for ${tool.name}*%0A%0A- Selected Plan: *${selectedTier.name}*%0A- Price: *${curr}${selectedTier.price} / month*%0A%0APlease share the activation details and payment link.`;
     window.open(`https://wa.me/?text=${text}`, "_blank");
   };
 
@@ -269,9 +269,14 @@ const ToolDetails = () => {
                 </div>
 
                 <div className="buy__pricing-block">
-                  <span className="current-p">{tool.currency || "₹"}{selectedTier.price}</span>
+                  <span className="current-p">
+                    {tool.currency || "₹"}{selectedTier.price}
+                    <span style={{ fontSize: "16px", fontWeight: "normal", color: "var(--pra)", marginLeft: "4px" }}>
+                      / month
+                    </span>
+                  </span>
                   {selectedTier.originalPrice && (
-                    <span className="original-p">{tool.currency || "₹"}{selectedTier.originalPrice}</span>
+                    <span className="original-p">{tool.currency || "₹"}{selectedTier.originalPrice} / mo</span>
                   )}
                   {selectedTier.discount && (
                     <span className="save-badge">{selectedTier.discount}</span>
@@ -280,7 +285,7 @@ const ToolDetails = () => {
 
                 {/* License Picker */}
                 <div className="license__picker">
-                  <label>Select License Tier:</label>
+                  <label>Select Plan (Monthly Subscription):</label>
                   {tool.licenseTiers.map((tier) => (
                     <div
                       key={tier.id}
@@ -291,7 +296,7 @@ const ToolDetails = () => {
                         <span className="tier-name">{tier.name}</span>
                         <span className="tier-desc">{tier.desc}</span>
                       </div>
-                      <span className="tier-price">{tool.currency || "₹"}{tier.price}</span>
+                      <span className="tier-price">{tool.currency || "₹"}{tier.price} / mo</span>
                     </div>
                   ))}
                 </div>
@@ -302,27 +307,27 @@ const ToolDetails = () => {
                     className="btn-add-cart"
                     onClick={() => addToCart(tool, selectedTier)}
                   >
-                    <BagCheck className="fz-20" /> Add to Cart ({tool.currency || "₹"}{selectedTier.price})
+                    <BagCheck className="fz-20" /> Add to Cart ({tool.currency || "₹"}{selectedTier.price}/mo)
                   </button>
 
                   <button
                     className="btn-direct-buy"
                     onClick={handleWhatsAppInstantBuy}
                   >
-                    <Whatsapp className="fz-18" /> Instant Buy via WhatsApp
+                    <Whatsapp className="fz-18" /> Subscribe via WhatsApp
                   </button>
                 </div>
 
                 {/* Guarantees */}
                 <ul className="trust__guarantees">
                   <li>
-                    <Download /> Instant .ZIP Plugin Download
+                    <Download /> Instant .ZIP Plugin Download & Setup
                   </li>
                   <li>
                     <ShieldCheck /> 100% Virus-Free & Production Tested
                   </li>
                   <li>
-                    <LightningChargeFill /> Lifetime / 1-Year Free Updates Included
+                    <LightningChargeFill /> Continuous Monthly Updates & Direct Support
                   </li>
                 </ul>
               </div>

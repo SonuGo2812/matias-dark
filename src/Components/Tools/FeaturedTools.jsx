@@ -10,7 +10,7 @@ const FeaturedTools = () => {
     <section className="tools__section pt-120 pb-120" id="tools">
       <div className="container">
         <Title
-          mainTitle={"Autonomous AI Co-pilots & Tools"}
+          mainTitle={"Custom Web Tools & Software"}
           sortTitle={"Digital Products"}
         />
 

@@ -8,7 +8,7 @@ const AllTools = () => {
   return (
     <>
       <PageHeader
-        heading={"Autonomous AI Tools & Software"}
+        heading={"Custom Web Tools & Software"}
         page="Tools & Store"
       />
 
