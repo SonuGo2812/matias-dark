@@ -1,0 +1,334 @@
+/* ==========================================================================
+   Chat Pilot AI Virtual Assistant - Nexa Studio Theme Customization
+   Matches Nexa Studio Dark Neon Aesthetic:
+   - Primary Background: #141410
+   - Card / Header Background: #181814
+   - Accent / Neon Lime: #c9f31d
+   - Accent Hover: #d7ff36
+   - Borders: #2e2e25
+   - White Text: #ffffff
+   - Muted Text: #999999
+   - Font: 'Kanit', sans-serif
+   ========================================================================== */
+
+#cp-saas-root {
+  font-family: 'Kanit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+
+  * {
+    font-family: 'Kanit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  }
+
+  /* 1. Proactive Speech Bubble */
+  .cp-saas-bubble {
+    background: #181814 !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(201, 243, 29, 0.35) !important;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.75), 0 0 20px rgba(201, 243, 29, 0.12) !important;
+    border-radius: 16px !important;
+
+    &::after {
+      background: #181814 !important;
+      border-right: 1px solid rgba(201, 243, 29, 0.35) !important;
+      border-bottom: 1px solid rgba(201, 243, 29, 0.35) !important;
+    }
+
+    &:hover {
+      border-color: rgba(201, 243, 29, 0.55) !important;
+      box-shadow: 0 18px 46px rgba(0, 0, 0, 0.85), 0 0 25px rgba(201, 243, 29, 0.22) !important;
+    }
+  }
+
+  .cp-saas-bubble-badge {
+    color: #c9f31d !important;
+    letter-spacing: 0.6px !important;
+    font-weight: 600 !important;
+  }
+
+  .cp-saas-bubble-dot {
+    background: #c9f31d !important;
+    box-shadow: 0 0 8px #c9f31d !important;
+  }
+
+  .cp-saas-bubble-close {
+    color: #818181 !important;
+    transition: all 0.2s ease !important;
+
+    &:hover {
+      color: #ffffff !important;
+      background: #282820 !important;
+    }
+  }
+
+  .cp-saas-bubble-text {
+    color: #d8d8d8 !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+  }
+
+  .cp-saas-bubble-action {
+    color: #c9f31d !important;
+    font-weight: 600 !important;
+
+    svg {
+      stroke: #c9f31d !important;
+    }
+  }
+
+  /* 2. Floating Robot Launcher Button */
+  .cp-saas-robot-btn {
+    background: radial-gradient(circle at 35% 35%, #26261f 0%, #161612 70%, #0d0d0a 100%) !important;
+    border: 2px solid #c9f31d !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), 0 0 22px rgba(201, 243, 29, 0.35) !important;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease !important;
+
+    &:hover {
+      transform: scale(1.08) !important;
+      border-color: #d8ff36 !important;
+      box-shadow: 0 12px 38px rgba(0, 0, 0, 0.8), 0 0 32px rgba(201, 243, 29, 0.6) !important;
+    }
+
+    /* Robot glowing beacon */
+    .cp-bot-beacon {
+      fill: #c9f31d !important;
+      filter: drop-shadow(0 0 6px #c9f31d) !important;
+    }
+
+    /* Eyes */
+    .cp-bot-eyes ellipse {
+      fill: #c9f31d !important;
+      filter: drop-shadow(0 0 3px rgba(201, 243, 29, 0.8)) !important;
+    }
+
+    /* Robot Ears & Accents */
+    rect[fill="#0284c7"] {
+      fill: #22221b !important;
+    }
+    circle[fill="#38bdf8"] {
+      fill: #c9f31d !important;
+    }
+    path[stroke="#38bdf8"] {
+      stroke: #c9f31d !important;
+    }
+  }
+
+  /* Minimize Button on Robot */
+  .cp-saas-minimize-btn {
+    background: #141410 !important;
+    color: #999999 !important;
+    border: 1px solid #414141 !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4) !important;
+
+    &:hover {
+      background: #c9f31d !important;
+      color: #141410 !important;
+      border-color: #c9f31d !important;
+      transform: scale(1.12) !important;
+    }
+  }
+
+  /* Compact Pill Mode */
+  .cp-saas-compact-pill {
+    background: #181814 !important;
+    color: #ffffff !important;
+    border: 1px solid #c9f31d !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5), 0 0 12px rgba(201, 243, 29, 0.25) !important;
+
+    &:hover {
+      background: #c9f31d !important;
+      color: #141410 !important;
+      box-shadow: 0 8px 24px rgba(201, 243, 29, 0.45) !important;
+
+      .cp-saas-compact-expand {
+        background: rgba(20, 20, 16, 0.25) !important;
+        color: #141410 !important;
+      }
+    }
+  }
+
+  /* 3. Main Chat Window */
+  .cp-saas-box {
+    background: #141410 !important;
+    border: 1px solid #2e2e25 !important;
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(201, 243, 29, 0.1) !important;
+    border-radius: 18px !important;
+  }
+
+  /* Header */
+  .cp-saas-hdr {
+    background: #181814 !important;
+    border-bottom: 1px solid #262620 !important;
+    color: #ffffff !important;
+    padding: 14px 18px !important;
+
+    /* Header avatar */
+    > div:first-child > div:first-child {
+      background: #22221b !important;
+      border: 1px solid rgba(201, 243, 29, 0.3) !important;
+
+      rect[fill="#ffffff"] {
+        fill: #26261f !important;
+      }
+      rect[fill="#090d16"] {
+        fill: #141410 !important;
+      }
+      ellipse[fill="#38bdf8"] {
+        fill: #c9f31d !important;
+      }
+      path[stroke="#38bdf8"] {
+        stroke: #c9f31d !important;
+      }
+    }
+
+    /* Online dot */
+    span[style*="background:#34d399"] {
+      background: #c9f31d !important;
+      box-shadow: 0 0 8px #c9f31d !important;
+    }
+
+    /* Close Button */
+    #cp-s-close {
+      background: #262620 !important;
+      color: #999999 !important;
+      transition: all 0.2s ease !important;
+
+      &:hover {
+        background: #333328 !important;
+        color: #c9f31d !important;
+        transform: rotate(90deg) !important;
+      }
+    }
+  }
+
+  /* Message Stream */
+  .cp-saas-stream {
+    background: #141410 !important;
+
+    /* Custom dark scrollbar matching portfolio */
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #141410;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #2e2e25;
+      border-radius: 4px;
+
+      &:hover {
+        background: #c9f31d;
+      }
+    }
+  }
+
+  /* Messages */
+  .cp-saas-msg {
+    border-radius: 14px !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+
+    /* Bot messages */
+    &.bot {
+      background: #1a1a14 !important;
+      color: #e5e5e5 !important;
+      border: 1px solid #2a2a22 !important;
+
+      strong {
+        color: #ffffff !important;
+      }
+
+      a, .cp-saas-link {
+        color: #c9f31d !important;
+        text-decoration: underline !important;
+
+        &:hover {
+          color: #d7ff36 !important;
+        }
+      }
+    }
+
+    /* User messages */
+    &.user {
+      background: #c9f31d !important;
+      color: #141410 !important;
+      font-weight: 500 !important;
+      box-shadow: 0 4px 15px rgba(201, 243, 29, 0.25) !important;
+
+      a, .cp-saas-link {
+        color: #000000 !important;
+        font-weight: 700 !important;
+      }
+    }
+  }
+
+  /* Input Row */
+  .cp-saas-input-row {
+    background: #181814 !important;
+    border-top: 1px solid #262620 !important;
+    padding: 12px 14px !important;
+  }
+
+  /* Text Input */
+  input.cp-saas-input {
+    background: #141410 !important;
+    color: #ffffff !important;
+    border: 1px solid #333328 !important;
+    border-radius: 24px !important;
+    padding: 9px 16px !important;
+    transition: all 0.2s ease !important;
+
+    &::placeholder {
+      color: #777777 !important;
+    }
+
+    &:focus {
+      background: #141410 !important;
+      border-color: #c9f31d !important;
+      box-shadow: 0 0 0 3px rgba(201, 243, 29, 0.22) !important;
+      color: #ffffff !important;
+    }
+  }
+
+  /* Send Button */
+  .cp-saas-send {
+    background: #c9f31d !important;
+    color: #141410 !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    transition: all 0.2s ease !important;
+
+    svg {
+      fill: #141410 !important;
+    }
+
+    &:hover:not(:disabled) {
+      background: #d7ff36 !important;
+      transform: scale(1.08) !important;
+      box-shadow: 0 4px 14px rgba(201, 243, 29, 0.4) !important;
+    }
+
+    &:disabled {
+      background: #262620 !important;
+      cursor: not-allowed !important;
+
+      svg {
+        fill: #666666 !important;
+      }
+    }
+  }
+
+  /* Mobile fullscreen refinements */
+  @media (max-width: 600px) {
+    .cp-saas-box {
+      border: none !important;
+      border-radius: 0 !important;
+    }
+    .cp-saas-hdr {
+      background: #181814 !important;
+    }
+    .cp-saas-input-row {
+      background: #181814 !important;
+      border-top: 1px solid #262620 !important;
+    }
+  }
+}
