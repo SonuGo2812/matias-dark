@@ -20,9 +20,9 @@ const CartDrawer = () => {
 
     let message = `*New Tool Order from Nexa Studio Website*%0A%0A`;
     cart.forEach((item, index) => {
-      message += `${index + 1}. *${item.name}*%0A   - Tier: ${item.tierName}%0A   - Price: $${item.price}%0A   - Qty: ${item.quantity}%0A%0A`;
+      message += `${index + 1}. *${item.name}*%0A   - Tier: ${item.tierName}%0A   - Price: ₹${item.price}%0A   - Qty: ${item.quantity}%0A%0A`;
     });
-    message += `*Total Amount:* $${cartTotal}%0A%0A*Please share payment link / license key instructions.*`;
+    message += `*Total Amount:* ₹${cartTotal}%0A%0A*Please share payment link / license key instructions.*`;
 
     // WhatsApp URL (Sonu's contact or direct)
     window.open(`https://wa.me/?text=${message}`, "_blank");
@@ -34,9 +34,9 @@ const CartDrawer = () => {
     let subject = encodeURIComponent(`Order Inquiry: ${cart.map((i) => i.name).join(", ")}`);
     let body = `Hello Sonu,%0D%0A%0D%0AI would like to purchase the following tools from your store:%0D%0A%0D%0A`;
     cart.forEach((item, index) => {
-      body += `${index + 1}. ${item.name} (${item.tierName}) x ${item.quantity} = $${item.price * item.quantity}%0D%0A`;
+      body += `${index + 1}. ${item.name} (${item.tierName}) x ${item.quantity} = ₹${item.price * item.quantity}%0D%0A`;
     });
-    body += `%0D%0ATotal: $${cartTotal}%0D%0A%0D%0APlease send payment and license activation details.`;
+    body += `%0D%0ATotal: ₹${cartTotal}%0D%0A%0D%0APlease send payment and license activation details.`;
 
     window.location.href = `mailto:sonu998999@gmail.com?subject=${subject}&body=${body}`;
   };
@@ -86,7 +86,7 @@ const CartDrawer = () => {
                   <div className="item-name">{item.name}</div>
                   <div className="item-tier">{item.tierName}</div>
                   <div className="item-bottom">
-                    <div className="item-price">${item.price * item.quantity}</div>
+                    <div className="item-price">₹{item.price * item.quantity}</div>
                     <div className="qty-controls">
                       <button
                         onClick={() => updateQuantity(item.cartItemId, item.quantity - 1)}
@@ -121,7 +121,7 @@ const CartDrawer = () => {
           <div className="cart__footer">
             <div className="cart__summary">
               <span className="total-label">Subtotal:</span>
-              <span className="total-amount">${cartTotal}</span>
+              <span className="total-amount">₹{cartTotal}</span>
             </div>
 
             <div className="checkout-btns">

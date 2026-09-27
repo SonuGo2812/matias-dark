@@ -29,7 +29,8 @@ const ToolDetails = () => {
   const [openFaq, setOpenFaq] = useState(0);
 
   const handleWhatsAppInstantBuy = () => {
-    const text = `*Inquiry / Instant Buy for ${tool.name}*%0A%0A- Selected License: *${selectedTier.name}*%0A- Price: *$${selectedTier.price}*%0A%0APlease share the payment link and instant download details.`;
+    const curr = tool.currency || "₹";
+    const text = `*Inquiry / Instant Buy for ${tool.name}*%0A%0A- Selected License: *${selectedTier.name}*%0A- Price: *${curr}${selectedTier.price}*%0A%0APlease share the payment link and instant download details.`;
     window.open(`https://wa.me/?text=${text}`, "_blank");
   };
 
@@ -268,9 +269,9 @@ const ToolDetails = () => {
                 </div>
 
                 <div className="buy__pricing-block">
-                  <span className="current-p">${selectedTier.price}</span>
+                  <span className="current-p">{tool.currency || "₹"}{selectedTier.price}</span>
                   {selectedTier.originalPrice && (
-                    <span className="original-p">${selectedTier.originalPrice}</span>
+                    <span className="original-p">{tool.currency || "₹"}{selectedTier.originalPrice}</span>
                   )}
                   {selectedTier.discount && (
                     <span className="save-badge">{selectedTier.discount}</span>
@@ -290,7 +291,7 @@ const ToolDetails = () => {
                         <span className="tier-name">{tier.name}</span>
                         <span className="tier-desc">{tier.desc}</span>
                       </div>
-                      <span className="tier-price">${tier.price}</span>
+                      <span className="tier-price">{tool.currency || "₹"}{tier.price}</span>
                     </div>
                   ))}
                 </div>
@@ -301,7 +302,7 @@ const ToolDetails = () => {
                     className="btn-add-cart"
                     onClick={() => addToCart(tool, selectedTier)}
                   >
-                    <BagCheck className="fz-20" /> Add to Cart (${selectedTier.price})
+                    <BagCheck className="fz-20" /> Add to Cart ({tool.currency || "₹"}{selectedTier.price})
                   </button>
 
                   <button
