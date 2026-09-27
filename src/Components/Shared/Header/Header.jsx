@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { List, ArrowRight } from "react-bootstrap-icons";
+import { List, ArrowRight, Bag } from "react-bootstrap-icons";
+import { useCart } from "../../../context/CartContext";
 
 import Drawer from "../Drawer/Drawer";
 import logo from "../../../assets/img/logo/nexa-studio-logo.png";
@@ -32,17 +33,22 @@ const menuList = [
   },
   {
     id: 5,
+    path: "/tools",
+    name: "Tools",
+  },
+  {
+    id: 6,
     path: "/",
     section: "#process",
     name: "Process",
   },
   {
-    id: 6,
+    id: 7,
     path: "/portfolio",
     name: "Portfolio",
   },
   {
-    id: 7,
+    id: 8,
     path: "/contact",
     name: "Contact",
   },
@@ -51,6 +57,7 @@ const menuList = [
 const Header = () => {
   const [isSidebarActive, setIsSidebarActive] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
+  const { cartCount, setIsCartOpen } = useCart();
 
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
@@ -61,6 +68,7 @@ const Header = () => {
 
   const isSticky = () => {
     const header = document.querySelector(".header-section");
+    if (!header) return;
     const scrollTop = window.scrollY;
 
     scrollTop >= 35
@@ -97,6 +105,17 @@ const Header = () => {
             })}
           </ul>
           <div className="menu__components d-flex align-items-center">
+            {/* Cart Trigger */}
+            <button
+              className="nav__cart-btn"
+              onClick={() => setIsCartOpen(true)}
+              title="View Cart"
+              aria-label="View Cart"
+            >
+              <Bag />
+              {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
+            </button>
+
             <Link
               to="/contact"
               className="d-flex fw-500 cmn--btn align-items-center gap-2"

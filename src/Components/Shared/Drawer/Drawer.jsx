@@ -1,8 +1,9 @@
 import React from "react";
-import { XLg, ChevronRight } from "react-bootstrap-icons";
+import { XLg, ChevronRight, Bag } from "react-bootstrap-icons";
 import logo from "../../../assets/img/logo/nexa-studio-logo.png";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { useCart } from "../../../context/CartContext";
 
 const drawerLinks = [
   {
@@ -25,9 +26,16 @@ const drawerLinks = [
     label: "Process",
     path: "/#process",
   },
+  {
+    id: 5,
+    label: "Tools & Store",
+    path: "/tools",
+  },
 ];
 
 const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
+  const { cartCount, setIsCartOpen } = useCart();
+
   return (
     <div className={`subside__barmenu ${isSidebarActive ? "active" : ""}`}>
       <div
@@ -69,7 +77,7 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
             </div>
           </div>
         </div>
-        <div className="sub__contact-right mb-80 position-relative">
+        <div className="sub__contact-right mb-40 position-relative">
           <ul className="social">
             {drawerLinks.map(({ id, label, path }) => (
               <li key={id}>
@@ -80,18 +88,37 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
             ))}
           </ul>
         </div>
-        <Link
-          to={"/contact"}
-          onClick={() => setIsSidebarActive(false)}
-          className="d-flex justify-content-center fw-500 cmn--btn align-items-center gap-2"
-        >
-          <span>
-            <i>
-              <ChevronRight />
-            </i>
-          </span>
-          <span className="get__text"> Let us Talk </span>
-        </Link>
+
+        <div className="d-flex flex-column gap-3">
+          <button
+            onClick={() => {
+              setIsSidebarActive(false);
+              setIsCartOpen(true);
+            }}
+            className="d-flex justify-content-center fw-500 cmn--btn align-items-center gap-2"
+            style={{
+              background: "rgba(201, 243, 29, 0.1)",
+              border: "1px solid var(--base)",
+              color: "var(--base)",
+            }}
+          >
+            <Bag className="fz-18" />
+            <span>View Cart ({cartCount})</span>
+          </button>
+
+          <Link
+            to={"/contact"}
+            onClick={() => setIsSidebarActive(false)}
+            className="d-flex justify-content-center fw-500 cmn--btn align-items-center gap-2"
+          >
+            <span>
+              <i>
+                <ChevronRight />
+              </i>
+            </span>
+            <span className="get__text"> Let us Talk </span>
+          </Link>
+        </div>
       </div>
     </div>
   );
