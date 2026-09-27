@@ -24,8 +24,8 @@ const CartDrawer = () => {
     });
     message += `*Total Amount:* ₹${cartTotal} / month%0A%0A*Please share payment link / license key instructions.*`;
 
-    // WhatsApp URL (Sonu's contact or direct)
-    window.open(`https://wa.me/?text=${message}`, "_blank");
+    // WhatsApp URL (Sonu's contact: +91 96103 42763)
+    window.open(`https://wa.me/919610342763?text=${message}`, "_blank");
   };
 
   const handleEmailCheckout = () => {

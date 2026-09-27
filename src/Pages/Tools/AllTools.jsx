@@ -80,10 +80,10 @@ const AllTools = () => {
               >
                 <LightningChargeFill style={{ fontSize: "32px", color: "var(--base)", marginBottom: "12px" }} />
                 <h5 style={{ color: "#fff", fontSize: "16px", marginBottom: "6px" }}>
-                  Gemini Flash Powered
+                  Ultra-Fast Response Engine
                 </h5>
                 <p style={{ color: "var(--pra)", fontSize: "13px", margin: 0 }}>
-                  Sub-1.5s real-time streaming with zero hallucination guardrails.
+                  Sub-1.5s real-time streaming with strict anti-hallucination guardrails.
                 </p>
               </div>
             </div>

@@ -35,7 +35,7 @@ export const toolsData = [
       },
     ],
     overview:
-      "Chat Pilot is a proprietary, high-performance website assistant custom-engineered by Nexa Studio specifically for WordPress & WooCommerce websites. Handcrafted with an optimized PHP backend and lightweight Vanilla JavaScript, Chat Pilot utilizes Google Gemini Flash alongside a 0.05s response cache, semantic micro-chunking, and strict anti-hallucination guardrails to answer customer queries accurately and capture high-intent leads around the clock.",
+      "Chat Pilot is a proprietary, high-performance website assistant custom-engineered by Nexa Studio specifically for WordPress & WooCommerce websites. Handcrafted with an optimized PHP backend and lightweight Vanilla JavaScript, Chat Pilot features a high-speed neural language processing core alongside an intelligent 0.05s response cache, semantic micro-chunking, and strict anti-hallucination guardrails to answer customer queries accurately and capture high-intent leads around the clock.",
     licenseTiers: [
       {
         id: "single",
@@ -47,8 +47,8 @@ export const toolsData = [
         desc: "For 1 business website or WooCommerce store wanting 24/7 automated sales & lead capture.",
         features: [
           "1 WordPress / WooCommerce Website",
-          "Google Gemini 1.5 Flash AI Engine",
-          "0.05s Smart Response Cache (0 API Cost on repeats)",
+          "High-Speed Neural Language Core",
+          "0.05s Smart Response Cache (0 Latency on repeats)",
           "Strict Anti-Hallucination Guardrails",
           "Automated Lead Capture & Contact Handover",
           "1-Click Knowledge Base Scanner",
@@ -121,7 +121,7 @@ export const toolsData = [
     whatsIncluded: [
       "Custom-coded ready-to-upload `chat-pilot.zip` WordPress plugin",
       "Complete step-by-step PDF & Video installation guide",
-      "Gemini Free API Key setup walkthrough",
+      "Instant 1-Click License Key & Cloud Activation Guide",
       "Custom CSS styling templates to match your website theme",
       "Direct 1-on-1 developer onboarding & assistance via WhatsApp / Email",
     ],
@@ -130,7 +130,7 @@ export const toolsData = [
       { label: "WordPress Compatibility", value: "WordPress 5.8, 6.0, 6.4, 6.5+" },
       { label: "WooCommerce Support", value: "WooCommerce 7.0+ & all product types" },
       { label: "PHP Requirement", value: "PHP 7.4, 8.0, 8.1, 8.2+" },
-      { label: "AI Engine", value: "Google Gemini 1.5 Flash (Free / Paid Key)" },
+      { label: "Engine Architecture", value: "High-Performance Neural Processing Core" },
       { label: "Widget Architecture", value: "Pure Vanilla JS (<25 KB, Zero jQuery)" },
       { label: "Delivery", value: "Instant .ZIP Download & License Key" },
     ],
@@ -140,8 +140,8 @@ export const toolsData = [
         a: "Chat Pilot was custom-designed and developed from scratch by Sonu Goswami at Nexa Studio. Unlike generic third-party tools, you receive direct 1-on-1 developer support, regular feature improvements, and setup assistance directly from the creator.",
       },
       {
-        q: "Does Chat Pilot require a paid Gemini API subscription?",
-        a: "No! Google Gemini Flash provides a generous free tier (up to 1,500 requests/day). Combined with Chat Pilot's custom 0.05s Smart Cache, most business websites operate entirely within the free tier with zero ongoing API expenses.",
+        q: "Are there any hidden server or per-message charges?",
+        a: "No! Everything is covered under your straightforward monthly subscription. With Chat Pilot's built-in 0.05s Smart Response Cache and optimized cloud infrastructure, you get predictable, transparent pricing with zero unexpected usage bills.",
       },
       {
         q: "Will Chat Pilot hallucinate or invent inaccurate information?",
@@ -153,7 +153,7 @@ export const toolsData = [
       },
       {
         q: "How do I install Chat Pilot on my WordPress website?",
-        a: "Installation takes less than 2 minutes. Go to Plugins > Add New > Upload Plugin, select chat-pilot.zip, paste your Gemini API key, click 'Scan Website Now', and your co-pilot is immediately live!",
+        a: "Installation takes less than 2 minutes. Go to Plugins > Add New > Upload Plugin, select chat-pilot.zip, enter your license key, click 'Scan Website Now', and your co-pilot is immediately live!",
       },
     ],
   },

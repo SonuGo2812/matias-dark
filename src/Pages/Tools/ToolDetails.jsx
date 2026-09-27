@@ -31,7 +31,7 @@ const ToolDetails = () => {
   const handleWhatsAppInstantBuy = () => {
     const curr = tool.currency || "₹";
     const text = `*Inquiry / Subscription for ${tool.name}*%0A%0A- Selected Plan: *${selectedTier.name}*%0A- Price: *${curr}${selectedTier.price} / month*%0A%0APlease share the activation details and payment link.`;
-    window.open(`https://wa.me/?text=${text}`, "_blank");
+    window.open(`https://wa.me/919610342763?text=${text}`, "_blank");
   };
 
   return (
