@@ -12,8 +12,8 @@ export const toolsData = [
     reviewsCount: 38,
     status: "active",
     currency: "₹",
-    price: 999,
-    originalPrice: 1999,
+    price: 699,
+    originalPrice: 1399,
     billingPeriod: "Monthly",
     discount: "50% OFF",
     bannerImage: "/images/tools/chat-pilot/chat-pilot-hero-banner.jpg",
@@ -41,8 +41,8 @@ export const toolsData = [
       {
         id: "single",
         name: "Single Website Plan",
-        price: 999,
-        originalPrice: 1999,
+        price: 699,
+        originalPrice: 1399,
         discount: "50% OFF",
         billingPeriod: "Monthly",
         desc: "For 1 business website or WooCommerce store wanting 24/7 automated sales & lead capture.",
@@ -60,8 +60,8 @@ export const toolsData = [
       {
         id: "agency-3",
         name: "Agency Plan (3 Websites)",
-        price: 2499,
-        originalPrice: 4999,
+        price: 1699,
+        originalPrice: 3399,
         discount: "50% OFF",
         billingPeriod: "Monthly",
         desc: "Ideal for freelancers & growing agencies deploying assistants across client sites.",
@@ -77,8 +77,8 @@ export const toolsData = [
       {
         id: "agency-5",
         name: "Agency Pro (5 Websites)",
-        price: 3999,
-        originalPrice: 7999,
+        price: 2500,
+        originalPrice: 4999,
         discount: "50% OFF",
         isPopular: true,
         billingPeriod: "Monthly",
@@ -150,7 +150,7 @@ export const toolsData = [
       },
       {
         q: "Can I manage multiple client websites?",
-        a: "Yes! With our 3-Website (₹2,499/mo) and 5-Website (₹3,999/mo) Agency plans, you receive dedicated license keys for each client domain, along with priority developer support.",
+        a: "Yes! With our 3-Website (₹1,699/mo) and 5-Website (₹2,500/mo) Agency plans, you receive dedicated license keys for each client domain, along with priority developer support.",
       },
       {
         q: "How do I install Chat Pilot on my WordPress website?",
