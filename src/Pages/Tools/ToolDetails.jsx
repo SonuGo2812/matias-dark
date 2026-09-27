@@ -26,19 +26,43 @@ const ToolDetails = () => {
     tool.gallery?.[0]?.url || tool.bannerImage
   );
   const [selectedTier, setSelectedTier] = useState(tool.licenseTiers[0]);
+  const [billingCycle, setBillingCycle] = useState("monthly"); // "monthly" | "yearly"
   const [openFaq, setOpenFaq] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
     setActiveImage(tool.gallery?.[0]?.url || tool.bannerImage);
     setSelectedTier(tool.licenseTiers[0]);
+    setBillingCycle("monthly");
     document.title = `${tool.name} | Nexa Studio`;
   }, [id, tool]);
 
+  const isYearly = billingCycle === "yearly" && selectedTier.yearlyPrice;
+  const currentPrice = isYearly ? selectedTier.yearlyPrice : selectedTier.price;
+  const currentBillingLabel = isYearly ? "/ year" : "/ month";
+  const currentPriceShort = isYearly
+    ? `${currentPrice.toLocaleString()}/yr`
+    : `${currentPrice.toLocaleString()}/mo`;
+
   const handleWhatsAppInstantBuy = () => {
     const curr = tool.currency || "₹";
-    const text = `*Inquiry / Subscription for ${tool.name}*%0A%0A- Selected Plan: *${selectedTier.name}*%0A- Price: *${curr}${selectedTier.price} / month*%0A%0APlease share the activation details and payment link.`;
+    const cycleText = isYearly ? "Yearly Plan (2 Months Free)" : "Monthly Plan";
+    const priceText = isYearly
+      ? `${curr}${selectedTier.yearlyPrice.toLocaleString()} / year`
+      : `${curr}${selectedTier.price.toLocaleString()} / month`;
+    const text = `*Inquiry / Subscription for ${tool.name}*%0A%0A- Selected Plan: *${selectedTier.name} (${cycleText})*%0A- Price: *${priceText}*%0A%0APlease share the activation details and payment link.`;
     window.open(`https://wa.me/919610342763?text=${text}`, "_blank");
+  };
+
+  const handleAddToCart = () => {
+    const tierForCart = {
+      ...selectedTier,
+      tierName: isYearly
+        ? `${selectedTier.name} (Yearly - 2 Months Free)`
+        : `${selectedTier.name} (Monthly)`,
+      price: currentPrice,
+    };
+    addToCart(tool, tierForCart);
   };
 
   return (
@@ -189,6 +213,129 @@ const ToolDetails = () => {
                 </div>
               )}
 
+              {/* Summary Pricing Table (User Specification) */}
+              {tool.summaryTable && (
+                <div
+                  style={{
+                    background: "rgba(24, 24, 24, 0.7)",
+                    border: "1px solid var(--cusborder)",
+                    borderRadius: "16px",
+                    padding: "26px",
+                    marginTop: "30px",
+                  }}
+                  data-aos="fade-up"
+                >
+                  <h3
+                    style={{
+                      color: "#fff",
+                      fontSize: "20px",
+                      marginBottom: "16px",
+                      fontWeight: "600",
+                    }}
+                  >
+                    Summary Table:
+                  </h3>
+
+                  <div style={{ overflowX: "auto" }}>
+                    <table
+                      style={{
+                        width: "100%",
+                        borderCollapse: "collapse",
+                        fontSize: "14px",
+                        color: "#fff",
+                        textAlign: "left",
+                        background: "#111418",
+                        borderRadius: "10px",
+                        overflow: "hidden",
+                        border: "1px solid rgba(255, 255, 255, 0.08)",
+                      }}
+                    >
+                      <thead>
+                        <tr
+                          style={{
+                            background: "#181e26",
+                            borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
+                          }}
+                        >
+                          <th style={{ padding: "14px 18px", color: "#f1f5f9", fontWeight: "600" }}>
+                            Plan Name
+                          </th>
+                          <th style={{ padding: "14px 18px", color: "#f1f5f9", fontWeight: "600" }}>
+                            Number of Sites
+                          </th>
+                          <th style={{ padding: "14px 18px", color: "#f1f5f9", fontWeight: "600" }}>
+                            Monthly Price
+                          </th>
+                          <th
+                            style={{
+                              padding: "14px 18px",
+                              color: "var(--base)",
+                              fontWeight: "600",
+                            }}
+                          >
+                            Yearly Price (2 Months Free)
+                          </th>
+                          <th style={{ padding: "14px 18px", color: "#f1f5f9", fontWeight: "600" }}>
+                            Price Per Site
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {tool.summaryTable.map((row, idx) => (
+                          <tr
+                            key={idx}
+                            style={{
+                              borderBottom:
+                                idx === tool.summaryTable.length - 1
+                                  ? "none"
+                                  : "1px solid rgba(255, 255, 255, 0.05)",
+                              background:
+                                idx % 2 === 0
+                                  ? "transparent"
+                                  : "rgba(255, 255, 255, 0.02)",
+                            }}
+                          >
+                            <td
+                              style={{
+                                padding: "14px 18px",
+                                fontWeight: "600",
+                                color: "#fff",
+                              }}
+                            >
+                              {row.planName}
+                            </td>
+                            <td style={{ padding: "14px 18px", color: "#cbd5e1" }}>
+                              {row.sites}
+                            </td>
+                            <td
+                              style={{
+                                padding: "14px 18px",
+                                fontWeight: "600",
+                                color: "#fff",
+                              }}
+                            >
+                              {row.monthlyPrice}
+                            </td>
+                            <td
+                              style={{
+                                padding: "14px 18px",
+                                fontWeight: "600",
+                                color: "var(--base)",
+                              }}
+                            >
+                              {row.yearlyPrice}
+                            </td>
+                            <td style={{ padding: "14px 18px", color: "#94a3b8" }}>
+                              {row.pricePerSite}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              )}
+
               {/* FAQ Section */}
               {tool.faqs && (
                 <div
@@ -275,24 +422,92 @@ const ToolDetails = () => {
                   </span>
                 </div>
 
+                {/* Monthly / Yearly Billing Toggle */}
+                {tool.licenseTiers.some((t) => t.yearlyPrice) && (
+                  <div
+                    style={{
+                      display: "flex",
+                      background: "rgba(255, 255, 255, 0.04)",
+                      borderRadius: "10px",
+                      padding: "4px",
+                      marginBottom: "20px",
+                      border: "1px solid var(--cusborder)",
+                    }}
+                  >
+                    <button
+                      type="button"
+                      onClick={() => setBillingCycle("monthly")}
+                      style={{
+                        flex: 1,
+                        padding: "8px 12px",
+                        borderRadius: "8px",
+                        fontSize: "13px",
+                        fontWeight: "600",
+                        border: "none",
+                        cursor: "pointer",
+                        background: billingCycle === "monthly" ? "var(--base)" : "transparent",
+                        color: billingCycle === "monthly" ? "#000" : "var(--pra)",
+                        transition: "all 0.3s ease",
+                      }}
+                    >
+                      Monthly Billing
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setBillingCycle("yearly")}
+                      style={{
+                        flex: 1,
+                        padding: "8px 12px",
+                        borderRadius: "8px",
+                        fontSize: "13px",
+                        fontWeight: "600",
+                        border: "none",
+                        cursor: "pointer",
+                        background: billingCycle === "yearly" ? "var(--base)" : "transparent",
+                        color: billingCycle === "yearly" ? "#000" : "var(--pra)",
+                        transition: "all 0.3s ease",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: "6px",
+                      }}
+                    >
+                      <span>Yearly Billing</span>
+                      <span
+                        style={{
+                          fontSize: "11px",
+                          background: billingCycle === "yearly" ? "#000" : "rgba(201, 243, 29, 0.2)",
+                          color: billingCycle === "yearly" ? "var(--base)" : "var(--base)",
+                          padding: "2px 6px",
+                          borderRadius: "4px",
+                          fontWeight: "700",
+                        }}
+                      >
+                        2 Mo. Free
+                      </span>
+                    </button>
+                  </div>
+                )}
+
                 <div className="buy__pricing-block">
                   <span className="current-p">
-                    {tool.currency || "₹"}{selectedTier.price}
+                    {tool.currency || "₹"}{currentPrice.toLocaleString()}
                     <span style={{ fontSize: "16px", fontWeight: "normal", color: "var(--pra)", marginLeft: "4px" }}>
-                      / month
+                      {currentBillingLabel}
                     </span>
                   </span>
-                  {selectedTier.originalPrice && (
-                    <span className="original-p">{tool.currency || "₹"}{selectedTier.originalPrice} / mo</span>
-                  )}
-                  {selectedTier.discount && (
-                    <span className="save-badge">{selectedTier.discount}</span>
+                  {isYearly ? (
+                    <span className="save-badge">2 MONTHS FREE</span>
+                  ) : (
+                    selectedTier.discount && (
+                      <span className="save-badge">{selectedTier.discount}</span>
+                    )
                   )}
                 </div>
 
                 {/* License Picker */}
                 <div className="license__picker">
-                  <label>Select Plan (Monthly Subscription):</label>
+                  <label>Select Plan ({isYearly ? "Annual Billing" : "Monthly Billing"}):</label>
                   {tool.licenseTiers.map((tier) => (
                     <div
                       key={tier.id}
@@ -303,7 +518,12 @@ const ToolDetails = () => {
                         <span className="tier-name">{tier.name}</span>
                         <span className="tier-desc">{tier.desc}</span>
                       </div>
-                      <span className="tier-price">{tool.currency || "₹"}{tier.price} / mo</span>
+                      <span className="tier-price">
+                        {tool.currency || "₹"}
+                        {isYearly && tier.yearlyPrice
+                          ? `${tier.yearlyPrice.toLocaleString()} / yr`
+                          : `${tier.price.toLocaleString()} / mo`}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -312,9 +532,9 @@ const ToolDetails = () => {
                 <div className="buy__ctas">
                   <button
                     className="btn-add-cart"
-                    onClick={() => addToCart(tool, selectedTier)}
+                    onClick={handleAddToCart}
                   >
-                    <BagCheck className="fz-20" /> Add to Cart ({tool.currency || "₹"}{selectedTier.price}/mo)
+                    <BagCheck className="fz-20" /> Add to Cart ({tool.currency || "₹"}{currentPriceShort})
                   </button>
 
                   <button
