@@ -49,6 +49,21 @@ const Banner = () => {
                   <span className="get__text">Contact Me</span>
                 </HashLink>
               </div>
+              <div className="banner__ai-hint mt-4">
+                <button
+                  type="button"
+                  onClick={() => {
+                    const btn = document.getElementById("cp-s-robot-btn") || document.getElementById("cp-s-expand-btn");
+                    if (btn) btn.click();
+                  }}
+                  className="banner__ai-trigger d-inline-flex align-items-center gap-2"
+                  title="Ask 24/7 Virtual Assistant"
+                >
+                  <span className="ai-pulse-dot"></span>
+                  <span>Have questions? <strong>Ask 24/7 AI Guide</strong></span>
+                  <i className="bi bi-arrow-right"></i>
+                </button>
+              </div>
             </div>
           </div>
           <div className="col-lg-4">

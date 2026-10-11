@@ -105,6 +105,21 @@ const Header = () => {
             })}
           </ul>
           <div className="menu__components d-flex align-items-center">
+            {/* Ask AI Trigger */}
+            <button
+              type="button"
+              onClick={() => {
+                const btn = document.getElementById("cp-s-robot-btn") || document.getElementById("cp-s-expand-btn");
+                if (btn) btn.click();
+              }}
+              className="nav__ai-btn d-none d-sm-flex align-items-center gap-2"
+              title="Chat with 24/7 AI Guide"
+              aria-label="Chat with 24/7 AI Guide"
+            >
+              <span className="ai-nav__dot"></span>
+              <span className="ai-nav__text">Ask AI</span>
+            </button>
+
             {/* Cart Trigger */}
             <button
               className="nav__cart-btn"
