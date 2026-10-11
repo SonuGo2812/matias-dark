@@ -45,11 +45,11 @@ const ProjectCard = ({
           rel="noreferrer"
           className="thumb mb-30 imgc d-block"
         >
-          <img src={image} alt={heading} />
+          <img src={image} alt={`${heading} - Website Project by Sonu Goswami, Nexa Studio Jodhpur`} />
         </a>
       ) : (
         <div onClick={handlePreview} className="thumb mb-30 imgc">
-          <img src={image} alt={heading} />
+          <img src={image} alt={`${heading} - Website Project by Sonu Goswami, Nexa Studio Jodhpur`} />
         </div>
       )}
       <div className="content d-flex align-items-center justify-content-between gap-2">

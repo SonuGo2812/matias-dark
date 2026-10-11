@@ -48,18 +48,18 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
       </div>
       <div className="sub__contact__wrapper d-grid">
         <Link to={"/"} className="side-logo" onClick={() => setIsSidebarActive(false)}>
-          <img src={logo} alt="NEXA STUDIO" />
+          <img src={logo} alt="Sonu Goswami | Website Developer in Jodhpur - Nexa Studio" />
         </Link>
         <p>
-          Website Developer specializing in WordPress, Shopify, Elementor,
-          WooCommerce, Divi, and custom website solutions for businesses
-          working worldwide.
+          Website Developer based in Jodhpur, Rajasthan, specializing in custom
+          websites, WordPress, Shopify, WooCommerce, and high-performance digital
+          solutions for businesses locally and worldwide.
         </p>
         <div className="sub__contact-left d-grid">
           <div className="sub__contac-item">
             <div className="content">
               <span className="address d-block"> location </span>
-              <span className="textp"> India, Working Worldwide </span>
+              <span className="textp"> Jodhpur, Rajasthan (Working Worldwide) </span>
             </div>
           </div>
           <div className="sub__contac-item">

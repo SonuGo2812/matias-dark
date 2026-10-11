@@ -86,7 +86,7 @@ const Header = () => {
         <div className="header-wrapper">
           <div className="main__logo">
             <Link to={"/"} className="logo">
-              <img src={logo} alt="NEXA STUDIO" />
+              <img src={logo} alt="Sonu Goswami | Website Developer in Jodhpur - Nexa Studio" />
             </Link>
           </div>
           <ul className={`main-menu ${menuActive ? "active" : ""}`}>

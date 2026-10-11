@@ -51,15 +51,15 @@ const About = () => {
             <img
               src={sectionStar}
               className="mb-30"
-              alt="star"
+              alt="Nexa Studio decorative star icon"
               data-aos="fade-up"
               data-aos-duration="1000"
             />
             <p className="descrp" data-aos="fade-up" data-aos-duration="1500">
-              I am Sonu Goswami, a Website Developer based in India, specializing
-              in WordPress, Shopify, Elementor, WooCommerce, and custom website
-              solutions. I work with clients worldwide to build responsive,
-              user-friendly, and conversion-focused websites.
+              I am Sonu Goswami, a website developer based in Jodhpur, Rajasthan,
+              crafting bespoke digital solutions under Nexa Studio. I build modern,
+              responsive, and conversion-driven websites for local businesses in
+              Jodhpur and clients worldwide.
             </p>
           </div>
           <div className="singletab">

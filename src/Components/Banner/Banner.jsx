@@ -23,7 +23,7 @@ const Banner = () => {
                   Available for website projects
                 </span>
                 <span className="d-flex gap-4 align-items-center">
-                  India, working worldwide
+                  Jodhpur, Rajasthan — Working Worldwide
                   <i className="bi bi-arrow-up-right"></i>
                 </span>
               </HashLink>
@@ -57,7 +57,7 @@ const Banner = () => {
                 position ? "right_up_animat" : "right_up"
               }`}
             >
-              <img src={bannerMan} alt="man-img" />
+              <img src={bannerMan} alt="Sonu Goswami - Website Developer in Jodhpur, Nexa Studio" />
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ const Banner = () => {
       <div className="banner__leftinfo">
         <div className="left__infomobile">
           <a href="mailto:goswamisonu2812@gmail.com">
-            <img src={dial} alt="img" />
+            <img src={dial} alt="Email Sonu Goswami" />
           </a>
           <a href="mailto:goswamisonu2812@gmail.com">goswamisonu2812@gmail.com</a>
         </div>
@@ -74,7 +74,7 @@ const Banner = () => {
             scroll down
           </HashLink>
           <HashLink smooth to="/#about" className="scroll__bar">
-            <img src={scrollDown} alt="img" />
+            <img src={scrollDown} alt="Scroll down to explore portfolio" />
           </HashLink>
         </div>
       </div>

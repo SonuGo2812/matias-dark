@@ -47,7 +47,7 @@ const Metting = () => {
                 </span>
                 <span className="box">
                   <span className="ptext fz-18 mb-1 d-block"> Location </span>
-                  <span className="location__text"> India, Working Worldwide </span>
+                  <span className="location__text"> Jodhpur, Rajasthan (Working Worldwide) </span>
                 </span>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Metting = () => {
               data-aos="zoom-in"
               data-aos-duration="2000"
             >
-              <img src={mettingImag} alt="Web design creator illustration" />
+              <img src={mettingImag} alt="Custom Web Development by Sonu Goswami in Jodhpur" />
             </div>
           </div>
         </div>

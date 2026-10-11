@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageHeader from "../../Components/Shared/PageHeader/PageHeader";
 import Form from "../../Components/Shared/Form/Form";
 import { ScrollRestoration } from "react-router-dom";
 
 const Contact = () => {
+  useEffect(() => {
+    document.title = "Contact Sonu Goswami | Website Developer in Jodhpur - Nexa Studio";
+  }, []);
+
   return (
     <>
       <PageHeader
@@ -42,7 +46,7 @@ const Contact = () => {
                 </div>
                 <div className="contact__item">
                   <span className="he1">Location</span>
-                  <span className="address">India, Working Worldwide</span>
+                  <span className="address">Jodhpur, Rajasthan, India (Working Worldwide)</span>
                 </div>
               </div>
             </div>

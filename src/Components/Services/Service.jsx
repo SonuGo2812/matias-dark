@@ -13,9 +13,9 @@ const Service = ({ heading, subHeading, para, id }) => {
           <span> {id} </span>
           <div className="cont">
             <h5>{subHeading}</h5>
-            <h2>
+            <h3>
               <Link to={"/contact"}> {heading} </Link>
-            </h2>
+            </h3>
           </div>
         </div>
         <p className="pra">{para}</p>

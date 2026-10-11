@@ -6,7 +6,7 @@ const Preloader = () => {
     <div className="preloader__matias">
       <div className="box text-center">
         <div className="matias mb-10">
-          <img src={logo} alt="NEXA STUDIO" />
+          <img src={logo} alt="Nexa Studio - Sonu Goswami | Website Developer in Jodhpur" />
         </div>
       </div>
     </div>

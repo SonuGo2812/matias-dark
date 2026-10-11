@@ -18,7 +18,7 @@ const contactInfo = [
   {
     id: 3,
     system: "Location",
-    contact: "India, Working Worldwide",
+    contact: "Jodhpur, Rajasthan (Global Clients)",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const AboutMe = ({ isTabActive }) => {
               data-aos="zoom-in"
               data-aos-duration="500"
             >
-              <img src={personalInfoPhoto} alt="Sonu Goswami working at a desk" />
+              <img src={personalInfoPhoto} alt="Sonu Goswami - Website Developer in Jodhpur, Nexa Studio" />
             </div>
           </div>
           <div className="col-lg-7">
@@ -57,13 +57,14 @@ const AboutMe = ({ isTabActive }) => {
                 data-aos="fade-up"
                 data-aos-duration="500"
               >
-                Passionate website developer with 5+ years of experience
-                creating modern, responsive, and user-focused websites. Skilled
-                in WordPress, Shopify, Elementor, WooCommerce, Divi, and custom
-                website solutions, with a strong focus on clean design,
-                performance, SEO-friendly structure, and smooth user experience.
-                Currently expanding my skills in React and modern custom
-                development to build more flexible and scalable web solutions.
+                I am a passionate website developer based in Jodhpur, Rajasthan,
+                with 5+ years of experience creating modern, responsive, and
+                user-focused websites. Through Nexa Studio, I craft bespoke web
+                solutions for local businesses in Jodhpur as well as international
+                brands. Skilled in custom web development, WordPress, Shopify,
+                Elementor, WooCommerce, and modern frontend technologies, I focus
+                on clean code, fast load times, semantic on-page SEO, and smooth
+                user experiences that convert visitors into clients.
               </p>
               <div className="about__contactwrap">
                 <div className="row g-4">

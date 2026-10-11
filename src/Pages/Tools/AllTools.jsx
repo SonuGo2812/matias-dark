@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageHeader from "../../Components/Shared/PageHeader/PageHeader";
 import ToolCard from "../../Components/Tools/ToolCard";
 import { toolsData } from "../../Utlits/toolsData";
 import { ShieldCheck, LightningChargeFill, Download, Headset } from "react-bootstrap-icons";
 
 const AllTools = () => {
+  useEffect(() => {
+    document.title = "Custom Web Tools & Software Store | Nexa Studio - Sonu Goswami";
+  }, []);
+
   return (
     <>
       <PageHeader

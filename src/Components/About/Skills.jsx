@@ -30,7 +30,7 @@ const Skills = ({ isTabActive }) => {
         <div className="row g-4 align-items-lg-start align-items-center">
           <div className="col-lg-5">
             <div className="about__onethumb">
-              <img src={skillsPhoto} alt="Developer coding with dual monitors" />
+              <img src={skillsPhoto} alt="Web Development and CMS Skills - Sonu Goswami Jodhpur" />
             </div>
           </div>
           <div className="col-lg-7">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { imagesList, projectList } from "../../Utlits/projectList";
 import PageHeader from "../../Components/Shared/PageHeader/PageHeader";
@@ -29,6 +29,10 @@ const Protfolio = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentId, setCurrentId] = useState(0);
   const [currentCategory, setCurrentCategory] = useState("all");
+
+  useEffect(() => {
+    document.title = "Portfolio & Client Projects | Sonu Goswami - Nexa Studio Jodhpur";
+  }, []);
 
   const filterProject =
     currentCategory === "all"

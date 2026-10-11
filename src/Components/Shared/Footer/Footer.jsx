@@ -41,9 +41,9 @@ const Footer = () => {
             <div className="col-lg-6">
               <div className="get__content">
                 <p>
-                  Hello, I am Sonu Goswami, a Website Developer based in India,
-                  working worldwide on WordPress, Shopify, WooCommerce, and CMS
-                  website solutions.
+                  Hello, I am Sonu Goswami, a Website Developer based in Jodhpur, Rajasthan,
+                  working with businesses locally and worldwide to craft bespoke web solutions,
+                  eCommerce stores, and high-performance digital platforms under Nexa Studio.
                 </p>
                 <a href="mailto:goswamisonu2812@gmail.com">goswamisonu2812@gmail.com</a>
               </div>

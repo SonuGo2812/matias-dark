@@ -5,33 +5,33 @@ import Title from "../Shared/Title/Title";
 const serviceList = [
   {
     id: "01",
-    heading: "WordPress Development",
-    subHeading: "CMS Websites",
-    para: "Custom WordPress websites, service pages, landing pages, and easy-to-manage CMS builds for businesses.",
+    heading: "Custom Web Development",
+    subHeading: "Bespoke Solutions",
+    para: "Tailored WordPress, Shopify, and modern web development crafted for high speed, conversion optimization, and smooth business workflows.",
   },
   {
     id: "02",
-    heading: "Shopify Store Development",
-    subHeading: "eCommerce",
-    para: "Responsive Shopify stores, product pages, collections, theme setup, and conversion-focused store experiences.",
+    heading: "WordPress & CMS Development",
+    subHeading: "Scalable CMS",
+    para: "Custom WordPress websites, Elementor & Divi builds, service pages, and easy-to-manage CMS structures for growing businesses.",
   },
   {
     id: "03",
-    heading: "Elementor Website Design",
-    subHeading: "Page Builder",
-    para: "Clean Elementor layouts, responsive sections, landing pages, and flexible pages clients can manage easily.",
+    heading: "eCommerce & Shopify Stores",
+    subHeading: "Online Retail",
+    para: "High-converting Shopify and WooCommerce online stores with custom product layouts, seamless payment gateways, and fast checkout flows.",
   },
   {
     id: "04",
-    heading: "WooCommerce Solutions",
-    subHeading: "Online Stores",
-    para: "WooCommerce setup, product pages, checkout flows, store structure, and business-ready eCommerce websites.",
+    heading: "Modern UI/UX Design",
+    subHeading: "User Interfaces",
+    para: "Clean, responsive, mobile-first website designs that turn visitors into customers through engaging visual journeys and intuitive navigation.",
   },
   {
     id: "05",
-    heading: "Custom Website Solutions",
-    subHeading: "Frontend & Layout",
-    para: "Custom page layouts, Divi customization, responsive fixes, and modern frontend improvements.",
+    heading: "Fast Performance Solutions & SEO",
+    subHeading: "Speed & Visibility",
+    para: "Core Web Vitals optimization, clean on-page technical SEO structure, caching configurations, and rapid load times for maximum search visibility.",
   },
 ];
 const Services = ({ isHeading }) => {

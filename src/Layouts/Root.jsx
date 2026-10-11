@@ -19,7 +19,9 @@ const Root = () => {
         <Header />
       )}
 
-      <Outlet />
+      <main id="main-content">
+        <Outlet />
+      </main>
       <Footer />
       <CartDrawer />
     </>

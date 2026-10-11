@@ -16,6 +16,7 @@ const Home = () => {
   const [isFetching, setIsFetching] = useState(true);
 
   useEffect(() => {
+    document.title = "Sonu Goswami | Website Developer in Jodhpur - Nexa Studio";
     setTimeout(function () {
       setIsFetching(false);
     }, 1500);
