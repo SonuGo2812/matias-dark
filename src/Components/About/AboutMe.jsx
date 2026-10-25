@@ -18,7 +18,7 @@ const contactInfo = [
   {
     id: 3,
     system: "Location",
-    contact: "Jodhpur, Rajasthan (Global Clients)",
+    contact: "Jodhpur, Rajasthan & All India",
   },
   {
     id: 4,

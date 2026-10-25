@@ -23,7 +23,7 @@ const Banner = () => {
                   Available for website projects
                 </span>
                 <span className="d-flex gap-4 align-items-center">
-                  Jodhpur, Rajasthan — Working Worldwide
+                  Jodhpur & India — Web Development Studio
                   <i className="bi bi-arrow-up-right"></i>
                 </span>
               </HashLink>

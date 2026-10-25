@@ -43,7 +43,7 @@ const Services = ({ isHeading }) => {
       <div className="container">
         {isHeading && (
           <Title
-            mainTitle="Website Development Services For Business Growth"
+            mainTitle="Best Web Development & Design Agency Solutions"
             sortTitle="Services That I Provide"
           />
         )}
